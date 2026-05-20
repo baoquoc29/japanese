@@ -78,7 +78,7 @@ export const KanjiTestPage: React.FC = () => {
       {stage === 'setup' && (
         <KanjiTestSetup 
           onStart={handleStartTest} 
-          kanjiCount={kanjiList.length} 
+          kanjiList={kanjiList} 
         />
       )}
 

@@ -1,0 +1,144 @@
+/* Print-specific stylesheet for Nihongo Study Web */
+
+/* Screen Preview Styling */
+.printable-page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 0 auto 2rem auto;
+  background: white;
+  color: #000000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  page-break-after: always;
+}
+
+/* Kanji Tracing and Writing Grid */
+.kanji-grid-cell {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #a3a3a3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  font-family: "Noto Sans JP", "Kaiti", "Courier New", sans-serif;
+  font-size: 28px;
+  color: #000000;
+  background-color: transparent;
+  user-select: none;
+}
+
+/* Crosshairs lines inside writing grids */
+.kanji-grid-cell::before,
+.kanji-grid-cell::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+/* Horizontal crosshair */
+.kanji-grid-cell::before {
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  border-top: 1px dashed #d4d4d4;
+  transform: translateY(-50%);
+}
+
+/* Vertical crosshair */
+.kanji-grid-cell::after {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  border-left: 1px dashed #d4d4d4;
+  transform: translateX(-50%);
+}
+
+.kanji-trace-char {
+  color: #e5e5e5 !important; /* Very light gray for tracing */
+  font-weight: 300;
+}
+
+/* Vocabulary writing lines */
+.vocab-practice-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.vocab-practice-line {
+  height: 24px;
+  border-bottom: 1px solid #d4d4d4;
+  border-top: 1px dotted #e5e5e5;
+  position: relative;
+}
+
+/* Print Specific Overrides */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide everything marked as no-print */
+  .no-print,
+  header,
+  footer,
+  nav,
+  button,
+  .print-setup-panel,
+  .app-header,
+  .sidebar,
+  .back-to-top {
+    display: none !important;
+  }
+
+  /* Reset layout structure for printing */
+  .app-container, 
+  .main-layout, 
+  .content-area,
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .printable-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    margin: 0 !important;
+    padding: 15mm 20mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Specific settings for pages */
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}

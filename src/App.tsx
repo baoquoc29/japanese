@@ -11,6 +11,7 @@ import { QuizPage } from './features/quiz/pages/QuizPage';
 import { FavoritesPage } from './features/favorites/pages/FavoritesPage';
 import { KanjiTestPage } from './features/kanji-test/KanjiTestPage';
 import { FlashcardsPage } from './features/flashcards/FlashcardsPage';
+import { PrintPracticePage } from './features/print-practice/PrintPracticePage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/favorites" element={<FavoritesPage />} />
           <Route path="/kanji-test" element={<KanjiTestPage />} />
           <Route path="/flashcards" element={<FlashcardsPage />} />
+          <Route path="/print-practice" element={<PrintPracticePage />} />
         </Routes>
       </Layout>
     </Router>

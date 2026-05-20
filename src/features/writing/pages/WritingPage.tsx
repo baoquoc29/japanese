@@ -5,16 +5,39 @@ import { HanziWriterPractice } from '../components/HanziWriterPractice';
 import { WritingModeTabs } from '../components/WritingModeTabs';
 import { Loader2 } from 'lucide-react';
 import type { Kanji } from '../../../types';
+import { JlptLevelTabs } from '../../../components/common/JlptLevelTabs';
+import { EmptyState } from '../../../components/common/EmptyState';
+import type { JlptFilterLevel } from '../../../constants/jlpt';
 
 export const WritingPage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { kanjiList, loading, error } = useKanji();
   
+  const [selectedLevel, setSelectedLevel] = useState<JlptFilterLevel>('N5');
   const [selectedKanji, setSelectedKanji] = useState<Kanji | null>(null);
   const [quickSearch, setQuickSearch] = useState('');
   const [writingMode, setWritingMode] = useState<'guided' | 'free'>('guided');
 
-  // Get active char from URL or select first one in list
+  // Sync Level Counts
+  const counts = kanjiList.reduce((acc, k) => {
+    const lvl = k.jlpt || 'N5';
+    acc[lvl] = (acc[lvl] || 0) + 1;
+    acc['ALL'] = (acc['ALL'] || 0) + 1;
+    return acc;
+  }, { ALL: 0, N5: 0, N4: 0, N3: 0, N2: 0, N1: 0 } as Record<string, number>);
+
+  // Level filtered list
+  const levelFilteredKanji = kanjiList.filter(k => 
+    selectedLevel === 'ALL' || k.jlpt === selectedLevel
+  );
+
+  // Search filter applied to level list
+  const filteredQuickList = levelFilteredKanji.filter(k => 
+    k.character.includes(quickSearch) ||
+    k.meanings_vi.some(m => m.toLowerCase().includes(quickSearch.toLowerCase()))
+  );
+
+  // Auto-select first kanji of level or sync URL char
   useEffect(() => {
     if (kanjiList.length === 0) return;
     
@@ -23,10 +46,13 @@ export const WritingPage: React.FC = () => {
       const found = kanjiList.find(k => k.character === urlChar);
       if (found) {
         setSelectedKanji(found);
+        // Sync level tab with selected Kanji level
+        if (found.jlpt && selectedLevel !== 'ALL' && found.jlpt !== selectedLevel) {
+          setSelectedLevel(found.jlpt as JlptFilterLevel);
+        }
         return;
       } else {
-        // Construct a temporary Kanji object for any arbitrary character requested via URL params
-        // This makes the writing page 100% extensible for characters found in handwriting search
+        // Construct temporary object for arbitrary chars
         setSelectedKanji({
           character: urlChar,
           meanings_vi: ['Chữ ngoài N5-N1'],
@@ -42,9 +68,16 @@ export const WritingPage: React.FC = () => {
       }
     }
     
-    // Default fallback to first element
-    setSelectedKanji(kanjiList[0]);
-  }, [kanjiList, searchParams]);
+    // If no URL char or URL char not in active level, pick the first in active level
+    if (levelFilteredKanji.length > 0) {
+      const isAlreadyInList = levelFilteredKanji.some(k => k.character === selectedKanji?.character);
+      if (!isAlreadyInList) {
+        setSelectedKanji(levelFilteredKanji[0]);
+      }
+    } else {
+      setSelectedKanji(null);
+    }
+  }, [kanjiList, selectedLevel]);
 
   const handleSelectKanji = (kanji: Kanji) => {
     setSelectedKanji(kanji);
@@ -52,20 +85,21 @@ export const WritingPage: React.FC = () => {
   };
 
   const handleNextKanji = () => {
-    if (kanjiList.length === 0 || !selectedKanji) return;
-    const currentIndex = kanjiList.findIndex(k => k.character === selectedKanji.character);
-    // If not found in local index, fall back to beginning
-    const nextIndex = currentIndex !== -1 ? (currentIndex + 1) % kanjiList.length : 0;
-    handleSelectKanji(kanjiList[nextIndex]);
+    if (levelFilteredKanji.length === 0 || !selectedKanji) return;
+    const currentIndex = levelFilteredKanji.findIndex(k => k.character === selectedKanji.character);
+    const nextIndex = currentIndex !== -1 ? (currentIndex + 1) % levelFilteredKanji.length : 0;
+    handleSelectKanji(levelFilteredKanji[nextIndex]);
   };
 
-  const filteredQuickList = kanjiList.filter(k => 
-    k.character.includes(quickSearch) ||
-    k.meanings_vi.some(m => m.toLowerCase().includes(quickSearch.toLowerCase()))
-  );
+  const handleLevelChange = (level: JlptFilterLevel) => {
+    setSelectedLevel(level);
+    setQuickSearch('');
+    // Remove search param char when switching levels so it auto-selects first in new level
+    setSearchParams({});
+  };
 
   return (
-    <div className="space-y-8 max-w-6xl mx-auto py-2">
+    <div className="space-y-6 max-w-6xl mx-auto py-2">
       
       {/* Header Title */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-neutral-200 dark:border-neutral-800 pb-5 select-none">
@@ -80,6 +114,15 @@ export const WritingPage: React.FC = () => {
         <WritingModeTabs mode={writingMode} onModeChange={setWritingMode} />
       </div>
 
+      {/* JLPT Levels Filter */}
+      {!loading && !error && kanjiList.length > 0 && (
+        <JlptLevelTabs 
+          selectedLevel={selectedLevel} 
+          onChange={handleLevelChange} 
+          counts={counts}
+        />
+      )}
+
       {loading ? (
         <div className="flex flex-col justify-center items-center py-20 gap-3">
           <Loader2 className="w-6 h-6 text-neutral-400 dark:text-neutral-600 animate-spin" />
@@ -89,13 +132,18 @@ export const WritingPage: React.FC = () => {
         <div className="text-center py-20 text-rose-600 text-xs font-bold">{error}</div>
       ) : kanjiList.length === 0 ? (
         <div className="text-center py-20 text-neutral-500 text-xs font-bold">Không có dữ liệu Kanji để tập viết.</div>
+      ) : levelFilteredKanji.length === 0 ? (
+        <EmptyState 
+          title={`Chưa có dữ liệu Kanji JLPT ${selectedLevel}`} 
+          description="Chúng tôi đang cập nhật dữ liệu phong phú cho cấp độ này. Vui lòng quay lại sau!" 
+        />
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           
           {/* Left panel: Quick Select list */}
           <div className="lg:col-span-1 bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-4 flex flex-col h-[500px] lg:h-[600px]">
             <span className="text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider block mb-3 select-none">
-              Danh sách chữ Kanji
+              Danh sách chữ Kanji ({levelFilteredKanji.length})
             </span>
             
             {/* mini search box */}
@@ -123,7 +171,7 @@ export const WritingPage: React.FC = () => {
                 >
                   <span className="font-jp text-sm leading-none">{k.character}</span>
                   <span className="capitalize text-[9px] text-neutral-400 dark:text-neutral-500 truncate max-w-[70%] select-none">
-                    {k.meanings_vi.slice(0, 1)} ({k.jlpt})
+                    {k.meanings_vi.slice(0, 1)}
                   </span>
                 </button>
               ))}

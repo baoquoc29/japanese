@@ -45,6 +45,16 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Luyện viết', path: '/writing' },
     { name: 'Kiểm tra', path: '/kanji-test' },
     { name: 'Flashcard', path: '/flashcards' },
+    { name: 'Sổ tay', path: '/favorites' },
+    { name: 'In phiếu', path: '/print-practice' },
+  ];
+
+  const mobileBottomNavItems = [
+    { name: 'Kanji', path: '/kanji' },
+    { name: 'Từ vựng', path: '/vocabulary' },
+    { name: 'Ngữ pháp', path: '/grammar' },
+    { name: 'Flashcard', path: '/flashcards' },
+    { name: 'Sổ tay', path: '/favorites' },
   ];
 
   const isActive = (path: string) => {
@@ -165,7 +175,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
 
       {/* ===== MOBILE BOTTOM NAV ===== */}
       <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-zinc-900 border-t border-neutral-200/80 dark:border-neutral-800/80 px-2 py-1 flex justify-around items-center z-40">
-        {navItems.map((item) => {
+        {mobileBottomNavItems.map((item) => {
           const active = isActive(item.path);
           return (
             <Link

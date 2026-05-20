@@ -6,6 +6,9 @@ import { useStudyProgress } from '../../../hooks/useStudyProgress';
 import { KanjiCard } from '../../kanji/components/KanjiCard';
 import { VocabularyCard } from '../../vocabulary/components/VocabularyCard';
 import { GrammarCard } from '../../grammar/components/GrammarCard';
+import { JlptLevelTabs } from '../../../components/common/JlptLevelTabs';
+import { type JlptFilterLevel } from '../../../constants/jlpt';
+import { EmptyState } from '../../../components/common/EmptyState';
 
 type TabType = 'kanji' | 'vocab' | 'grammar' | 'wrong';
 
@@ -25,19 +28,58 @@ export const FavoritesPage: React.FC = () => {
   } = useStudyProgress();
 
   const [activeTab, setActiveTab] = useState<TabType>('kanji');
+  const [selectedLevel, setSelectedLevel] = useState<JlptFilterLevel>('ALL');
 
   // Filter lists based on favorite array in progress
-  const favKanjis = kanjiList.filter(k => progress.favoriteKanji.includes(k.character));
-  const favVocabs = vocabList.filter(v => progress.favoriteVocab.includes(v.id));
-  const favGrammars = grammarList.filter(g => progress.favoriteGrammar.includes(g.id));
+  const allFavKanjis = kanjiList.filter(k => progress.favoriteKanji.includes(k.character));
+  const allFavVocabs = vocabList.filter(v => progress.favoriteVocab.includes(v.id));
+  const allFavGrammars = grammarList.filter(g => progress.favoriteGrammar.includes(g.id));
   const wrongQuestions = progress.wrongQuizQuestions || [];
 
+  // Filter by active level
+  const favKanjis = selectedLevel === 'ALL' ? allFavKanjis : allFavKanjis.filter(k => k.jlpt === selectedLevel);
+  const favVocabs = selectedLevel === 'ALL' ? allFavVocabs : allFavVocabs.filter(v => v.jlpt === selectedLevel);
+  const favGrammars = selectedLevel === 'ALL' ? allFavGrammars : allFavGrammars.filter(g => g.jlpt === selectedLevel);
+
   const tabs = [
-    { value: 'kanji', label: 'Kanji yêu thích', count: favKanjis.length },
-    { value: 'vocab', label: 'Từ vựng yêu thích', count: favVocabs.length },
-    { value: 'grammar', label: 'Ngữ pháp yêu thích', count: favGrammars.length },
+    { value: 'kanji', label: 'Kanji yêu thích', count: allFavKanjis.length },
+    { value: 'vocab', label: 'Từ vựng yêu thích', count: allFavVocabs.length },
+    { value: 'grammar', label: 'Ngữ pháp yêu thích', count: allFavGrammars.length },
     { value: 'wrong', label: 'Cần ôn tập (Lỗi)', count: wrongQuestions.length },
   ];
+
+  const handleTabChange = (tab: TabType) => {
+    setActiveTab(tab);
+    setSelectedLevel('ALL');
+  };
+
+  const getLevelCounts = () => {
+    const counts: Record<string, number> = {
+      ALL: 0,
+      N5: 0,
+      N4: 0,
+      N3: 0,
+      N2: 0,
+      N1: 0,
+    };
+    if (activeTab === 'kanji') {
+      counts.ALL = allFavKanjis.length;
+      allFavKanjis.forEach(k => {
+        if (counts[k.jlpt] !== undefined) counts[k.jlpt]++;
+      });
+    } else if (activeTab === 'vocab') {
+      counts.ALL = allFavVocabs.length;
+      allFavVocabs.forEach(v => {
+        if (counts[v.jlpt] !== undefined) counts[v.jlpt]++;
+      });
+    } else if (activeTab === 'grammar') {
+      counts.ALL = allFavGrammars.length;
+      allFavGrammars.forEach(g => {
+        if (counts[g.jlpt] !== undefined) counts[g.jlpt]++;
+      });
+    }
+    return counts;
+  };
 
   return (
     <div className="space-y-8">
@@ -57,7 +99,7 @@ export const FavoritesPage: React.FC = () => {
         {tabs.map((tab) => (
           <button
             key={tab.value}
-            onClick={() => setActiveTab(tab.value as TabType)}
+            onClick={() => handleTabChange(tab.value as TabType)}
             className={`pb-2.5 text-xs font-semibold transition-colors relative cursor-pointer flex items-center gap-1.5 ${
               activeTab === tab.value
                 ? 'text-indigo-600 dark:text-indigo-400 font-bold border-b border-indigo-600 dark:border-indigo-400'
@@ -76,18 +118,29 @@ export const FavoritesPage: React.FC = () => {
         ))}
       </div>
 
+      {/* JLPT Level Tabs - Hidden for Wrong Questions Tab */}
+      {activeTab !== 'wrong' && (
+        <div className="animate-fade-in">
+          <JlptLevelTabs
+            selectedLevel={selectedLevel}
+            onChange={setSelectedLevel}
+            counts={getLevelCounts()}
+          />
+        </div>
+      )}
+
       {/* Dynamic Content Panels based on Active Tab */}
       <div className="pt-2">
         
         {/* KANJI TAB */}
         {activeTab === 'kanji' && (
           favKanjis.length === 0 ? (
-            <div className="bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800/80 rounded-xl py-16 text-center">
-              <h3 className="text-sm font-bold text-neutral-700 dark:text-neutral-300">Chưa có Kanji yêu thích nào</h3>
-              <p className="text-xs text-neutral-450 dark:text-neutral-500 mt-1 max-w-sm mx-auto">
-                Nhấp lưu trên các thẻ Kanji trong danh sách bài học để đưa chúng vào sổ tay này.
-              </p>
-            </div>
+            <EmptyState
+              title={selectedLevel === 'ALL' ? "Chưa có Kanji yêu thích nào" : `Chưa có Kanji yêu thích nào ở cấp độ ${selectedLevel}`}
+              description={selectedLevel === 'ALL' 
+                ? "Nhấp lưu trên các thẻ Kanji trong danh sách bài học để đưa chúng vào sổ tay này."
+                : `Hãy lưu thêm các thẻ Kanji ${selectedLevel} trong danh sách bài học.`}
+            />
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 animate-fade-in">
               {favKanjis.map((kanji) => (
@@ -113,12 +166,12 @@ export const FavoritesPage: React.FC = () => {
         {/* VOCAB TAB */}
         {activeTab === 'vocab' && (
           favVocabs.length === 0 ? (
-            <div className="bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800/80 rounded-xl py-16 text-center">
-              <h3 className="text-sm font-bold text-neutral-700 dark:text-neutral-300">Chưa có Từ vựng yêu thích nào</h3>
-              <p className="text-xs text-neutral-450 dark:text-neutral-500 mt-1 max-w-sm mx-auto">
-                Nhấp lưu trên các thẻ từ vựng trong danh sách bài học để đưa chúng vào sổ tay này.
-              </p>
-            </div>
+            <EmptyState
+              title={selectedLevel === 'ALL' ? "Chưa có Từ vựng yêu thích nào" : `Chưa có Từ vựng yêu thích nào ở cấp độ ${selectedLevel}`}
+              description={selectedLevel === 'ALL'
+                ? "Nhấp lưu trên các thẻ từ vựng trong danh sách bài học để đưa chúng vào sổ tay này."
+                : `Hãy lưu thêm các từ vựng ${selectedLevel} trong danh sách bài học.`}
+            />
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
               {favVocabs.map((vocab) => (
@@ -138,12 +191,12 @@ export const FavoritesPage: React.FC = () => {
         {/* GRAMMAR TAB */}
         {activeTab === 'grammar' && (
           favGrammars.length === 0 ? (
-            <div className="bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800/80 rounded-xl py-16 text-center">
-              <h3 className="text-sm font-bold text-neutral-700 dark:text-neutral-300">Chưa có Ngữ pháp yêu thích nào</h3>
-              <p className="text-xs text-neutral-450 dark:text-neutral-500 mt-1 max-w-sm mx-auto">
-                Nhấp lưu trên các thẻ ngữ pháp trong danh sách bài học để đưa chúng vào sổ tay này.
-              </p>
-            </div>
+            <EmptyState
+              title={selectedLevel === 'ALL' ? "Chưa có Ngữ pháp yêu thích nào" : `Chưa có Ngữ pháp yêu thích nào ở cấp độ ${selectedLevel}`}
+              description={selectedLevel === 'ALL'
+                ? "Nhấp lưu trên các thẻ ngữ pháp trong danh sách bài học để đưa chúng vào sổ tay này."
+                : `Hãy lưu thêm cấu trúc ngữ pháp ${selectedLevel} trong danh sách bài học.`}
+            />
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
               {favGrammars.map((grammar) => (
@@ -163,12 +216,10 @@ export const FavoritesPage: React.FC = () => {
         {/* WRONG QUESTIONS TAB */}
         {activeTab === 'wrong' && (
           wrongQuestions.length === 0 ? (
-            <div className="bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800/80 rounded-xl py-16 text-center">
-              <h3 className="text-sm font-bold text-neutral-700 dark:text-neutral-300">Sổ tay trống</h3>
-              <p className="text-xs text-neutral-450 dark:text-neutral-500 mt-1 max-w-sm mx-auto">
-                Khi bạn làm sai bất kỳ câu hỏi nào trong module Quiz, câu hỏi đó sẽ được tự động xếp vào đây để bạn dễ dàng rèn luyện lại.
-              </p>
-            </div>
+            <EmptyState
+              title="Sổ tay trống"
+              description="Khi bạn làm sai bất kỳ câu hỏi nào trong module Quiz, câu hỏi đó sẽ được tự động xếp vào đây để bạn dễ dàng rèn luyện lại."
+            />
           ) : (
             <div className="bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800 rounded-xl overflow-hidden max-w-2xl mx-auto">
               <div className="divide-y divide-neutral-100 dark:divide-neutral-800/80">

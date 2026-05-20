@@ -36,6 +36,12 @@ export const KanjiWritingCanvas: React.FC<KanjiWritingCanvasProps> = ({
     setShowHint(mode === 'guided');
   }, [mode]);
 
+  // Reset strokes and currentStroke when character or mode changes
+  useEffect(() => {
+    setStrokes([]);
+    setCurrentStroke([]);
+  }, [character, mode]);
+
   const strokeColor = '#4f46e5'; // indigo-600
   const strokeWidth = 8;
 
