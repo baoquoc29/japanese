@@ -1,5 +1,4 @@
 import React from 'react';
-import { BookOpen, GraduationCap, Layers, Hash } from 'lucide-react';
 import type { KanjiQuestionType } from './kanjiTestGenerator';
 
 interface KanjiTestSetupProps {
@@ -27,34 +26,33 @@ export const KanjiTestSetup: React.FC<KanjiTestSetupProps> = ({ onStart, kanjiCo
 
   const countOptions = [5, 10, 20];
 
-  const typeOptions: { value: KanjiQuestionType[] | 'mixed'; label: string; icon: React.ReactNode; desc: string }[] = [
-    { value: 'mixed', label: 'Tổng hợp', icon: <Layers className="w-5 h-5" />, desc: 'Ngẫu nhiên tất cả dạng' },
-    { value: ['meaning'], label: 'Chọn nghĩa', icon: <BookOpen className="w-5 h-5" />, desc: 'Kanji → nghĩa tiếng Việt' },
-    { value: ['reading'], label: 'Chọn cách đọc', icon: <GraduationCap className="w-5 h-5" />, desc: 'Kanji → On/Kun reading' },
-    { value: ['kanji_by_meaning'], label: 'Chọn Kanji', icon: <span className="text-lg font-black font-jp">漢</span>, desc: 'Nghĩa → chọn Kanji đúng' },
-    { value: ['stroke_count'], label: 'Đếm nét', icon: <Hash className="w-5 h-5" />, desc: 'Kanji → số nét đúng' },
+  const typeOptions: { value: KanjiQuestionType[] | 'mixed'; label: string; desc: string }[] = [
+    { value: 'mixed', label: 'Tổng hợp', desc: 'Ngẫu nhiên tất cả các dạng câu hỏi bên dưới' },
+    { value: ['meaning'], label: 'Chọn ý nghĩa', desc: 'Nhìn chữ Kanji đoán ý nghĩa tiếng Việt tương ứng' },
+    { value: ['reading'], label: 'Chọn cách đọc', desc: 'Nhìn chữ Kanji chọn âm On/Kun chính xác' },
+    { value: ['kanji_by_meaning'], label: 'Chọn chữ Kanji', desc: 'Nhìn ý nghĩa chọn chữ Kanji chính xác' },
+    { value: ['stroke_count'], label: 'Đếm nét viết', desc: 'Chọn tổng số nét viết chính xác của chữ Kanji' },
   ];
 
   const isTypeSelected = (val: KanjiQuestionType[] | 'mixed') =>
     JSON.stringify(questionType) === JSON.stringify(val);
 
   return (
-    <div className="max-w-2xl mx-auto space-y-8 animate-fade-in">
+    <div className="max-w-xl mx-auto space-y-8 animate-fade-in py-6">
       {/* Header */}
-      <div className="text-center">
-        <div className="text-5xl mb-3">📝</div>
-        <h1 className="text-3xl font-extrabold text-slate-800 dark:text-white">
+      <div className="text-center space-y-2 border-b border-neutral-200 dark:border-neutral-800 pb-6 select-none">
+        <h1 className="text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 font-display">
           Kiểm tra Kanji
         </h1>
-        <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
-          {kanjiCount} chữ Kanji sẵn sàng — Chọn cấu hình bài kiểm tra
+        <p className="text-xs text-neutral-500 dark:text-neutral-400">
+          Thư viện chứa {kanjiCount} chữ Kanji đã sẵn sàng. Thiết lập cấu hình bài thi bên dưới.
         </p>
       </div>
 
-      <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 space-y-6">
+      <div className="bg-white dark:bg-zinc-900 rounded-xl border border-neutral-200 dark:border-neutral-800 p-6 space-y-6">
         {/* JLPT */}
-        <div>
-          <label className="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
+        <div className="space-y-3">
+          <label className="block text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider select-none">
             Cấp độ JLPT
           </label>
           <div className="flex flex-wrap gap-2">
@@ -62,10 +60,10 @@ export const KanjiTestSetup: React.FC<KanjiTestSetupProps> = ({ onStart, kanjiCo
               <button
                 key={opt.value}
                 onClick={() => setJlpt(opt.value)}
-                className={`px-4 py-2 rounded-xl text-sm font-bold transition-all cursor-pointer ${
+                className={`px-3 py-1.5 rounded text-xs font-semibold transition-colors cursor-pointer ${
                   jlpt === opt.value
-                    ? 'bg-violet-600 text-white shadow-md shadow-violet-500/20'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                    ? 'bg-neutral-900 text-white dark:bg-neutral-50 dark:text-neutral-950 font-bold'
+                    : 'bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100'
                 }`}
               >
                 {opt.label}
@@ -75,19 +73,19 @@ export const KanjiTestSetup: React.FC<KanjiTestSetupProps> = ({ onStart, kanjiCo
         </div>
 
         {/* Question Count */}
-        <div>
-          <label className="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
-            Số câu hỏi
+        <div className="space-y-3">
+          <label className="block text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider select-none">
+            Số lượng câu hỏi
           </label>
           <div className="flex gap-2">
             {countOptions.map(c => (
               <button
                 key={c}
                 onClick={() => setQuestionCount(c)}
-                className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all cursor-pointer ${
+                className={`px-4 py-1.5 rounded text-xs font-semibold transition-colors cursor-pointer ${
                   questionCount === c
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-500/20'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                    ? 'bg-neutral-900 text-white dark:bg-neutral-50 dark:text-neutral-950 font-bold'
+                    : 'bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100'
                 }`}
               >
                 {c} câu
@@ -97,29 +95,29 @@ export const KanjiTestSetup: React.FC<KanjiTestSetupProps> = ({ onStart, kanjiCo
         </div>
 
         {/* Question Type */}
-        <div>
-          <label className="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
-            Dạng câu hỏi
+        <div className="space-y-3">
+          <label className="block text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider select-none">
+            Phương thức trắc nghiệm
           </label>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 gap-2">
             {typeOptions.map(opt => (
               <button
                 key={opt.label}
                 onClick={() => setQuestionType(opt.value)}
-                className={`flex items-center gap-3 p-3 rounded-xl text-left transition-all cursor-pointer ${
+                className={`flex items-center justify-between p-3.5 rounded-lg text-left border transition-colors cursor-pointer ${
                   isTypeSelected(opt.value)
-                    ? 'bg-indigo-50 dark:bg-indigo-500/10 border-2 border-indigo-500 dark:border-indigo-400'
-                    : 'bg-slate-50 dark:bg-slate-800 border-2 border-transparent hover:border-slate-200 dark:hover:border-slate-700'
+                    ? 'bg-neutral-50 dark:bg-neutral-850/60 border-neutral-400 dark:border-neutral-700 text-neutral-900 dark:text-neutral-100 font-semibold'
+                    : 'bg-white border-neutral-200 dark:bg-zinc-900 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-850/50'
                 }`}
               >
-                <div className={`shrink-0 ${isTypeSelected(opt.value) ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-400 dark:text-slate-500'}`}>
-                  {opt.icon}
-                </div>
-                <div>
-                  <p className={`text-sm font-bold ${isTypeSelected(opt.value) ? 'text-indigo-700 dark:text-indigo-300' : 'text-slate-700 dark:text-slate-300'}`}>
+                <div className="space-y-0.5">
+                  <p className="text-xs font-bold">
                     {opt.label}
                   </p>
-                  <p className="text-[10px] text-slate-400 dark:text-slate-500">{opt.desc}</p>
+                  <p className="text-[10px] text-neutral-400 dark:text-neutral-500">{opt.desc}</p>
+                </div>
+                <div className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400">
+                  {isTypeSelected(opt.value) ? '[Đang chọn]' : ''}
                 </div>
               </button>
             ))}
@@ -129,9 +127,9 @@ export const KanjiTestSetup: React.FC<KanjiTestSetupProps> = ({ onStart, kanjiCo
         {/* Start Button */}
         <button
           onClick={() => onStart({ jlpt, questionCount, questionTypes: questionType })}
-          className="w-full py-3.5 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-bold rounded-2xl transition-all hover:scale-[1.01] cursor-pointer shadow-lg shadow-indigo-500/20 text-base"
+          className="w-full mt-4 py-2.5 bg-neutral-900 hover:bg-neutral-800 dark:bg-neutral-50 dark:hover:bg-neutral-200 text-white dark:text-neutral-950 text-xs font-semibold rounded-lg transition-colors cursor-pointer"
         >
-          🚀 Bắt đầu kiểm tra
+          Bắt đầu làm bài
         </button>
       </div>
     </div>

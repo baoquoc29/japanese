@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { Kanji } from '../../../types';
-import { BookOpen, PenTool } from 'lucide-react';
+import type { Kanji } from '../../types';
 
 interface KanjiCandidateCardProps {
   kanji: Kanji;
@@ -48,15 +47,15 @@ export const KanjiCandidateCard: React.FC<KanjiCandidateCardProps> = ({ kanji })
       <div className="flex gap-1.5 mt-3">
         <button
           onClick={() => navigate(`/kanji/${encodeURIComponent(kanji.character)}`)}
-          className="flex-1 flex items-center justify-center gap-1 px-2 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-[10px] font-bold hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-colors cursor-pointer"
+          className="flex-1 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-850 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-[10px] font-bold transition-colors cursor-pointer"
         >
-          <BookOpen className="w-3 h-3" /> Chi tiết
+          Chi tiết
         </button>
         <button
           onClick={() => navigate(`/writing?char=${encodeURIComponent(kanji.character)}`)}
-          className="flex-1 flex items-center justify-center gap-1 px-2 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-500/10 text-sky-600 dark:text-sky-400 text-[10px] font-bold hover:bg-sky-100 dark:hover:bg-sky-500/20 transition-colors cursor-pointer"
+          className="flex-1 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-850 dark:bg-indigo-650 dark:hover:bg-indigo-750 text-white text-[10px] font-bold transition-colors cursor-pointer"
         >
-          <PenTool className="w-3 h-3" /> Luyện viết
+          Luyện viết
         </button>
       </div>
     </div>

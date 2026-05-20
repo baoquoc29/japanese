@@ -1,4 +1,4 @@
-import type { Kanji } from '../types';
+import type { Kanji } from '../../types';
 
 interface DrawStroke {
   points: { x: number; y: number }[];

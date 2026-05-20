@@ -125,7 +125,7 @@ export const Home: React.FC = () => {
                 Ngữ pháp
               </h3>
               <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                Củng cố cấu trúc ngữ pháp thông qua các ví dụ ngắn gọn, thực tế và dễ tiếp thu.
+                Củng cố {grammarList.length}+ cấu trúc ngữ pháp thông qua các ví dụ ngắn gọn, thực tế và dễ tiếp thu.
               </p>
             </div>
             <div className="text-xs text-indigo-600 dark:text-indigo-400 font-semibold mt-6">
