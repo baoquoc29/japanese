@@ -121,7 +121,7 @@ body {
   font-family: 'Noto Sans JP', 'Yu Gothic', 'Hiragino Sans', sans-serif;
 }
 
-/* ===== Hanzi Writer container ===== */
-.hanzi-writer-container svg {
+/* ===== KanjiVG container ===== */
+.kanjivg-container svg {
   display: block;
 }

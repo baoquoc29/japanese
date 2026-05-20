@@ -1,892 +1,2566 @@
 [
   {
     "character": "日",
-    "meanings_vi": ["ngày", "mặt trời", "Nhật Bản"],
-    "meanings_en": ["day", "sun", "Japan"],
-    "on_readings": ["ニチ", "ジツ"],
-    "kun_readings": ["ひ", "か"],
+    "meanings_vi": [
+      "ngày",
+      "mặt trời",
+      "Nhật Bản"
+    ],
+    "meanings_en": [
+      "day",
+      "sun",
+      "Japan"
+    ],
+    "on_readings": [
+      "ニチ",
+      "ジツ"
+    ],
+    "kun_readings": [
+      "ひ",
+      "か"
+    ],
     "stroke_count": 4,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "65e5",
-    "examples": ["日本", "今日", "日曜日"]
+    "examples": [
+      "日本",
+      "今日",
+      "日曜日"
+    ]
   },
   {
     "character": "本",
-    "meanings_vi": ["sách", "gốc", "nguồn gốc"],
-    "meanings_en": ["book", "origin", "source"],
-    "on_readings": ["ホン"],
-    "kun_readings": ["もと"],
+    "meanings_vi": [
+      "sách",
+      "gốc",
+      "nguồn gốc"
+    ],
+    "meanings_en": [
+      "book",
+      "origin",
+      "source"
+    ],
+    "on_readings": [
+      "ホン"
+    ],
+    "kun_readings": [
+      "もと"
+    ],
     "stroke_count": 5,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "672c",
-    "examples": ["日本", "本屋", "日本語"]
+    "examples": [
+      "日本",
+      "本屋",
+      "日本語"
+    ]
   },
   {
     "character": "人",
-    "meanings_vi": ["người"],
-    "meanings_en": ["person", "people"],
-    "on_readings": ["ジン", "ニン"],
-    "kun_readings": ["ひと"],
+    "meanings_vi": [
+      "người"
+    ],
+    "meanings_en": [
+      "person",
+      "people"
+    ],
+    "on_readings": [
+      "ジン",
+      "ニン"
+    ],
+    "kun_readings": [
+      "ひと"
+    ],
     "stroke_count": 2,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "4eba",
-    "examples": ["日本人", "三人", "あの人"]
+    "examples": [
+      "日本人",
+      "三人",
+      "あの人"
+    ]
   },
   {
     "character": "月",
-    "meanings_vi": ["tháng", "mặt trăng"],
-    "meanings_en": ["month", "moon"],
-    "on_readings": ["ゲツ", "ガツ"],
-    "kun_readings": ["つき"],
+    "meanings_vi": [
+      "tháng",
+      "mặt trăng"
+    ],
+    "meanings_en": [
+      "month",
+      "moon"
+    ],
+    "on_readings": [
+      "ゲツ",
+      "ガツ"
+    ],
+    "kun_readings": [
+      "つき"
+    ],
     "stroke_count": 4,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "6708",
-    "examples": ["一月", "今月", "月曜日"]
+    "examples": [
+      "一月",
+      "今月",
+      "月曜日"
+    ]
   },
   {
     "character": "火",
-    "meanings_vi": ["lửa"],
-    "meanings_en": ["fire"],
-    "on_readings": ["カ"],
-    "kun_readings": ["ひ", "び"],
+    "meanings_vi": [
+      "lửa"
+    ],
+    "meanings_en": [
+      "fire"
+    ],
+    "on_readings": [
+      "カ"
+    ],
+    "kun_readings": [
+      "ひ",
+      "び"
+    ],
     "stroke_count": 4,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "706b",
-    "examples": ["火曜日", "火山", "火事"]
+    "examples": [
+      "火曜日",
+      "火山",
+      "火事"
+    ]
   },
   {
     "character": "水",
-    "meanings_vi": ["nước"],
-    "meanings_en": ["water"],
-    "on_readings": ["スイ"],
-    "kun_readings": ["みず"],
+    "meanings_vi": [
+      "nước"
+    ],
+    "meanings_en": [
+      "water"
+    ],
+    "on_readings": [
+      "スイ"
+    ],
+    "kun_readings": [
+      "みず"
+    ],
     "stroke_count": 4,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "6c34",
-    "examples": ["水曜日", "お水", "水道"]
+    "examples": [
+      "水曜日",
+      "お水",
+      "水道"
+    ]
   },
   {
     "character": "木",
-    "meanings_vi": ["cây", "gỗ"],
-    "meanings_en": ["tree", "wood"],
-    "on_readings": ["モク", "ボク"],
-    "kun_readings": ["き"],
+    "meanings_vi": [
+      "cây",
+      "gỗ"
+    ],
+    "meanings_en": [
+      "tree",
+      "wood"
+    ],
+    "on_readings": [
+      "モク",
+      "ボク"
+    ],
+    "kun_readings": [
+      "き"
+    ],
     "stroke_count": 4,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "6728",
-    "examples": ["木曜日", "大木", "木の下"]
+    "examples": [
+      "木曜日",
+      "大木",
+      "木の下"
+    ]
   },
   {
     "character": "金",
-    "meanings_vi": ["vàng", "tiền"],
-    "meanings_en": ["gold", "money"],
-    "on_readings": ["キン", "コン"],
-    "kun_readings": ["かね", "かな"],
+    "meanings_vi": [
+      "vàng",
+      "tiền"
+    ],
+    "meanings_en": [
+      "gold",
+      "money"
+    ],
+    "on_readings": [
+      "キン",
+      "コン"
+    ],
+    "kun_readings": [
+      "かね",
+      "かな"
+    ],
     "stroke_count": 8,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "91d1",
-    "examples": ["金曜日", "お金", "金メダル"]
+    "examples": [
+      "金曜日",
+      "お金",
+      "金メダル"
+    ]
   },
   {
     "character": "土",
-    "meanings_vi": ["đất"],
-    "meanings_en": ["earth", "soil", "ground"],
-    "on_readings": ["ド", "ト"],
-    "kun_readings": ["つち"],
+    "meanings_vi": [
+      "đất"
+    ],
+    "meanings_en": [
+      "earth",
+      "soil",
+      "ground"
+    ],
+    "on_readings": [
+      "ド",
+      "ト"
+    ],
+    "kun_readings": [
+      "つち"
+    ],
     "stroke_count": 3,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "571f",
-    "examples": ["土曜日", "土地", "お土産"]
+    "examples": [
+      "土曜日",
+      "土地",
+      "お土産"
+    ]
   },
   {
     "character": "山",
-    "meanings_vi": ["núi"],
-    "meanings_en": ["mountain"],
-    "on_readings": ["サン"],
-    "kun_readings": ["やま"],
+    "meanings_vi": [
+      "núi"
+    ],
+    "meanings_en": [
+      "mountain"
+    ],
+    "on_readings": [
+      "サン"
+    ],
+    "kun_readings": [
+      "やま"
+    ],
     "stroke_count": 3,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "5c71",
-    "examples": ["富士山", "山登り", "山川さん"]
+    "examples": [
+      "富士山",
+      "山登り",
+      "山川さん"
+    ]
   },
   {
     "character": "川",
-    "meanings_vi": ["sông"],
-    "meanings_en": ["river"],
-    "on_readings": ["セン"],
-    "kun_readings": ["かわ"],
+    "meanings_vi": [
+      "sông"
+    ],
+    "meanings_en": [
+      "river"
+    ],
+    "on_readings": [
+      "セン"
+    ],
+    "kun_readings": [
+      "かわ"
+    ],
     "stroke_count": 3,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "5ddd",
-    "examples": ["ナイル川", "川岸", "山川さん"]
+    "examples": [
+      "ナイル川",
+      "川岸",
+      "山川さん"
+    ]
   },
   {
     "character": "田",
-    "meanings_vi": ["ruộng lúa"],
-    "meanings_en": ["rice field"],
-    "on_readings": ["デン"],
-    "kun_readings": ["た", "だ"],
+    "meanings_vi": [
+      "ruộng lúa"
+    ],
+    "meanings_en": [
+      "rice field"
+    ],
+    "on_readings": [
+      "デン"
+    ],
+    "kun_readings": [
+      "た",
+      "だ"
+    ],
     "stroke_count": 5,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "7530",
-    "examples": ["水田", "山田さん", "田んぼ"]
+    "examples": [
+      "水田",
+      "山田さん",
+      "田んぼ"
+    ]
   },
   {
     "character": "子",
-    "meanings_vi": ["con"],
-    "meanings_en": ["child"],
-    "on_readings": ["シ", "ス"],
-    "kun_readings": ["こ"],
+    "meanings_vi": [
+      "con"
+    ],
+    "meanings_en": [
+      "child"
+    ],
+    "on_readings": [
+      "シ",
+      "ス"
+    ],
+    "kun_readings": [
+      "こ"
+    ],
     "stroke_count": 3,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "5b50",
-    "examples": ["子ども", "女子", "迷子"]
+    "examples": [
+      "子ども",
+      "女子",
+      "迷子"
+    ]
   },
   {
     "character": "女",
-    "meanings_vi": ["phụ nữ", "con gái"],
-    "meanings_en": ["woman", "female"],
-    "on_readings": ["ジョ", "ニョ"],
-    "kun_readings": ["おんな"],
+    "meanings_vi": [
+      "phụ nữ",
+      "con gái"
+    ],
+    "meanings_en": [
+      "woman",
+      "female"
+    ],
+    "on_readings": [
+      "ジョ",
+      "ニョ"
+    ],
+    "kun_readings": [
+      "おんな"
+    ],
     "stroke_count": 3,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "5973",
-    "examples": ["女の子", "女性", "長女"]
+    "examples": [
+      "女の子",
+      "女性",
+      "長女"
+    ]
   },
   {
     "character": "学",
-    "meanings_vi": ["học", "học vấn"],
-    "meanings_en": ["study", "learning"],
-    "on_readings": ["ガク"],
-    "kun_readings": ["まな.ぶ"],
+    "meanings_vi": [
+      "học",
+      "học vấn"
+    ],
+    "meanings_en": [
+      "study",
+      "learning"
+    ],
+    "on_readings": [
+      "ガク"
+    ],
+    "kun_readings": [
+      "まな.ぶ"
+    ],
     "stroke_count": 8,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "5b66",
-    "examples": ["学生", "学校", "大学"]
+    "examples": [
+      "学生",
+      "学校",
+      "大学"
+    ]
   },
   {
     "character": "生",
-    "meanings_vi": ["sinh", "sống", "học sinh"],
-    "meanings_en": ["life", "birth", "student"],
-    "on_readings": ["セイ", "ショウ"],
-    "kun_readings": ["い.きる", "う.まれる", "なま"],
+    "meanings_vi": [
+      "sinh",
+      "sống",
+      "học sinh"
+    ],
+    "meanings_en": [
+      "life",
+      "birth",
+      "student"
+    ],
+    "on_readings": [
+      "セイ",
+      "ショウ"
+    ],
+    "kun_readings": [
+      "い.きる",
+      "う.まれる",
+      "なま"
+    ],
     "stroke_count": 5,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "751f",
-    "examples": ["学生", "先生", "生まれる"]
+    "examples": [
+      "学生",
+      "先生",
+      "生まれる"
+    ]
   },
   {
     "character": "先",
-    "meanings_vi": ["trước", "tiền"],
-    "meanings_en": ["before", "ahead", "previous"],
-    "on_readings": ["セン"],
-    "kun_readings": ["さき"],
+    "meanings_vi": [
+      "trước",
+      "tiền"
+    ],
+    "meanings_en": [
+      "before",
+      "ahead",
+      "previous"
+    ],
+    "on_readings": [
+      "セン"
+    ],
+    "kun_readings": [
+      "さき"
+    ],
     "stroke_count": 6,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "5148",
-    "examples": ["先生", "先月", "お先に"]
+    "examples": [
+      "先生",
+      "先月",
+      "お先に"
+    ]
   },
   {
     "character": "私",
-    "meanings_vi": ["tôi", "tư nhân"],
-    "meanings_en": ["I", "me", "private"],
-    "on_readings": ["シ"],
-    "kun_readings": ["わたし", "わたくし"],
+    "meanings_vi": [
+      "tôi",
+      "tư nhân",
+      "tư hữu"
+    ],
+    "meanings_en": [
+      "I",
+      "me",
+      "private"
+    ],
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "わたし",
+      "わたくし"
+    ],
     "stroke_count": 7,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "79c1",
-    "examples": ["私立大学", "私鉄", "私小説"]
+    "examples": [
+      "私立大学",
+      "私鉄",
+      "私小説",
+      "私"
+    ],
+    "han_viet": "Tư"
   },
   {
     "character": "何",
-    "meanings_vi": ["cái gì"],
-    "meanings_en": ["what"],
-    "on_readings": ["カ"],
-    "kun_readings": ["なに", "なん"],
+    "meanings_vi": [
+      "cái gì"
+    ],
+    "meanings_en": [
+      "what"
+    ],
+    "on_readings": [
+      "カ"
+    ],
+    "kun_readings": [
+      "なに",
+      "なん"
+    ],
     "stroke_count": 7,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "4f55",
-    "examples": ["何ですか", "何人", "何時"]
+    "examples": [
+      "何ですか",
+      "何人",
+      "何時"
+    ]
   },
   {
     "character": "上",
-    "meanings_vi": ["trên", "phía trên"],
-    "meanings_en": ["above", "up", "top"],
-    "on_readings": ["ジョウ"],
-    "kun_readings": ["うえ", "あ.がる", "のぼ.る"],
+    "meanings_vi": [
+      "trên",
+      "phía trên"
+    ],
+    "meanings_en": [
+      "above",
+      "up",
+      "top"
+    ],
+    "on_readings": [
+      "ジョウ"
+    ],
+    "kun_readings": [
+      "うえ",
+      "あ.がる",
+      "のぼ.る"
+    ],
     "stroke_count": 3,
     "jlpt": "N5",
     "grade": 1,
     "unicode": "4e0a",
-    "examples": ["机の上", "上がる", "川上"]
+    "examples": [
+      "机の上",
+      "上がる",
+      "川上"
+    ]
   },
   {
     "character": "会",
     "han_viet": "Hội",
-    "meanings_vi": ["gặp", "hội", "cuộc họp"],
-    "meanings_en": ["meet", "meeting"],
-    "on_readings": ["カイ", "エ"],
-    "kun_readings": ["あ.う"],
+    "meanings_vi": [
+      "gặp",
+      "hội",
+      "cuộc họp",
+      "gặp gỡ",
+      "hội họp",
+      "hiệp hội"
+    ],
+    "meanings_en": [
+      "meet",
+      "meeting",
+      "society",
+      "association"
+    ],
+    "on_readings": [
+      "カイ",
+      "エ"
+    ],
+    "kun_readings": [
+      "あ.う",
+      "あう"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "4f1a",
-    "examples": ["会う", "会社", "会話"]
+    "examples": [
+      "会う",
+      "会社",
+      "会話",
+      "国会"
+    ]
   },
   {
     "character": "同",
     "han_viet": "Đồng",
-    "meanings_vi": ["cùng", "tương đồng", "giống nhau"],
-    "meanings_en": ["same", "agree", "equal"],
-    "on_readings": ["ドウ"],
-    "kun_readings": ["おな.じ"],
+    "meanings_vi": [
+      "cùng",
+      "tương đồng",
+      "giống nhau"
+    ],
+    "meanings_en": [
+      "same",
+      "agree",
+      "equal"
+    ],
+    "on_readings": [
+      "ドウ"
+    ],
+    "kun_readings": [
+      "おな.じ"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "540c",
-    "examples": ["同じ", "同時", "同僚"]
+    "examples": [
+      "同じ",
+      "同時",
+      "同僚"
+    ]
   },
   {
     "character": "事",
     "han_viet": "Sự",
-    "meanings_vi": ["sự việc", "công việc", "việc"],
-    "meanings_en": ["matter", "thing", "business"],
-    "on_readings": ["ジ", "ズ"],
-    "kun_readings": ["こと"],
+    "meanings_vi": [
+      "sự việc",
+      "công việc",
+      "việc"
+    ],
+    "meanings_en": [
+      "matter",
+      "thing",
+      "business"
+    ],
+    "on_readings": [
+      "ジ",
+      "ズ"
+    ],
+    "kun_readings": [
+      "こと"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 3,
     "unicode": "4e8b",
-    "examples": ["仕事", "食事", "大事"]
+    "examples": [
+      "仕事",
+      "食事",
+      "大事"
+    ]
   },
   {
     "character": "自",
     "han_viet": "Tự",
-    "meanings_vi": ["tự mình", "tự bản thân"],
-    "meanings_en": ["oneself", "self"],
-    "on_readings": ["ジ", "シ"],
-    "kun_readings": ["みずか.ら"],
+    "meanings_vi": [
+      "tự mình",
+      "tự bản thân"
+    ],
+    "meanings_en": [
+      "oneself",
+      "self"
+    ],
+    "on_readings": [
+      "ジ",
+      "シ"
+    ],
+    "kun_readings": [
+      "みずか.ら"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "81ea",
-    "examples": ["自分", "自動車", "自由"]
+    "examples": [
+      "自分",
+      "自動車",
+      "自由"
+    ]
   },
   {
     "character": "社",
     "han_viet": "Xã",
-    "meanings_vi": ["xã hội", "công ty", "đền thờ"],
-    "meanings_en": ["company", "shrine", "society"],
-    "on_readings": ["シャ"],
-    "kun_readings": ["やしろ"],
+    "meanings_vi": [
+      "xã hội",
+      "công ty",
+      "đền thờ",
+      "đền chùa"
+    ],
+    "meanings_en": [
+      "company",
+      "shrine",
+      "society"
+    ],
+    "on_readings": [
+      "シャ"
+    ],
+    "kun_readings": [
+      "やしろ"
+    ],
     "stroke_count": 7,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "793e",
-    "examples": ["会社", "社会", "社長"]
+    "examples": [
+      "会社",
+      "社会",
+      "社長",
+      "神社"
+    ]
   },
   {
     "character": "者",
     "han_viet": "Giả",
-    "meanings_vi": ["người", "học giả"],
-    "meanings_en": ["someone", "person"],
-    "on_readings": ["シャ"],
-    "kun_readings": ["もの"],
+    "meanings_vi": [
+      "người",
+      "học giả"
+    ],
+    "meanings_en": [
+      "someone",
+      "person"
+    ],
+    "on_readings": [
+      "シャ"
+    ],
+    "kun_readings": [
+      "もの"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 3,
     "unicode": "8005",
-    "examples": ["学者", "若者", "医者"]
+    "examples": [
+      "学者",
+      "若者",
+      "医者"
+    ]
   },
   {
     "character": "国",
     "han_viet": "Quốc",
-    "meanings_vi": ["đất nước", "quốc gia"],
-    "meanings_en": ["country", "nation"],
-    "on_readings": ["コク"],
-    "kun_readings": ["くに"],
+    "meanings_vi": [
+      "đất nước",
+      "quốc gia"
+    ],
+    "meanings_en": [
+      "country",
+      "nation"
+    ],
+    "on_readings": [
+      "コク"
+    ],
+    "kun_readings": [
+      "くに"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "56fd",
-    "examples": ["国", "外国", "国際"]
+    "examples": [
+      "国",
+      "外国",
+      "国際"
+    ]
   },
   {
     "character": "出",
     "han_viet": "Xuất",
-    "meanings_vi": ["đi ra", "xuất hiện", "đưa ra"],
-    "meanings_en": ["exit", "leave", "go out"],
-    "on_readings": ["シュツ", "スイ"],
-    "kun_readings": ["で.る", "だ.す"],
+    "meanings_vi": [
+      "đi ra",
+      "xuất hiện",
+      "đưa ra"
+    ],
+    "meanings_en": [
+      "exit",
+      "leave",
+      "go out"
+    ],
+    "on_readings": [
+      "シュツ",
+      "スイ"
+    ],
+    "kun_readings": [
+      "で.る",
+      "だ.す"
+    ],
     "stroke_count": 5,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "51fa",
-    "examples": ["出る", "出す", "出口"]
+    "examples": [
+      "出る",
+      "出す",
+      "出口"
+    ]
   },
   {
     "character": "用",
     "han_viet": "Dụng",
-    "meanings_vi": ["sử dụng", "dùng", "công việc"],
-    "meanings_en": ["use", "service", "business"],
-    "on_readings": ["ヨウ"],
-    "kun_readings": ["もち.いる"],
+    "meanings_vi": [
+      "sử dụng",
+      "dùng",
+      "công việc"
+    ],
+    "meanings_en": [
+      "use",
+      "service",
+      "business"
+    ],
+    "on_readings": [
+      "ヨウ"
+    ],
+    "kun_readings": [
+      "もち.いる"
+    ],
     "stroke_count": 5,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "7528",
-    "examples": ["用意", "使用", "用事"]
+    "examples": [
+      "用意",
+      "使用",
+      "用事"
+    ]
   },
   {
     "character": "地",
     "han_viet": "Địa",
-    "meanings_vi": ["đất đai", "trái đất", "địa phương"],
-    "meanings_en": ["ground", "earth"],
-    "on_readings": ["チ", "ジ"],
+    "meanings_vi": [
+      "đất đai",
+      "trái đất",
+      "địa phương"
+    ],
+    "meanings_en": [
+      "ground",
+      "earth"
+    ],
+    "on_readings": [
+      "チ",
+      "ジ"
+    ],
     "kun_readings": [],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "5730",
-    "examples": ["地下鉄", "地図", "地震"]
+    "examples": [
+      "地下鉄",
+      "地図",
+      "地震"
+    ]
   },
   {
     "character": "京",
     "han_viet": "Kinh",
-    "meanings_vi": ["kinh đô", "thành phố lớn"],
-    "meanings_en": ["capital", "metropolis"],
-    "on_readings": ["キョウ", "ケイ"],
-    "kun_readings": ["みやこ"],
+    "meanings_vi": [
+      "kinh đô",
+      "thành phố lớn"
+    ],
+    "meanings_en": [
+      "capital",
+      "metropolis"
+    ],
+    "on_readings": [
+      "キョウ",
+      "ケイ"
+    ],
+    "kun_readings": [
+      "みやこ"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "4eac",
-    "examples": ["東京", "京都", "上京"]
+    "examples": [
+      "東京",
+      "京都",
+      "上京"
+    ]
   },
   {
     "character": "明",
     "han_viet": "Minh",
-    "meanings_vi": ["sáng sủa", "rõ ràng"],
-    "meanings_en": ["bright", "light", "clear"],
-    "on_readings": ["メイ", "ミョウ"],
-    "kun_readings": ["あか.るい", "あき.らか"],
+    "meanings_vi": [
+      "sáng sủa",
+      "rõ ràng"
+    ],
+    "meanings_en": [
+      "bright",
+      "light",
+      "clear"
+    ],
+    "on_readings": [
+      "メイ",
+      "ミョウ"
+    ],
+    "kun_readings": [
+      "あか.るい",
+      "あき.らか"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "660e",
-    "examples": ["明日", "明るい", "説明"]
+    "examples": [
+      "明日",
+      "明るい",
+      "説明"
+    ]
   },
   {
     "character": "東",
     "han_viet": "Đông",
-    "meanings_vi": ["phía đông"],
-    "meanings_en": ["east"],
-    "on_readings": ["トウ"],
-    "kun_readings": ["ひがし"],
+    "meanings_vi": [
+      "phía đông"
+    ],
+    "meanings_en": [
+      "east"
+    ],
+    "on_readings": [
+      "トウ"
+    ],
+    "kun_readings": [
+      "ひがし"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "6771",
-    "examples": ["東京", "東南アジア", "東口"]
+    "examples": [
+      "東京",
+      "東南アジア",
+      "東口"
+    ]
   },
   {
     "character": "西",
     "han_viet": "Tây",
-    "meanings_vi": ["phía tây"],
-    "meanings_en": ["west"],
-    "on_readings": ["セイ", "サイ"],
-    "kun_readings": ["にし"],
+    "meanings_vi": [
+      "phía tây"
+    ],
+    "meanings_en": [
+      "west"
+    ],
+    "on_readings": [
+      "セイ",
+      "サイ"
+    ],
+    "kun_readings": [
+      "にし"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "897f",
-    "examples": ["関西", "西洋", "西口"]
+    "examples": [
+      "関西",
+      "西洋",
+      "西口"
+    ]
   },
   {
     "character": "南",
     "han_viet": "Nam",
-    "meanings_vi": ["phía nam"],
-    "meanings_en": ["south"],
-    "on_readings": ["ナン"],
-    "kun_readings": ["みなみ"],
+    "meanings_vi": [
+      "phía nam"
+    ],
+    "meanings_en": [
+      "south"
+    ],
+    "on_readings": [
+      "ナン"
+    ],
+    "kun_readings": [
+      "みなみ"
+    ],
     "stroke_count": 9,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "5357",
-    "examples": ["南国", "東南アジア", "南口"]
+    "examples": [
+      "南国",
+      "東南アジア",
+      "南口"
+    ]
   },
   {
     "character": "北",
     "han_viet": "Bắc",
-    "meanings_vi": ["phía bắc"],
-    "meanings_en": ["north"],
-    "on_readings": ["ホク"],
-    "kun_readings": ["きた"],
+    "meanings_vi": [
+      "phía bắc"
+    ],
+    "meanings_en": [
+      "north"
+    ],
+    "on_readings": [
+      "ホク"
+    ],
+    "kun_readings": [
+      "きた"
+    ],
     "stroke_count": 5,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "5317",
-    "examples": ["北海道", "東北", "北口"]
+    "examples": [
+      "北海道",
+      "東北",
+      "北口"
+    ]
   },
   {
     "character": "高",
     "han_viet": "Cao",
-    "meanings_vi": ["cao ráo", "đắt đỏ"],
-    "meanings_en": ["tall", "high", "expensive"],
-    "on_readings": ["コウ"],
-    "kun_readings": ["たか.い"],
+    "meanings_vi": [
+      "cao ráo",
+      "đắt đỏ"
+    ],
+    "meanings_en": [
+      "tall",
+      "high",
+      "expensive"
+    ],
+    "on_readings": [
+      "コウ"
+    ],
+    "kun_readings": [
+      "たか.い"
+    ],
     "stroke_count": 10,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "9ad8",
-    "examples": ["高い", "高校生", "高級"]
+    "examples": [
+      "高い",
+      "高校生",
+      "高級"
+    ]
   },
   {
     "character": "安",
     "han_viet": "An",
-    "meanings_vi": ["an tâm", "rẻ"],
-    "meanings_en": ["cheap", "safety", "peaceful"],
-    "on_readings": ["アン"],
-    "kun_readings": ["やす.い"],
+    "meanings_vi": [
+      "an tâm",
+      "rẻ"
+    ],
+    "meanings_en": [
+      "cheap",
+      "safety",
+      "peaceful"
+    ],
+    "on_readings": [
+      "アン"
+    ],
+    "kun_readings": [
+      "やす.い"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 3,
     "unicode": "5b89",
-    "examples": ["安い", "安心", "安全"]
+    "examples": [
+      "安い",
+      "安心",
+      "安全"
+    ]
   },
   {
     "character": "新",
     "han_viet": "Tân",
-    "meanings_vi": ["mới"],
-    "meanings_en": ["new"],
-    "on_readings": ["シン"],
-    "kun_readings": ["あたら.しい", "あら.た"],
+    "meanings_vi": [
+      "mới"
+    ],
+    "meanings_en": [
+      "new"
+    ],
+    "on_readings": [
+      "シン"
+    ],
+    "kun_readings": [
+      "あたら.しい",
+      "あら.た"
+    ],
     "stroke_count": 13,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "65b0",
-    "examples": ["新しい", "新聞", "新幹線"]
+    "examples": [
+      "新しい",
+      "新聞",
+      "新幹線"
+    ]
   },
   {
     "character": "古",
     "han_viet": "Cổ",
-    "meanings_vi": ["cũ"],
-    "meanings_en": ["old"],
-    "on_readings": ["コ"],
-    "kun_readings": ["ふる.い"],
+    "meanings_vi": [
+      "cũ"
+    ],
+    "meanings_en": [
+      "old"
+    ],
+    "on_readings": [
+      "コ"
+    ],
+    "kun_readings": [
+      "ふる.い"
+    ],
     "stroke_count": 5,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "53e4",
-    "examples": ["古い", "古本", "古代"]
+    "examples": [
+      "古い",
+      "古本",
+      "古代"
+    ]
   },
   {
     "character": "多",
     "han_viet": "Đa",
-    "meanings_vi": ["nhiều"],
-    "meanings_en": ["many", "much"],
-    "on_readings": ["タ"],
-    "kun_readings": ["おお.い"],
+    "meanings_vi": [
+      "nhiều"
+    ],
+    "meanings_en": [
+      "many",
+      "much"
+    ],
+    "on_readings": [
+      "タ"
+    ],
+    "kun_readings": [
+      "おお.い"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "591a",
-    "examples": ["多い", "多分", "多数"]
+    "examples": [
+      "多い",
+      "多分",
+      "多数"
+    ]
   },
   {
     "character": "少",
     "han_viet": "Thiểu",
-    "meanings_vi": ["ít"],
-    "meanings_en": ["few", "little"],
-    "on_readings": ["ショウ"],
-    "kun_readings": ["すく.ない", "すこ.し"],
+    "meanings_vi": [
+      "ít"
+    ],
+    "meanings_en": [
+      "few",
+      "little"
+    ],
+    "on_readings": [
+      "ショウ"
+    ],
+    "kun_readings": [
+      "すく.ない",
+      "すこ.し"
+    ],
     "stroke_count": 4,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "5c11",
-    "examples": ["少ない", "少し", "少女"]
+    "examples": [
+      "少ない",
+      "少し",
+      "少女"
+    ]
   },
   {
     "character": "長",
     "han_viet": "Trường",
-    "meanings_vi": ["dài", "trưởng"],
-    "meanings_en": ["long", "leader", "chief"],
-    "on_readings": ["チョウ"],
-    "kun_readings": ["なが.い"],
+    "meanings_vi": [
+      "dài",
+      "trưởng"
+    ],
+    "meanings_en": [
+      "long",
+      "leader",
+      "chief"
+    ],
+    "on_readings": [
+      "チョウ"
+    ],
+    "kun_readings": [
+      "なが.い"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "9577",
-    "examples": ["長い", "社長", "長男"]
+    "examples": [
+      "長い",
+      "社長",
+      "長男"
+    ]
   },
   {
     "character": "外",
     "han_viet": "Ngoại",
-    "meanings_vi": ["bên ngoài", "ngoại quốc"],
-    "meanings_en": ["outside", "foreign"],
-    "on_readings": ["ガイ", "ゲ"],
-    "kun_readings": ["そと", "ほか", "はず.す"],
+    "meanings_vi": [
+      "bên ngoài",
+      "ngoại quốc"
+    ],
+    "meanings_en": [
+      "outside",
+      "foreign"
+    ],
+    "on_readings": [
+      "ガイ",
+      "ゲ"
+    ],
+    "kun_readings": [
+      "そと",
+      "ほか",
+      "はず.す"
+    ],
     "stroke_count": 5,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "5916",
-    "examples": ["外国", "外", "海外"]
+    "examples": [
+      "外国",
+      "外",
+      "海外"
+    ]
   },
   {
     "character": "内",
     "han_viet": "Nội",
-    "meanings_vi": ["bên trong", "nội bộ"],
-    "meanings_en": ["inside", "within"],
-    "on_readings": ["ナイ", "ダイ"],
-    "kun_readings": ["うち"],
+    "meanings_vi": [
+      "bên trong",
+      "nội bộ"
+    ],
+    "meanings_en": [
+      "inside",
+      "within"
+    ],
+    "on_readings": [
+      "ナイ",
+      "ダイ"
+    ],
+    "kun_readings": [
+      "うち"
+    ],
     "stroke_count": 4,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "5185",
-    "examples": ["家内", "国内", "内側"]
+    "examples": [
+      "家内",
+      "国内",
+      "内側"
+    ]
   },
   {
     "character": "口",
     "han_viet": "Khẩu",
-    "meanings_vi": ["cái miệng", "cửa"],
-    "meanings_en": ["mouth", "opening"],
-    "on_readings": ["コウ", "ク"],
-    "kun_readings": ["くち", "ぐち"],
+    "meanings_vi": [
+      "cái miệng",
+      "cửa"
+    ],
+    "meanings_en": [
+      "mouth",
+      "opening"
+    ],
+    "on_readings": [
+      "コウ",
+      "ク"
+    ],
+    "kun_readings": [
+      "くち",
+      "ぐち"
+    ],
     "stroke_count": 3,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "53e3",
-    "examples": ["出口", "入口", "窓口"]
+    "examples": [
+      "出口",
+      "入口",
+      "窓口"
+    ]
   },
   {
     "character": "目",
     "han_viet": "Mục",
-    "meanings_vi": ["con mắt", "thứ tự"],
-    "meanings_en": ["eye", "class", "look"],
-    "on_readings": ["モク", "ボク"],
-    "kun_readings": ["め"],
+    "meanings_vi": [
+      "con mắt",
+      "thứ tự"
+    ],
+    "meanings_en": [
+      "eye",
+      "class",
+      "look"
+    ],
+    "on_readings": [
+      "モク",
+      "ボク"
+    ],
+    "kun_readings": [
+      "め"
+    ],
     "stroke_count": 5,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "76ee",
-    "examples": ["目的", "目立つ", "一日目"]
+    "examples": [
+      "目的",
+      "目立つ",
+      "一日目"
+    ]
   },
   {
     "character": "耳",
     "han_viet": "Nhĩ",
-    "meanings_vi": ["cái tai"],
-    "meanings_en": ["ear"],
-    "on_readings": ["ジ"],
-    "kun_readings": ["みみ"],
+    "meanings_vi": [
+      "cái tai"
+    ],
+    "meanings_en": [
+      "ear"
+    ],
+    "on_readings": [
+      "ジ"
+    ],
+    "kun_readings": [
+      "みみ"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "8033",
-    "examples": ["耳", "耳鼻科"]
+    "examples": [
+      "耳",
+      "耳鼻科"
+    ]
   },
   {
     "character": "手",
     "han_viet": "Thủ",
-    "meanings_vi": ["bàn tay"],
-    "meanings_en": ["hand"],
-    "on_readings": ["シュ"],
-    "kun_readings": ["て", "た"],
+    "meanings_vi": [
+      "bàn tay"
+    ],
+    "meanings_en": [
+      "hand"
+    ],
+    "on_readings": [
+      "シュ"
+    ],
+    "kun_readings": [
+      "て",
+      "た"
+    ],
     "stroke_count": 4,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "624b",
-    "examples": ["歌手", "上手", "下手"]
+    "examples": [
+      "歌手",
+      "上手",
+      "下手"
+    ]
   },
   {
     "character": "足",
     "han_viet": "Túc",
-    "meanings_vi": ["cái chân", "đầy đủ"],
-    "meanings_en": ["leg", "foot", "sufficient"],
-    "on_readings": ["ソク"],
-    "kun_readings": ["あし", "た.りる"],
+    "meanings_vi": [
+      "cái chân",
+      "đầy đủ"
+    ],
+    "meanings_en": [
+      "leg",
+      "foot",
+      "sufficient"
+    ],
+    "on_readings": [
+      "ソク"
+    ],
+    "kun_readings": [
+      "あし",
+      "た.りる"
+    ],
     "stroke_count": 7,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "8db3",
-    "examples": ["足", "足りる", "遠足"]
+    "examples": [
+      "足",
+      "足りる",
+      "遠足"
+    ]
   },
   {
     "character": "力",
     "han_viet": "Lực",
-    "meanings_vi": ["sức lực", "sức mạnh"],
-    "meanings_en": ["power", "strength", "force"],
-    "on_readings": ["リョク", "リキ"],
-    "kun_readings": ["ちから"],
+    "meanings_vi": [
+      "sức lực",
+      "sức mạnh"
+    ],
+    "meanings_en": [
+      "power",
+      "strength",
+      "force"
+    ],
+    "on_readings": [
+      "リョク",
+      "リキ"
+    ],
+    "kun_readings": [
+      "ちから"
+    ],
     "stroke_count": 2,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "529b",
-    "examples": ["実力", "協力", "力"]
+    "examples": [
+      "実力",
+      "協力",
+      "力"
+    ]
   },
   {
     "character": "工",
     "han_viet": "Công",
-    "meanings_vi": ["công nghiệp", "thợ thủ công"],
-    "meanings_en": ["craft", "construction", "industry"],
-    "on_readings": ["コウ", "ク"],
+    "meanings_vi": [
+      "công nghiệp",
+      "thợ thủ công",
+      "công trình"
+    ],
+    "meanings_en": [
+      "craft",
+      "construction",
+      "industry",
+      "art",
+      "work"
+    ],
+    "on_readings": [
+      "コウ",
+      "ク"
+    ],
     "kun_readings": [],
     "stroke_count": 3,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "5de5",
-    "examples": ["工場", "工事", "工業"]
+    "examples": [
+      "工場",
+      "工事",
+      "工業",
+      "大工"
+    ]
   },
   {
     "character": "作",
     "han_viet": "Tác",
-    "meanings_vi": ["chế tác", "làm ra"],
-    "meanings_en": ["make", "produce", "prepare"],
-    "on_readings": ["サク", "サ"],
-    "kun_readings": ["つく.る"],
+    "meanings_vi": [
+      "chế tác",
+      "làm ra",
+      "sáng tác"
+    ],
+    "meanings_en": [
+      "make",
+      "produce",
+      "prepare",
+      "build"
+    ],
+    "on_readings": [
+      "サク",
+      "サ"
+    ],
+    "kun_readings": [
+      "つく.る",
+      "つくる"
+    ],
     "stroke_count": 7,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "4f5c",
-    "examples": ["作る", "作文", "作品"]
+    "examples": [
+      "作る",
+      "作文",
+      "作品",
+      "作家"
+    ]
   },
   {
     "character": "使",
     "han_viet": "Sử",
-    "meanings_vi": ["sử dụng", "sai khiến"],
-    "meanings_en": ["use", "employ", "envoy"],
-    "on_readings": ["シ"],
-    "kun_readings": ["つか.う"],
+    "meanings_vi": [
+      "sử dụng",
+      "sai khiến",
+      "sứ giả"
+    ],
+    "meanings_en": [
+      "use",
+      "employ",
+      "envoy",
+      "send on a mission"
+    ],
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "つか.う",
+      "つかう"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 3,
     "unicode": "4f7f",
-    "examples": ["使う", "大使館", "使用"]
+    "examples": [
+      "使う",
+      "大使館",
+      "使用",
+      "使い道"
+    ]
   },
   {
     "character": "品",
     "han_viet": "Phẩm",
-    "meanings_vi": ["sản phẩm", "vật phẩm", "nhân phẩm"],
-    "meanings_en": ["goods", "article", "dignity"],
-    "on_readings": ["ヒン"],
-    "kun_readings": ["しな"],
+    "meanings_vi": [
+      "sản phẩm",
+      "vật phẩm",
+      "nhân phẩm"
+    ],
+    "meanings_en": [
+      "goods",
+      "article",
+      "dignity",
+      "refined"
+    ],
+    "on_readings": [
+      "ヒン"
+    ],
+    "kun_readings": [
+      "しな"
+    ],
     "stroke_count": 9,
     "jlpt": "N4",
     "grade": 3,
     "unicode": "54c1",
-    "examples": ["作品", "商品", "品物"]
+    "examples": [
+      "作品",
+      "商品",
+      "品物",
+      "上品"
+    ]
   },
   {
     "character": "休",
     "han_viet": "Hưu",
-    "meanings_vi": ["nghỉ ngơi"],
-    "meanings_en": ["rest", "day off", "sleep"],
-    "on_readings": ["キュウ"],
-    "kun_readings": ["やす.む"],
+    "meanings_vi": [
+      "nghỉ ngơi"
+    ],
+    "meanings_en": [
+      "rest",
+      "day off",
+      "sleep"
+    ],
+    "on_readings": [
+      "キュウ"
+    ],
+    "kun_readings": [
+      "やす.む"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "4f11",
-    "examples": ["休む", "休日", "夏休み"]
+    "examples": [
+      "休む",
+      "休日",
+      "夏休み"
+    ]
   },
   {
     "character": "体",
     "han_viet": "Thể",
-    "meanings_vi": ["cơ thể", "thể chất"],
-    "meanings_en": ["body", "substance"],
-    "on_readings": ["タイ"],
-    "kun_readings": ["からだ"],
+    "meanings_vi": [
+      "cơ thể",
+      "thể chất"
+    ],
+    "meanings_en": [
+      "body",
+      "substance"
+    ],
+    "on_readings": [
+      "タイ"
+    ],
+    "kun_readings": [
+      "からだ"
+    ],
     "stroke_count": 7,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "4f53",
-    "examples": ["体", "体力", "体育"]
+    "examples": [
+      "体",
+      "体力",
+      "体育"
+    ]
   },
   {
     "character": "信",
     "han_viet": "Tín",
-    "meanings_vi": ["tin tưởng", "tín ngưỡng"],
-    "meanings_en": ["trust", "believe", "faith"],
-    "on_readings": ["シン"],
-    "kun_readings": ["しん.じる"],
+    "meanings_vi": [
+      "tin tưởng",
+      "tín ngưỡng"
+    ],
+    "meanings_en": [
+      "trust",
+      "believe",
+      "faith"
+    ],
+    "on_readings": [
+      "シン"
+    ],
+    "kun_readings": [
+      "しん.じる"
+    ],
     "stroke_count": 9,
     "jlpt": "N4",
     "grade": 4,
     "unicode": "4fe1",
-    "examples": ["信じる", "信号", "信用"]
+    "examples": [
+      "信じる",
+      "信号",
+      "信用"
+    ]
   },
   {
     "character": "言",
     "han_viet": "Ngôn",
-    "meanings_vi": ["nói", "ngôn ngữ"],
-    "meanings_en": ["say", "word", "speech"],
-    "on_readings": ["ゲン", "ゴン"],
-    "kun_readings": ["い.う", "こと"],
+    "meanings_vi": [
+      "nói",
+      "ngôn ngữ"
+    ],
+    "meanings_en": [
+      "say",
+      "word",
+      "speech"
+    ],
+    "on_readings": [
+      "ゲン",
+      "ゴン"
+    ],
+    "kun_readings": [
+      "い.う",
+      "こと"
+    ],
     "stroke_count": 7,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "8a00",
-    "examples": ["言う", "言葉", "言語"]
+    "examples": [
+      "言う",
+      "言葉",
+      "言語"
+    ]
   },
   {
     "character": "話",
     "han_viet": "Thoại",
-    "meanings_vi": ["cuộc nói chuyện", "đàm thoại"],
-    "meanings_en": ["talk", "speak", "story"],
-    "on_readings": ["ワ"],
-    "kun_readings": ["はな.す", "はなし"],
+    "meanings_vi": [
+      "cuộc nói chuyện",
+      "đàm thoại"
+    ],
+    "meanings_en": [
+      "talk",
+      "speak",
+      "story"
+    ],
+    "on_readings": [
+      "ワ"
+    ],
+    "kun_readings": [
+      "はな.す",
+      "はなし"
+    ],
     "stroke_count": 13,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "8a71",
-    "examples": ["話す", "話", "電話"]
+    "examples": [
+      "話す",
+      "話",
+      "電話"
+    ]
   },
   {
     "character": "語",
     "han_viet": "Ngôn",
-    "meanings_vi": ["từ ngữ", "tiếng", "ngôn ngữ"],
-    "meanings_en": ["language", "word", "tell"],
-    "on_readings": ["ゴ"],
-    "kun_readings": ["かた.る"],
+    "meanings_vi": [
+      "từ ngữ",
+      "tiếng",
+      "ngôn ngữ"
+    ],
+    "meanings_en": [
+      "language",
+      "word",
+      "tell"
+    ],
+    "on_readings": [
+      "ゴ"
+    ],
+    "kun_readings": [
+      "かた.る"
+    ],
     "stroke_count": 14,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "8a9e",
-    "examples": ["日本語", "英語", "物語"]
+    "examples": [
+      "日本語",
+      "英語",
+      "物語"
+    ]
   },
   {
     "character": "読",
     "han_viet": "Độc",
-    "meanings_vi": ["đọc"],
-    "meanings_en": ["read"],
-    "on_readings": ["ドク"],
-    "kun_readings": ["よ.む"],
+    "meanings_vi": [
+      "đọc"
+    ],
+    "meanings_en": [
+      "read"
+    ],
+    "on_readings": [
+      "ドク"
+    ],
+    "kun_readings": [
+      "よ.む"
+    ],
     "stroke_count": 14,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "8aad",
-    "examples": ["読む", "読書", "読者"]
+    "examples": [
+      "読む",
+      "読書",
+      "読者"
+    ]
   },
   {
     "character": "書",
     "han_viet": "Thư",
-    "meanings_vi": ["viết", "sách"],
-    "meanings_en": ["write", "book"],
-    "on_readings": ["ショ"],
-    "kun_readings": ["か.く"],
+    "meanings_vi": [
+      "viết",
+      "sách"
+    ],
+    "meanings_en": [
+      "write",
+      "book"
+    ],
+    "on_readings": [
+      "ショ"
+    ],
+    "kun_readings": [
+      "か.く"
+    ],
     "stroke_count": 10,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "66f8",
-    "examples": ["書く", "図書館", "辞書"]
+    "examples": [
+      "書く",
+      "図書館",
+      "辞書"
+    ]
   },
   {
     "character": "見",
     "han_viet": "Kiến",
-    "meanings_vi": ["nhìn", "xem", "ngắm"],
-    "meanings_en": ["see", "watch", "look"],
-    "on_readings": ["ケン"],
-    "kun_readings": ["み.る", "み.せる"],
+    "meanings_vi": [
+      "nhìn",
+      "xem",
+      "ngắm"
+    ],
+    "meanings_en": [
+      "see",
+      "watch",
+      "look"
+    ],
+    "on_readings": [
+      "ケン"
+    ],
+    "kun_readings": [
+      "み.る",
+      "み.せる"
+    ],
     "stroke_count": 7,
     "jlpt": "N4",
     "grade": 1,
     "unicode": "898b",
-    "examples": ["見る", "見せる", "意見"]
+    "examples": [
+      "見る",
+      "見せる",
+      "意見"
+    ]
   },
   {
     "character": "聞",
     "han_viet": "Văn",
-    "meanings_vi": ["nghe", "hỏi"],
-    "meanings_en": ["hear", "listen", "ask"],
-    "on_readings": ["ブン", "モン"],
-    "kun_readings": ["き.く"],
+    "meanings_vi": [
+      "nghe",
+      "hỏi"
+    ],
+    "meanings_en": [
+      "hear",
+      "listen",
+      "ask"
+    ],
+    "on_readings": [
+      "ブン",
+      "モン"
+    ],
+    "kun_readings": [
+      "き.く"
+    ],
     "stroke_count": 14,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "805e",
-    "examples": ["聞く", "新聞", "聞こえる"]
+    "examples": [
+      "聞く",
+      "新聞",
+      "聞こえる"
+    ]
   },
   {
     "character": "知",
     "han_viet": "Tri",
-    "meanings_vi": ["biết", "tri thức"],
-    "meanings_en": ["know", "wisdom"],
-    "on_readings": ["チ"],
-    "kun_readings": ["し.る"],
+    "meanings_vi": [
+      "biết",
+      "tri thức"
+    ],
+    "meanings_en": [
+      "know",
+      "wisdom"
+    ],
+    "on_readings": [
+      "チ"
+    ],
+    "kun_readings": [
+      "し.る"
+    ],
     "stroke_count": 8,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "77e5",
-    "examples": ["知る", "知り合い", "知識"]
+    "examples": [
+      "知る",
+      "知り合い",
+      "知識"
+    ]
   },
   {
     "character": "思",
     "han_viet": "Tư",
-    "meanings_vi": ["suy nghĩ", "nghĩ về"],
-    "meanings_en": ["think"],
-    "on_readings": ["シ"],
-    "kun_readings": ["おも.う"],
+    "meanings_vi": [
+      "suy nghĩ",
+      "nghĩ về"
+    ],
+    "meanings_en": [
+      "think"
+    ],
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "おも.う"
+    ],
     "stroke_count": 9,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "601d",
-    "examples": ["思う", "思い出す", "不思議"]
+    "examples": [
+      "思う",
+      "思い出す",
+      "不思議"
+    ]
   },
   {
     "character": "考",
     "han_viet": "Khảo",
-    "meanings_vi": ["suy khảo", "suy nghĩ"],
-    "meanings_en": ["consider", "think"],
-    "on_readings": ["コウ"],
-    "kun_readings": ["かんが.える"],
+    "meanings_vi": [
+      "suy khảo",
+      "suy nghĩ"
+    ],
+    "meanings_en": [
+      "consider",
+      "think"
+    ],
+    "on_readings": [
+      "コウ"
+    ],
+    "kun_readings": [
+      "かんが.える"
+    ],
     "stroke_count": 6,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "8003",
-    "examples": ["考える", "考え", "参考"]
+    "examples": [
+      "考える",
+      "考え",
+      "参考"
+    ]
   },
   {
     "character": "買",
     "han_viet": "Mãi",
-    "meanings_vi": ["mua"],
-    "meanings_en": ["buy"],
-    "on_readings": ["バイ"],
-    "kun_readings": ["か.う"],
+    "meanings_vi": [
+      "mua"
+    ],
+    "meanings_en": [
+      "buy"
+    ],
+    "on_readings": [
+      "バイ"
+    ],
+    "kun_readings": [
+      "か.う"
+    ],
     "stroke_count": 12,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "8cb7",
-    "examples": ["買う", "買い物", "売買"]
+    "examples": [
+      "買う",
+      "買い物",
+      "売買"
+    ]
   },
   {
     "character": "売",
     "han_viet": "Mại",
-    "meanings_vi": ["bán"],
-    "meanings_en": ["sell"],
-    "on_readings": ["バイ"],
-    "kun_readings": ["う.る", "う.れる"],
+    "meanings_vi": [
+      "bán"
+    ],
+    "meanings_en": [
+      "sell"
+    ],
+    "on_readings": [
+      "バイ"
+    ],
+    "kun_readings": [
+      "う.る",
+      "う.れる",
+      "うる",
+      "うれる"
+    ],
     "stroke_count": 7,
     "jlpt": "N4",
     "grade": 2,
     "unicode": "58f2",
-    "examples": ["売る", "売り場", "商売"]
+    "examples": [
+      "売る",
+      "売り場",
+      "商売",
+      "売店"
+    ]
+  },
+  {
+    "character": "家",
+    "meanings_vi": [
+      "nhà",
+      "gia đình"
+    ],
+    "meanings_en": [
+      "house",
+      "home",
+      "family"
+    ],
+    "on_readings": [
+      "カ",
+      "ケ"
+    ],
+    "kun_readings": [
+      "いえ",
+      "や",
+      "うち"
+    ],
+    "stroke_count": 10,
+    "jlpt": "N4",
+    "unicode": "5bb6",
+    "examples": [
+      "家族",
+      "家庭",
+      "家事",
+      "大家",
+      "家"
+    ],
+    "han_viet": "Gia"
+  },
+  {
+    "character": "族",
+    "meanings_vi": [
+      "gia tộc",
+      "dòng họ",
+      "họ hàng"
+    ],
+    "meanings_en": [
+      "tribe",
+      "family",
+      "clan"
+    ],
+    "on_readings": [
+      "ゾク"
+    ],
+    "kun_readings": [],
+    "stroke_count": 11,
+    "jlpt": "N4",
+    "unicode": "65cf",
+    "examples": [
+      "家族",
+      "親族",
+      "民族",
+      "水族館"
+    ],
+    "han_viet": "Tộc"
+  },
+  {
+    "character": "兄",
+    "meanings_vi": [
+      "anh trai"
+    ],
+    "meanings_en": [
+      "elder brother",
+      "brother"
+    ],
+    "on_readings": [
+      "ケイ",
+      "キョウ"
+    ],
+    "kun_readings": [
+      "あに"
+    ],
+    "stroke_count": 5,
+    "jlpt": "N4",
+    "unicode": "5144",
+    "examples": [
+      "兄弟",
+      "お兄さん",
+      "父兄",
+      "兄"
+    ],
+    "han_viet": "Huynh"
+  },
+  {
+    "character": "弟",
+    "meanings_vi": [
+      "em trai"
+    ],
+    "meanings_en": [
+      "younger brother"
+    ],
+    "on_readings": [
+      "テイ",
+      "ダイ",
+      "デ"
+    ],
+    "kun_readings": [
+      "おとうと"
+    ],
+    "stroke_count": 7,
+    "jlpt": "N4",
+    "unicode": "5f1f",
+    "examples": [
+      "兄弟",
+      "弟子",
+      "弟"
+    ],
+    "han_viet": "Đệ"
+  },
+  {
+    "character": "姉",
+    "meanings_vi": [
+      "chị gái"
+    ],
+    "meanings_en": [
+      "elder sister"
+    ],
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "あね",
+      "ねえ"
+    ],
+    "stroke_count": 8,
+    "jlpt": "N4",
+    "unicode": "59c9",
+    "examples": [
+      "姉妹",
+      "お姉さん",
+      "姉"
+    ],
+    "han_viet": "Tỷ"
+  },
+  {
+    "character": "妹",
+    "meanings_vi": [
+      "em gái"
+    ],
+    "meanings_en": [
+      "younger sister"
+    ],
+    "on_readings": [
+      "マイ"
+    ],
+    "kun_readings": [
+      "いもうと"
+    ],
+    "stroke_count": 8,
+    "jlpt": "N4",
+    "unicode": "59b9",
+    "examples": [
+      "姉妹",
+      "妹",
+      "妹分"
+    ],
+    "han_viet": "Muội"
+  },
+  {
+    "character": "育",
+    "meanings_vi": [
+      "giáo dục",
+      "nuôi nấng",
+      "lớn lên"
+    ],
+    "meanings_en": [
+      "bring up",
+      "grow up",
+      "raise",
+      "rear"
+    ],
+    "on_readings": [
+      "イク"
+    ],
+    "kun_readings": [
+      "そだて",
+      "そだつ",
+      "はぐくむ"
+    ],
+    "stroke_count": 8,
+    "jlpt": "N4",
+    "unicode": "80b2",
+    "examples": [
+      "教育",
+      "体育",
+      "子育て",
+      "育つ"
+    ],
+    "han_viet": "Dục"
+  },
+  {
+    "character": "働",
+    "meanings_vi": [
+      "lao động",
+      "làm việc"
+    ],
+    "meanings_en": [
+      "work",
+      "labor"
+    ],
+    "on_readings": [
+      "ドウ"
+    ],
+    "kun_readings": [
+      "はたらく"
+    ],
+    "stroke_count": 13,
+    "jlpt": "N4",
+    "unicode": "50cd",
+    "examples": [
+      "働く",
+      "労働",
+      "労働者",
+      "共働き"
+    ],
+    "han_viet": "Động"
+  },
+  {
+    "character": "場",
+    "meanings_vi": [
+      "địa điểm",
+      "quảng trường",
+      "nơi chốn"
+    ],
+    "meanings_en": [
+      "location",
+      "place"
+    ],
+    "on_readings": [
+      "ジョウ"
+    ],
+    "kun_readings": [
+      "ば"
+    ],
+    "stroke_count": 12,
+    "jlpt": "N4",
+    "unicode": "5834",
+    "examples": [
+      "工場",
+      "場所",
+      "場合",
+      "広場"
+    ],
+    "han_viet": "Trường"
+  },
+  {
+    "character": "始",
+    "meanings_vi": [
+      "bắt đầu",
+      "khởi đầu"
+    ],
+    "meanings_en": [
+      "commence",
+      "begin",
+      "start"
+    ],
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "はじめる",
+      "はじまる"
+    ],
+    "stroke_count": 8,
+    "jlpt": "N4",
+    "unicode": "59cb",
+    "examples": [
+      "始める",
+      "始まる",
+      "開始",
+      "年始"
+    ],
+    "han_viet": "Thủy"
+  },
+  {
+    "character": "終",
+    "meanings_vi": [
+      "kết thúc",
+      "hoàn thành"
+    ],
+    "meanings_en": [
+      "end",
+      "finish"
+    ],
+    "on_readings": [
+      "シュウ"
+    ],
+    "kun_readings": [
+      "おわる",
+      "おえる"
+    ],
+    "stroke_count": 11,
+    "jlpt": "N4",
+    "unicode": "7d42",
+    "examples": [
+      "終わる",
+      "終わり",
+      "終電",
+      "最終"
+    ],
+    "han_viet": "Chung"
+  },
+  {
+    "character": "店",
+    "meanings_vi": [
+      "cửa hàng",
+      "tiệm"
+    ],
+    "meanings_en": [
+      "store",
+      "shop"
+    ],
+    "on_readings": [
+      "テン"
+    ],
+    "kun_readings": [
+      "みせ"
+    ],
+    "stroke_count": 8,
+    "jlpt": "N4",
+    "unicode": "5e97",
+    "examples": [
+      "店",
+      "書店",
+      "売店",
+      "店員"
+    ],
+    "han_viet": "Điếm"
+  },
+  {
+    "character": "客",
+    "meanings_vi": [
+      "khách hàng",
+      "hành khách",
+      "khách khứa"
+    ],
+    "meanings_en": [
+      "guest",
+      "visitor",
+      "customer",
+      "client"
+    ],
+    "on_readings": [
+      "キャク",
+      "カク"
+    ],
+    "kun_readings": [],
+    "stroke_count": 9,
+    "jlpt": "N4",
+    "unicode": "5ba2",
+    "examples": [
+      "お客様",
+      "乗客",
+      "客間",
+      "観客"
+    ],
+    "han_viet": "Khách"
+  },
+  {
+    "character": "親",
+    "meanings_vi": [
+      "cha mẹ",
+      "thân thiết",
+      "thân thuộc"
+    ],
+    "meanings_en": [
+      "parent",
+      "intimacy",
+      "relative",
+      "familiarity"
+    ],
+    "on_readings": [
+      "シン"
+    ],
+    "kun_readings": [
+      "おや",
+      "したしい",
+      "したしむ"
+    ],
+    "stroke_count": 16,
+    "jlpt": "N4",
+    "unicode": "89aa",
+    "examples": [
+      "両親",
+      "父親",
+      "母親",
+      "親しい",
+      "親切"
+    ],
+    "han_viet": "Thân"
+  },
+  {
+    "character": "切",
+    "meanings_vi": [
+      "cắt",
+      "thiết thực",
+      "khẩn cấp"
+    ],
+    "meanings_en": [
+      "cut",
+      "cutoff",
+      "sharp"
+    ],
+    "on_readings": [
+      "セツ",
+      "サイ"
+    ],
+    "kun_readings": [
+      "きる",
+      "きれる"
+    ],
+    "stroke_count": 4,
+    "jlpt": "N4",
+    "unicode": "5207",
+    "examples": [
+      "切る",
+      "切手",
+      "大切",
+      "親切"
+    ],
+    "han_viet": "Thiết"
+  },
+  {
+    "character": "当",
+    "meanings_vi": [
+      "trúng",
+      "đúng",
+      "tương đương"
+    ],
+    "meanings_en": [
+      "hit",
+      "right",
+      "appropriate",
+      "himself"
+    ],
+    "on_readings": [
+      "トウ"
+    ],
+    "kun_readings": [
+      "あたる",
+      "あてる"
+    ],
+    "stroke_count": 6,
+    "jlpt": "N4",
+    "unicode": "5f53",
+    "examples": [
+      "当たる",
+      "本当に",
+      "弁当",
+      "当時"
+    ],
+    "han_viet": "Đương"
+  },
+  {
+    "character": "便",
+    "meanings_vi": [
+      "thuận tiện",
+      "tiện lợi",
+      "thư tín"
+    ],
+    "meanings_en": [
+      "convenience",
+      "mail",
+      "excrement"
+    ],
+    "on_readings": [
+      "ベン",
+      "ビン"
+    ],
+    "kun_readings": [
+      "たより"
+    ],
+    "stroke_count": 9,
+    "jlpt": "N4",
+    "unicode": "4fbf",
+    "examples": [
+      "便利",
+      "郵便局",
+      "航空便",
+      "便り"
+    ],
+    "han_viet": "Tiện"
+  },
+  {
+    "character": "利",
+    "meanings_vi": [
+      "lợi ích",
+      "lợi nhuận",
+      "tiện lợi"
+    ],
+    "meanings_en": [
+      "profit",
+      "advantage",
+      "benefit"
+    ],
+    "on_readings": [
+      "リ"
+    ],
+    "kun_readings": [
+      "きく"
+    ],
+    "stroke_count": 7,
+    "jlpt": "N4",
+    "unicode": "5229",
+    "examples": [
+      "便利",
+      "利用",
+      "利口",
+      "金利"
+    ],
+    "han_viet": "Lợi"
+  },
+  {
+    "character": "銀",
+    "meanings_vi": [
+      "bạc",
+      "ngân hàng"
+    ],
+    "meanings_en": [
+      "silver"
+    ],
+    "on_readings": [
+      "ギン"
+    ],
+    "kun_readings": [
+      "しろがね"
+    ],
+    "stroke_count": 14,
+    "jlpt": "N4",
+    "unicode": "9280",
+    "examples": [
+      "銀行",
+      "銀メダル",
+      "水銀",
+      "銀河"
+    ],
+    "han_viet": "Ngân"
+  },
+  {
+    "character": "白",
+    "meanings_vi": [
+      "màu trắng"
+    ],
+    "meanings_en": [
+      "white"
+    ],
+    "on_readings": [
+      "ハク",
+      "ビャク"
+    ],
+    "kun_readings": [
+      "しろ",
+      "しらい",
+      "しろい"
+    ],
+    "stroke_count": 5,
+    "jlpt": "N4",
+    "unicode": "767d",
+    "examples": [
+      "面白い",
+      "白い",
+      "白鳥",
+      "告白"
+    ],
+    "han_viet": "Bạch"
+  },
+  {
+    "character": "黒",
+    "meanings_vi": [
+      "màu đen"
+    ],
+    "meanings_en": [
+      "black"
+    ],
+    "on_readings": [
+      "コク"
+    ],
+    "kun_readings": [
+      "くろ",
+      "くろい"
+    ],
+    "stroke_count": 11,
+    "jlpt": "N4",
+    "unicode": "9ed2",
+    "examples": [
+      "黒い",
+      "黒板",
+      "白黒",
+      "黒山"
+    ],
+    "han_viet": "Hắc"
+  },
+  {
+    "character": "紙",
+    "meanings_vi": [
+      "giấy"
+    ],
+    "meanings_en": [
+      "paper"
+    ],
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "かみ"
+    ],
+    "stroke_count": 10,
+    "jlpt": "N4",
+    "unicode": "7d19",
+    "examples": [
+      "手紙",
+      "用紙",
+      "和紙",
+      "ちり紙"
+    ],
+    "han_viet": "Chỉ"
   }
 ]

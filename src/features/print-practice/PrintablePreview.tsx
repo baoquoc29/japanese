@@ -22,9 +22,28 @@ export const PrintablePreview: React.FC<PrintablePreviewProps> = ({
     return chunks;
   };
 
-  // Kanji: We fit 8 rows per A4 page beautifully
-  // Vocab: We fit 5 vocabulary blocks per A4 page beautifully (with lines)
-  const itemsPerPage = category === 'kanji' ? 8 : 5;
+  // Dynamically calculate how many Kanji items fit per page based on the number of cell rows
+  // 5 or 10 cells -> 1 row -> 8 items per page
+  // 15 cells -> 2 rows (since cellsPerRow is 11) -> 5 items per page
+  // 20 cells -> 2 rows -> 5 items per page
+  // 25 cells -> 3 rows -> 3 items per page
+  const getItemsPerPage = () => {
+    if (category === 'vocab') return 5;
+    
+    const cellsPerRow = 11; // maximum cells that fit in one row
+    const totalCells = options.blankCellsCount + (options.includeTracing ? 2 : 0);
+    const rowsCount = Math.ceil((totalCells + 1) / cellsPerRow); // +1 for the reference cell
+    
+    if (rowsCount <= 1) {
+      return 8;
+    } else if (rowsCount === 2) {
+      return 5;
+    } else {
+      return 3;
+    }
+  };
+
+  const itemsPerPage = getItemsPerPage();
   const pages = chunkArray(selectedItemsData, itemsPerPage);
 
   if (selectedItemsData.length === 0) {
@@ -70,7 +89,7 @@ export const PrintablePreview: React.FC<PrintablePreviewProps> = ({
           {category === 'kanji' && (
             <div className="space-y-5">
               {pageItems.map((kanji, idx) => {
-                const totalCells = Math.min(options.blankCellsCount + (options.includeTracing ? 2 : 0), 11);
+                const totalCells = options.blankCellsCount + (options.includeTracing ? 2 : 0);
                 
                 return (
                   <div key={kanji.character || idx} className="flex border border-neutral-200 rounded-lg overflow-hidden">
