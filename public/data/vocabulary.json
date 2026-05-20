@@ -508,5 +508,1704 @@
         "vi": "Thư viện rất yên tĩnh."
       }
     ]
+  },
+  {
+    "id": "vocab_n4_001",
+    "word": "会う",
+    "reading": "あう",
+    "romaji": "au",
+    "meanings_vi": ["gặp", "gặp gỡ"],
+    "meanings_en": ["to meet"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "駅で友達に会います。",
+        "reading": "えきでともだちにあいます。",
+        "vi": "Tôi sẽ gặp bạn ở ga."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_002",
+    "word": "開く",
+    "reading": "ひらく",
+    "romaji": "hiraku",
+    "meanings_vi": ["mở", "khai mạc"],
+    "meanings_en": ["to open", "to unfold"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "本を五ページ開いてください。",
+        "reading": "ほんをごページひらいてください。",
+        "vi": "Hãy mở sách trang số năm."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_003",
+    "word": "集まる",
+    "reading": "あつまる",
+    "romaji": "atsumaru",
+    "meanings_vi": ["tập trung", "tụ họp"],
+    "meanings_en": ["to gather", "to assemble"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "教室にみんなが集まりました。",
+        "reading": "きょうしつにみんながあつまりました。",
+        "vi": "Mọi người đã tập trung ở lớp học."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_004",
+    "word": "謝る",
+    "reading": "あやまる",
+    "romaji": "ayamaru",
+    "meanings_vi": ["xin lỗi"],
+    "meanings_en": ["to apologize"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "遅れたことを先生に謝りました。",
+        "reading": "おくれたことをせんせいにあやまりました。",
+        "vi": "Tôi đã xin lỗi giáo viên vì đến muộn."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_005",
+    "word": "安全",
+    "reading": "あんぜん",
+    "romaji": "anzen",
+    "meanings_vi": ["an toàn"],
+    "meanings_en": ["safe", "safety"],
+    "partOfSpeech": "adj-na",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "日本は安全な国だと思います。",
+        "reading": "にほんはあんぜんなくにだとおもいます。",
+        "vi": "Tôi nghĩ Nhật Bản là một đất nước an toàn."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_006",
+    "word": "案内",
+    "reading": "あんない",
+    "romaji": "annai",
+    "meanings_vi": ["hướng dẫn", "chỉ dẫn"],
+    "meanings_en": ["guide", "information"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "街を案内してもらいましょう。",
+        "reading": "まちをあんないしてもらいましょう。",
+        "vi": "Chúng ta hãy nhờ hướng dẫn đi xem thành phố nhé."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_007",
+    "word": "以下",
+    "reading": "いか",
+    "romaji": "ika",
+    "meanings_vi": ["trở xuống", "dưới"],
+    "meanings_en": ["below", "under"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "小学生以下の子供は無料です。",
+        "reading": "しょうがくせいいかのこどもはむりょうです。",
+        "vi": "Trẻ em từ cấp tiểu học trở xuống được miễn phí."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_008",
+    "word": "以外",
+    "reading": "いがい",
+    "romaji": "igai",
+    "meanings_vi": ["ngoài ra", "ngoại trừ"],
+    "meanings_en": ["except", "excluding"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "日本語以外は話せません。",
+        "reading": "にほんごいがいははなせません。",
+        "vi": "Tôi không thể nói được tiếng nào ngoài tiếng Nhật."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_009",
+    "word": "医学",
+    "reading": "いがく",
+    "romaji": "igaku",
+    "meanings_vi": ["y học", "ngành y"],
+    "meanings_en": ["medicine", "medical science"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "大学で医学を専攻しています。",
+        "reading": "だいがくでいがくをせんこうしています。",
+        "vi": "Tôi đang học chuyên ngành y học ở trường đại học."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_010",
+    "word": "意見",
+    "reading": "いけん",
+    "romaji": "iken",
+    "meanings_vi": ["ý kiến"],
+    "meanings_en": ["opinion", "view"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "あなたの意見を聞かせてください。",
+        "reading": "あなたのいけんをきかせてください。",
+        "vi": "Hãy cho tôi biết ý kiến của bạn."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_011",
+    "word": "いじめる",
+    "reading": "いじめる",
+    "romaji": "ijimeru",
+    "meanings_vi": ["bắt nạt", "chọc ghẹo"],
+    "meanings_en": ["to tease", "to bully"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "動物をいじめてはいけません。",
+        "reading": "どうぶつをいじめてはいけません。",
+        "vi": "Không được bắt nạt động vật."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_012",
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "romaji": "isogu",
+    "meanings_vi": ["vội vã", "khẩn trương"],
+    "meanings_en": ["to hurry", "to rush"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "遅れそうなので急ぎましょう。",
+        "reading": "おくれそうなのでいそぎましょう。",
+        "vi": "Có vẻ sắp muộn rồi nên vội lên thôi."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_013",
+    "word": "一度",
+    "reading": "いちど",
+    "romaji": "ichido",
+    "meanings_vi": ["một lần"],
+    "meanings_en": ["once", "one time"],
+    "partOfSpeech": "adverb",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "一度、京都へ行ってみたいです。",
+        "reading": "いちど、きょうとへいってみたいです。",
+        "vi": "Tôi muốn thử đi Kyoto một lần."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_014",
+    "word": "一生懸命",
+    "reading": "いっしょうけんめい",
+    "romaji": "isshoukenmei",
+    "meanings_vi": ["hết sức mình", "chăm chỉ"],
+    "meanings_en": ["with utmost effort", "very hard"],
+    "partOfSpeech": "adverb",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "一生懸命勉強して合格します。",
+        "reading": "いっしょうけんめいべんきょうしてごうかくします。",
+        "vi": "Tôi sẽ học hết sức mình để đỗ kỳ thi."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_015",
+    "word": "糸",
+    "reading": "いと",
+    "romaji": "ito",
+    "meanings_vi": ["sợi chỉ", "sợi tơ"],
+    "meanings_en": ["thread", "yarn"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "針に糸を通します。",
+        "reading": "はりにおとを通します"
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_016",
+    "word": "以内",
+    "reading": "いない",
+    "romaji": "inai",
+    "meanings_vi": ["trong vòng", "trong giới hạn"],
+    "meanings_en": ["within", "inside of"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "一週間以内に返事をして下さい。",
+        "reading": "いっしゅうかんいないにへんじをしてください。",
+        "vi": "Xin vui lòng trả lời trong vòng một tuần."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_017",
+    "word": "田舎",
+    "reading": "いなか",
+    "romaji": "inaka",
+    "meanings_vi": ["quê hương", "nông thôn"],
+    "meanings_en": ["countryside", "rural area"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "私の田舎は静かな所です。",
+        "reading": "わたしのいなかはしずかなところです。",
+        "vi": "Quê tôi là một nơi rất yên tĩnh."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_018",
+    "word": "祈る",
+    "reading": "いのる",
+    "romaji": "inoru",
+    "meanings_vi": ["cầu nguyện", "chúc phúc"],
+    "meanings_en": ["to pray", "to wish"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "家族の健康を祈ります。",
+        "reading": "かぞくのけんこうをいのります。",
+        "vi": "Tôi cầu nguyện cho sức khỏe của gia đình."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_019",
+    "word": "植える",
+    "reading": "うえる",
+    "romaji": "ueru",
+    "meanings_vi": ["trồng cây", "gieo trồng"],
+    "meanings_en": ["to plant", "to grow"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "庭に桜の木を植えました。",
+        "reading": "にわにさくらのきをうえました。",
+        "vi": "Tôi đã trồng một cây hoa anh đào ở trong sân."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_020",
+    "word": "伺う",
+    "reading": "うかがう",
+    "romaji": "ukagau",
+    "meanings_vi": ["hỏi", "viếng thăm (khiêm nhường)"],
+    "meanings_en": ["to ask", "to visit (humble)"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "明日、オフィスへ伺います。",
+        "reading": "あした、オフィスへうかがいます。",
+        "vi": "Ngày mai tôi sẽ ghé qua văn phòng của ngài."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_021",
+    "word": "受付",
+    "reading": "うけつけ",
+    "romaji": "uketsuke",
+    "meanings_vi": ["quầy tiếp tân", "nơi tiếp nhận"],
+    "meanings_en": ["reception desk", "information"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "受付で名前を書いてください。",
+        "reading": "うけつけでなまえをかいてください。",
+        "vi": "Vui lòng ghi tên bạn ở quầy tiếp tân."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_022",
+    "word": "動く",
+    "reading": "うごく",
+    "romaji": "ugoku",
+    "meanings_vi": ["di chuyển", "hoạt động"],
+    "meanings_en": ["to move", "to function"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "壊れた時計が動き出しました。",
+        "reading": "こわれたとけいがうごきだしました。",
+        "vi": "Chiếc đồng hồ bị hỏng đã bắt đầu chạy lại."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_023",
+    "word": "嘘",
+    "reading": "うそ",
+    "romaji": "uso",
+    "meanings_vi": ["lời nói dối", "giả dối"],
+    "meanings_en": ["lie", "untruth"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "嘘をついてはいけません。",
+        "reading": "うそをついてはいけません。",
+        "vi": "Không được nói dối."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_024",
+    "word": "写す",
+    "reading": "うつす",
+    "romaji": "utsusu",
+    "meanings_vi": ["chụp ảnh", "sao chép", "miêu tả"],
+    "meanings_en": ["to copy", "to photograph"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "黒板の文字をノートに写します。",
+        "reading": "こくばんのもじをノートにうつします。",
+        "vi": "Tôi chép các chữ trên bảng vào vở."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_025",
+    "word": "美しい",
+    "reading": "うつくしい",
+    "romaji": "utsukushii",
+    "meanings_vi": ["xinh đẹp", "đẹp đẽ"],
+    "meanings_en": ["beautiful", "lovely"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "美しい山が見えます。",
+        "reading": "うつくしいやまがみえます。",
+        "vi": "Có thể nhìn thấy một ngọn núi tuyệt đẹp."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_026",
+    "word": "写る",
+    "reading": "うつる",
+    "romaji": "utsuru",
+    "meanings_vi": ["được chụp", "phản chiếu"],
+    "meanings_en": ["to be photographed", "to reflect"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "このカメラはきれいに写ります。",
+        "reading": "このカメラはきれいにうつります。",
+        "vi": "Chiếc máy ảnh này chụp ảnh rất đẹp."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_027",
+    "word": "選ぶ",
+    "reading": "えらぶ",
+    "romaji": "erabu",
+    "meanings_vi": ["chọn lựa", "tuyển chọn"],
+    "meanings_en": ["to choose", "to select"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "好きなカードを一枚選んでください。",
+        "reading": "すきなカードをいちまいえらんでください。",
+        "vi": "Vui lòng chọn một tấm thẻ bạn thích."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_028",
+    "word": "遠慮",
+    "reading": "えんりょ",
+    "romaji": "enryo",
+    "meanings_vi": ["ngại ngần", "khách sáo"],
+    "meanings_en": ["hesitation", "reserve"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "遠慮しないでたくさん食べてね。",
+        "reading": "えんりょしないでたくさんたべてね。",
+        "vi": "Đừng khách sáo, hãy ăn thật nhiều nhé."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_029",
+    "word": "お祝い",
+    "reading": "おいわい",
+    "romaji": "oiwai",
+    "meanings_vi": ["sự chúc mừng", "quà mừng"],
+    "meanings_en": ["celebration", "congratulations"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "友達の誕生日に祝いを贈ります。",
+        "reading": "ともだちのたんじょうびにおいわいをおくります。",
+        "vi": "Tôi tặng quà mừng vào ngày sinh nhật của bạn."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_030",
+    "word": "億",
+    "reading": "おく",
+    "romaji": "oku",
+    "meanings_vi": ["một trăm triệu"],
+    "meanings_en": ["one hundred million"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "日本には一億以上の人が住んでいます。",
+        "reading": "にほんにはいちおくいじょうのひとがすんでいます。",
+        "vi": "Có hơn một trăm triệu người sống ở Nhật Bản."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_031",
+    "word": "屋上",
+    "reading": "おくじょう",
+    "romaji": "okujou",
+    "meanings_vi": ["sân thượng"],
+    "meanings_en": ["rooftop"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "ビルの屋上から街が見えます。",
+        "reading": "ビルのおくじょうからまちがみえます。",
+        "vi": "Có thể nhìn thấy toàn cảnh thành phố từ sân thượng của tòa nhà."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_032",
+    "word": "贈り物",
+    "reading": "おくりもの",
+    "romaji": "okurimono",
+    "meanings_vi": ["quà tặng"],
+    "meanings_en": ["present", "gift"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "素敵な贈り物をもらいました。",
+        "reading": "すてきなおくりものをもらいました。",
+        "vi": "Tôi đã nhận được một món quà tuyệt vời."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_033",
+    "word": "送る",
+    "reading": "おくる",
+    "romaji": "okuru",
+    "meanings_vi": ["gửi (thư, đồ)"],
+    "meanings_en": ["to send"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "手紙を国へ送りました。",
+        "reading": "てがみをくにへおくりました。",
+        "vi": "Tôi đã gửi một bức thư về nước."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_034",
+    "word": "起こす",
+    "reading": "おこす",
+    "romaji": "okosu",
+    "meanings_vi": ["đánh thức", "gây ra"],
+    "meanings_en": ["to wake someone up", "to cause"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "明日、朝六時に起こしてください。",
+        "reading": "あした、あさろくじにおこしてください。",
+        "vi": "Sáng mai hãy đánh thức tôi lúc 6 giờ nhé."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_035",
+    "word": "行う",
+    "reading": "おこなう",
+    "romaji": "okonau",
+    "meanings_vi": ["tiến hành", "tổ chức"],
+    "meanings_en": ["to carry out", "to perform"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "会議は来週行われます。",
+        "reading": "かいぎはらいしゅうおこなわれます。",
+        "vi": "Cuộc họp sẽ được tiến hành vào tuần tới."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_036",
+    "word": "怒る",
+    "reading": "おこる",
+    "romaji": "okoru",
+    "meanings_vi": ["nổi giận", "tức giận"],
+    "meanings_en": ["to get angry"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "先生を怒らせてしまいました。",
+        "reading": "せんせいをおこらせてしまいました。",
+        "vi": "Tôi lỡ làm thầy giáo nổi giận mất rồi."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_037",
+    "word": "押し入れ",
+    "reading": "おしいれ",
+    "romaji": "oshiire",
+    "meanings_vi": ["tủ âm tường"],
+    "meanings_en": ["sliding door closet"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "布団を押し入れに片付けます。",
+        "reading": "ふとんをおしいれにかたづけます。",
+        "vi": "Tôi dọn dẹp chăn đệm cất vào tủ âm tường."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_038",
+    "word": "お嬢さん",
+    "reading": "おじょうさん",
+    "romaji": "ojousan",
+    "meanings_vi": ["tiểu thư", "con gái người khác"],
+    "meanings_en": ["young lady", "someone's daughter"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "山田さんのお嬢さんは綺麗ですね。",
+        "reading": "やまださんのおじょうさんはきれいですね。",
+        "vi": "Con gái của bác Yamada thật xinh đẹp nhỉ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_039",
+    "word": "お宅",
+    "reading": "おたく",
+    "romaji": "otaku",
+    "meanings_vi": ["nhà bạn (tôn kính)"],
+    "meanings_en": ["your house / family (polite)"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "昨日、先生のお宅に伺いました。",
+        "reading": "きのう、せんせいのおたくにうかがいました。",
+        "vi": "Hôm qua tôi đã đến thăm nhà của thầy giáo."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_040",
+    "word": "落とす",
+    "reading": "おとす",
+    "romaji": "otosu",
+    "meanings_vi": ["làm rơi", "làm mất"],
+    "meanings_en": ["to drop", "to lose"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "財布をどこかで落としました。",
+        "reading": "さいふをどこかでおとしました。",
+        "vi": "Tôi đã làm rơi ví tiền ở đâu đó mất rồi."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_041",
+    "word": "踊り",
+    "reading": "おどり",
+    "romaji": "odori",
+    "meanings_vi": ["điệu nhảy", "vũ điệu"],
+    "meanings_en": ["dance", "dancing"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "日本の伝統的な踊りを見ました。",
+        "reading": "にほんのでんとうてきなおどりをみました。",
+        "vi": "Tôi đã xem một điệu múa truyền thống của Nhật Bản."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_042",
+    "word": "驚く",
+    "reading": "おどろく",
+    "romaji": "odoroku",
+    "meanings_vi": ["ngạc nhiên", "kinh ngạc"],
+    "meanings_en": ["to be surprised", "to be shocked"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "ニュースを聞いて驚きました。",
+        "reading": "ニュースをきいておどろきました。",
+        "vi": "Tôi đã rất ngạc nhiên khi nghe bản tin."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_043",
+    "word": "思い出す",
+    "reading": "おもいだす",
+    "romaji": "omoidasu",
+    "meanings_vi": ["nhớ lại", "hồi tưởng"],
+    "meanings_en": ["to recall", "to remember"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "子どもの頃のことを思い出します。",
+        "reading": "こどものころのことをおもいだします。",
+        "vi": "Tôi nhớ lại những chuyện thời còn nhỏ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_044",
+    "word": "おもちゃ",
+    "reading": "おもちゃ",
+    "romaji": "omocha",
+    "meanings_vi": ["đồ chơi"],
+    "meanings_en": ["toy"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "子どもにおもちゃを買いました。",
+        "reading": "こどもにおもちゃをかいました。",
+        "vi": "Tôi đã mua đồ chơi cho con."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_045",
+    "word": "表",
+    "reading": "おもて",
+    "romaji": "omote",
+    "meanings_vi": ["bề mặt", "phía trước"],
+    "meanings_en": ["front side", "surface"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "封筒の表に住所を書きます。",
+        "reading": "ふうとうのおもてにじゅうしょをかきます。",
+        "vi": "Viết địa chỉ lên mặt trước của phong bì."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_046",
+    "word": "下りる",
+    "reading": "おりる",
+    "romaji": "oriru",
+    "meanings_vi": ["đi xuống (xe, thang)"],
+    "meanings_en": ["to go down", "to get off (bus/train)"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "次の駅で電車を下ります。",
+        "reading": "つぎのえきででんしゃをおります。",
+        "vi": "Tôi sẽ xuống tàu ở ga tiếp theo."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_047",
+    "word": "折る",
+    "reading": "おる",
+    "romaji": "oru",
+    "meanings_vi": ["bẻ gãy", "gấp lại"],
+    "meanings_en": ["to break", "to fold"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "折り紙でツルを折ります。",
+        "reading": "おりがみでツルをおります。",
+        "vi": "Gấp con hạc bằng giấy thủ công Origami."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_048",
+    "word": "お礼",
+    "reading": "おれい",
+    "romaji": "orei",
+    "meanings_vi": ["sự cảm ơn", "lời cảm tạ"],
+    "meanings_en": ["thanks", "gratitude"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "手伝ってくれた人にお礼を言います。",
+        "reading": "てつだってくれたひとにおれいをいいます。",
+        "vi": "Tôi nói lời cảm ơn tới người đã giúp đỡ mình."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_049",
+    "word": "折れる",
+    "reading": "おれる",
+    "romaji": "oreru",
+    "meanings_vi": ["bị gãy", "bị gấp"],
+    "meanings_en": ["to break", "to be fractured"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "強い風で木の枝が折れました。",
+        "reading": "つよいかぜできのえだがおれました。",
+        "vi": "Cành cây bị gãy do gió thổi mạnh."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_050",
+    "word": "終わる",
+    "reading": "おわる",
+    "romaji": "owaru",
+    "meanings_vi": ["kết thúc", "hoàn thành"],
+    "meanings_en": ["to finish", "to end"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "今日の授業はこれで終わります。",
+        "reading": "きょうのじゅぎょうはこれでおわります。",
+        "vi": "Giờ học hôm nay kết thúc tại đây."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_051",
+    "word": "海岸",
+    "reading": "かいがん",
+    "romaji": "kaigan",
+    "meanings_vi": ["bờ biển", "ven biển"],
+    "meanings_en": ["seaside", "beach"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "夏に海岸を散歩するのが好きです。",
+        "reading": "なつにかいがんをさんぽするのがすきです。",
+        "vi": "Tôi thích đi dạo bờ biển vào mùa hè."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_052",
+    "word": "会議",
+    "reading": "かいぎ",
+    "romaji": "kaigi",
+    "meanings_vi": ["cuộc họp", "hội nghị"],
+    "meanings_en": ["meeting", "conference"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "午後から大事な会議があります。",
+        "reading": "ごごからだいじなかいぎがあります。",
+        "vi": "Tôi có một cuộc họp quan trọng từ buổi chiều."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_053",
+    "word": "会社",
+    "reading": "かいしゃ",
+    "romaji": "kaisha",
+    "meanings_vi": ["công ty"],
+    "meanings_en": ["company", "corporation"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "私の会社は東京にあります。",
+        "reading": "わたしのかいしゃはとうきょうにあります。",
+        "vi": "Công ty của tôi nằm ở Tokyo."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_054",
+    "word": "会話",
+    "reading": "かいわ",
+    "romaji": "kaiwa",
+    "meanings_vi": ["cuộc hội thoại", "trò chuyện"],
+    "meanings_en": ["conversation", "dialogue"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "毎日日本語の会話を練習します。",
+        "reading": "まいにちにほんごのかいわをれんしゅうします。",
+        "vi": "Tôi luyện tập hội thoại tiếng Nhật mỗi ngày."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_055",
+    "word": "帰り",
+    "reading": "かえり",
+    "romaji": "kaeri",
+    "meanings_vi": ["sự trở về"],
+    "meanings_en": ["return", "going home"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "仕事の帰りにスーパーへ寄ります。",
+        "reading": "しごとのかえりにスーパーへよります。",
+        "vi": "Tôi tạt vào siêu thị trên đường đi làm về."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_056",
+    "word": "変える",
+    "reading": "かえる",
+    "romaji": "kaeru",
+    "meanings_vi": ["thay đổi"],
+    "meanings_en": ["to change"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "髪型を変えてみました。",
+        "reading": "かみがたをかえてみました。",
+        "vi": "Tôi đã thử thay đổi kiểu tóc."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_057",
+    "word": "科学",
+    "reading": "かがく",
+    "romaji": "kagaku",
+    "meanings_vi": ["khoa học"],
+    "meanings_en": ["science"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "科学の力は素晴らしいです。",
+        "reading": "かがくのちからはすばらしいです。",
+        "vi": "Sức mạnh của khoa học thật tuyệt vời."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_058",
+    "word": "鏡",
+    "reading": "かがみ",
+    "romaji": "kagami",
+    "meanings_vi": ["cái gương"],
+    "meanings_en": ["mirror"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "鏡を見て髪を整えます。",
+        "reading": "かがみをみてかみをととのえます。",
+        "vi": "Nhìn vào gương để vuốt lại tóc."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_059",
+    "word": "掛ける",
+    "reading": "かける",
+    "romaji": "kakeru",
+    "meanings_vi": ["treo", "đeo kính", "gọi điện thoại"],
+    "meanings_en": ["to hang", "to make a phone call", "to put on glasses"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "壁にカレンダーを掛けました。",
+        "reading": "かべにカレンダーをかけました。",
+        "vi": "Tôi đã treo một cuốn lịch lên tường."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_060",
+    "word": "飾る",
+    "reading": "かざる",
+    "romaji": "kazaru",
+    "meanings_vi": ["trang trí"],
+    "meanings_en": ["to decorate", "to display"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "部屋に花を飾りました。",
+        "reading": "へやにはなをかざりました。",
+        "vi": "Tôi đã trang trí hoa trong phòng."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_061",
+    "word": "火事",
+    "reading": "かじ",
+    "romaji": "kaji",
+    "meanings_vi": ["hỏa hoạn", "cháy nhà"],
+    "meanings_en": ["fire", "conflagration"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "近くで火事が発生しました。",
+        "reading": "ちかくでかじがはっせいしました。",
+        "vi": "Có một vụ hỏa hoạn xảy ra ở gần đây."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_062",
+    "word": "片付ける",
+    "reading": "かたづける",
+    "romaji": "kataduzeru",
+    "meanings_vi": ["dọn dẹp"],
+    "meanings_en": ["to tidy up", "to clean"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "勉強する前に机の上を片付けます。",
+        "reading": "べんきょうするまえにつくえのうえをかたづけます。",
+        "vi": "Tôi dọn dẹp mặt bàn trước khi học bài."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_063",
+    "word": "勝つ",
+    "reading": "かつ",
+    "romaji": "katsu",
+    "meanings_vi": ["chiến thắng"],
+    "meanings_en": ["to win"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "試合に勝ってうれしかったです。",
+        "reading": "しあいにかってうれしかったです。",
+        "vi": "Tôi rất vui vì đã thắng trận đấu."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_064",
+    "word": "家庭",
+    "reading": "かてい",
+    "romaji": "katei",
+    "meanings_vi": ["gia đình", "mái ấm"],
+    "meanings_en": ["home", "family", "household"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "温かい家庭を築きたいです。",
+        "reading": "あたたかいかていをきずきたいです。",
+        "vi": "Tôi muốn xây dựng một gia đình ấm áp."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_065",
+    "word": "角",
+    "reading": "かど",
+    "romaji": "kado",
+    "meanings_vi": ["góc đường", "góc phố"],
+    "meanings_en": ["corner", "angle"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "そこの角を右に曲がってください。",
+        "reading": "そこのかどをみぎにまがってください。",
+        "vi": "Vui lòng rẽ phải ở góc đường đằng kia."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_066",
+    "word": "家内",
+    "reading": "かない",
+    "romaji": "kanai",
+    "meanings_vi": ["vợ tôi"],
+    "meanings_en": ["my wife (humble)"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "私の家内は日本語を教えています。",
+        "reading": "わたしのかないはにほんごをおしえています。",
+        "vi": "Vợ tôi đang dạy tiếng Nhật."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_067",
+    "word": "悲しい",
+    "reading": "かなしい",
+    "romaji": "kanashii",
+    "meanings_vi": ["buồn bã", "đau buồn"],
+    "meanings_en": ["sad", "sorrowful"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "悲しい映画を見て泣きました。",
+        "reading": "かなしいえいがをみてなきました。",
+        "vi": "Tôi đã khóc khi xem một bộ phim buồn."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_068",
+    "word": "通う",
+    "reading": "かよう",
+    "romaji": "kayou",
+    "meanings_vi": ["lui tới", "đi đi về về"],
+    "meanings_en": ["to commute", "to attend regularly"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "毎日、大学へ通っています。",
+        "reading": "まいにち、だいがくにかよっています。",
+        "vi": "Hàng ngày, tôi đều đi đi về về trường đại học."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_069",
+    "word": "彼",
+    "reading": "かれ",
+    "romaji": "kare",
+    "meanings_vi": ["anh ấy", "bạn trai"],
+    "meanings_en": ["he", "him", "boyfriend"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "彼は私の大切な親友です。",
+        "reading": "かれはわたしのたいせつなしんゆうです。",
+        "vi": "Anh ấy là người bạn thân thiết của tôi."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_070",
+    "word": "彼女",
+    "reading": "かのじょ",
+    "romaji": "kanojo",
+    "meanings_vi": ["cô ấy", "bạn gái"],
+    "meanings_en": ["she", "her", "girlfriend"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "彼女はいつも明るく笑っています。",
+        "reading": "かのじょはいつもあかるくわらっています。",
+        "vi": "Cô ấy lúc nào cũng nở nụ cười tươi tắn."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_071",
+    "word": "髪",
+    "reading": "かみ",
+    "romaji": "kami",
+    "meanings_vi": ["tóc"],
+    "meanings_en": ["hair"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "昨日、美容院で髪を切りました。",
+        "reading": "きのう、びよういんでかみをきりました。",
+        "vi": "Hôm qua tôi đã cắt tóc ở tiệm làm tóc."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_072",
+    "word": "乾く",
+    "reading": "かわく",
+    "romaji": "kawaku",
+    "meanings_vi": ["khô ráo", "hút ẩm"],
+    "meanings_en": ["to dry", "to become dry"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "洗濯物がよく乾きました。",
+        "reading": "せんたくものがよくかわきました。",
+        "vi": "Quần áo giặt đã rất khô ráo."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_073",
+    "word": "代わり",
+    "reading": "かわり",
+    "romaji": "kawari",
+    "meanings_vi": ["thay thế", "đại diện"],
+    "meanings_en": ["substitute", "instead of"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "父の代わりに私が伺いました。",
+        "reading": "ちちのかわりにわたしがうかがいました。",
+        "vi": "Tôi đã thay mặt bố đến gặp."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_074",
+    "word": "考える",
+    "reading": "かんがえる",
+    "romaji": "kangaeru",
+    "meanings_vi": ["suy nghĩ", "cân nhắc"],
+    "meanings_en": ["to think over", "to consider"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "将来の進路について考えます。",
+        "reading": "しょうらいのしんろについてかんがえます。",
+        "vi": "Tôi suy nghĩ về hướng đi trong tương lai."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_075",
+    "word": "簡単",
+    "reading": "かんたん",
+    "romaji": "kantan",
+    "meanings_vi": ["đơn giản", "dễ dàng"],
+    "meanings_en": ["simple", "easy"],
+    "partOfSpeech": "adj-na",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "今日の試験はとても簡単でした。",
+        "reading": "きょうのしけんはとてもかんたんでした。",
+        "vi": "Bài thi ngày hôm nay rất đơn giản."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_076",
+    "word": "がんばる",
+    "reading": "がんばる",
+    "romaji": "ganbaru",
+    "meanings_vi": ["cố gắng", "nỗ lực"],
+    "meanings_en": ["to persist", "to do one's best"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "あきらめないでがんばってください。",
+        "reading": "あきらめないでがんばってください。",
+        "vi": "Xin vui lòng cố gắng lên, đừng từ bỏ nhé."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_077",
+    "word": "汽車",
+    "reading": "きしゃ",
+    "romaji": "kisha",
+    "meanings_vi": ["tàu hỏa (hơi nước)"],
+    "meanings_en": ["steam train"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "山の中を汽車が走っています。",
+        "reading": "やまのなかをきしゃがはしっています。",
+        "vi": "Đoàn tàu hỏa đang chạy xuyên qua rừng núi."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_078",
+    "word": "技術",
+    "reading": "ぎじゅつ",
+    "romaji": "gijutsu",
+    "meanings_vi": ["kỹ thuật", "công nghệ"],
+    "meanings_en": ["technology", "skill", "technique"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "日本の建築技術は高いです。",
+        "reading": "にほんのけんちくぎじゅつはたかいです。",
+        "vi": "Kỹ thuật xây dựng của Nhật Bản rất cao."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_079",
+    "word": "季節",
+    "reading": "きせつ",
+    "romaji": "kisetsu",
+    "meanings_vi": ["mùa"],
+    "meanings_en": ["season"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "一年の中で秋という季節が一番好きです。",
+        "reading": "いちねんのなかであきというきせつがいちばんすきです。",
+        "vi": "Tôi thích mùa thu nhất trong năm."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_080",
+    "word": "規則",
+    "reading": "きそく",
+    "romaji": "kisoku",
+    "meanings_vi": ["quy tắc", "nội quy"],
+    "meanings_en": ["rule", "regulation"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "学校の規則を守らなければなりません。",
+        "reading": "がっこうのきそくをまもらなければなりません。",
+        "vi": "Chúng ta phải chấp hành quy tắc của nhà trường."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_081",
+    "word": "厳しい",
+    "reading": "きびしい",
+    "romaji": "kibishii",
+    "meanings_vi": ["nghiêm khắc", "khắt khe"],
+    "meanings_en": ["strict", "severe"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "お父様はとても厳しい方のようですね。",
+        "reading": "おとうさまはとてもきびしいかたのようですね。",
+        "vi": "Bố của bạn có vẻ là một người rất nghiêm khắc nhỉ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_082",
+    "word": "気分",
+    "reading": "きぶん",
+    "romaji": "kibun",
+    "meanings_vi": ["tâm trạng", "sức khỏe"],
+    "meanings_en": ["mood", "feeling"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "少し気分が悪いので休みます。",
+        "reading": "すこしきぶんがわるいのでやすみます。",
+        "vi": "Tôi cảm thấy người hơi mệt nên sẽ đi nghỉ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_083",
+    "word": "決まる",
+    "reading": "きまる",
+    "romaji": "kimaru",
+    "meanings_vi": ["được quyết định"],
+    "meanings_en": ["to be decided", "to be settled"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "次の予定がもう決まりましたか。",
+        "reading": "つぎのよていがもうきまりましたか。",
+        "vi": "Lịch trình tiếp theo đã được quyết định chưa?"
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_084",
+    "word": "決める",
+    "reading": "きめる",
+    "romaji": "kimeru",
+    "meanings_vi": ["quyết định", "định đoạt"],
+    "meanings_en": ["to decide", "to choose"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "自分で将来の目標を決めました。",
+        "reading": "じぶんでしょうらいのもくひょうをきめました。",
+        "vi": "Tôi tự quyết định mục tiêu tương lai cho bản thân."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_085",
+    "word": "急行",
+    "reading": "きゅうこう",
+    "romaji": "kyuukou",
+    "meanings_vi": ["tàu tốc hành"],
+    "meanings_en": ["express train"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "急行に乗ると早く着きます。",
+        "reading": "きゅうこうにのるとはやくつきます。",
+        "vi": "Nếu đi tàu tốc hành sẽ đến nơi nhanh hơn."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_086",
+    "word": "教育",
+    "reading": "きょういく",
+    "romaji": "kyouiku",
+    "meanings_vi": ["giáo dục"],
+    "meanings_en": ["education"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "子供の教育は本当に大切です。",
+        "reading": "こどものきょういくはほんとうにたいせつです。",
+        "vi": "Giáo dục con cái là điều thực sự quan trọng."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_087",
+    "word": "教室",
+    "reading": "きょうしつ",
+    "romaji": "kyoushitsu",
+    "meanings_vi": ["phòng học", "lớp học"],
+    "meanings_en": ["classroom"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "授業の後で教室を掃除します。",
+        "reading": "じゅぎょうのあとできょうしつをそうじします。",
+        "vi": "Tôi quét dọn lớp học sau giờ học."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_088",
+    "word": "興味",
+    "reading": "きょうみ",
+    "romaji": "kyoumi",
+    "meanings_vi": ["hứng thú", "quan tâm"],
+    "meanings_en": ["interest"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "日本の文化に興味を持っています。",
+        "reading": "にほんのぶんかにきょうみをもっています。",
+        "vi": "Tôi rất có hứng thú với văn hóa Nhật Bản."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_089",
+    "word": "曲",
+    "reading": "きょく",
+    "romaji": "kyoku",
+    "meanings_vi": ["bài hát", "khúc nhạc"],
+    "meanings_en": ["tune", "song", "melody"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "この曲はとても穏やかで美しいです。",
+        "reading": "このきょくはとてもおだやかでうつくしいです。",
+        "vi": "Khúc nhạc này thật êm dịu và đẹp đẽ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_090",
+    "word": "空気",
+    "reading": "くうき",
+    "romaji": "kuuki",
+    "meanings_vi": ["không khí"],
+    "meanings_en": ["air", "atmosphere"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "山の上は空気がきれいで気持ちがいい。",
+        "reading": "やまのうえはくうきがきれいできもちがいい。",
+        "vi": "Trên đỉnh núi không khí trong lành nên cảm giác thật dễ chịu."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_091",
+    "word": "空港",
+    "reading": "くうこう",
+    "romaji": "kuukou",
+    "meanings_vi": ["sân bay", "phi trường"],
+    "meanings_en": ["airport"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "飛行機に乗るために空港へ行きます。",
+        "reading": "ひこうきにのるためにくうこうへいきます。",
+        "vi": "Tôi đi đến sân bay để lên máy bay."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_092",
+    "word": "草",
+    "reading": "くさ",
+    "romaji": "kusa",
+    "meanings_vi": ["cỏ", "thảo mộc"],
+    "meanings_en": ["grass", "weed"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "庭の草をきれいに抜きました。",
+        "reading": "にわのくさをきれいにぬきました。",
+        "vi": "Tôi đã nhổ sạch cỏ dại ở trong vườn."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_093",
+    "word": "下さる",
+    "reading": "くださる",
+    "romaji": "kudasaru",
+    "meanings_vi": ["cho tôi (tôn kính)"],
+    "meanings_en": ["to give (polite version of kureru)"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "先生が本を私に下さりました。",
+        "reading": "せんせいがほんをわたしにくださりました。",
+        "vi": "Thầy giáo đã trao tặng sách cho tôi."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_094",
+    "word": "首",
+    "reading": "くび",
+    "romaji": "kubi",
+    "meanings_vi": ["cái cổ"],
+    "meanings_en": ["neck"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "寒かったので首にマフラーを巻きました。",
+        "reading": "さむかったのでくびにマフラーをまきました。",
+        "vi": "Vì lạnh nên tôi quấn khăn quàng vào cổ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_095",
+    "word": "雲",
+    "reading": "くも",
+    "romaji": "kumo",
+    "meanings_vi": ["mây", "đám mây"],
+    "meanings_en": ["cloud"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "空に白い雲が浮かんでいます。",
+        "reading": "そらにしろいくもがうかんでいます。",
+        "vi": "Trên bầu trời có những đám mây trắng trôi lững lờ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_096",
+    "word": "比べる",
+    "reading": "くらべる",
+    "romaji": "kuraberu",
+    "meanings_vi": ["so sánh"],
+    "meanings_en": ["to compare"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "去年と比べて今年は暖かいですね。",
+        "reading": "きょねんとくらべてことしはあたたかいですね。",
+        "vi": "So với năm ngoái thì năm nay ấm áp hơn nhỉ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_097",
+    "word": "暮れる",
+    "reading": "くれる",
+    "romaji": "kureru",
+    "meanings_vi": ["tối đi, lặn (mặt trời)"],
+    "meanings_en": ["to grow dark", "to set (sun)"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "日が暮れてすっかり暗くなりました。",
+        "reading": "ひがくれてすっかりくらくなりました。",
+        "vi": "Mặt trời lặn và trời đã tối sầm lại."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_098",
+    "word": "計画",
+    "reading": "けいかく",
+    "romaji": "keikaku",
+    "meanings_vi": ["kế hoạch"],
+    "meanings_en": ["plan", "project"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "夏の旅行の計画を立てます。",
+        "reading": "なつのりょこうのけいかくをたてます。",
+        "vi": "Lập kế hoạch du lịch cho mùa hè."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_099",
+    "word": "経験",
+    "reading": "けいけん",
+    "romaji": "keiken",
+    "meanings_vi": ["kinh nghiệm"],
+    "meanings_en": ["experience"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "いろいろな国での経験は大切です。",
+        "reading": "いろいろなくにでのけいけんはたいせつです。",
+        "vi": "Kinh nghiệm ở nhiều quốc gia khác nhau là điều rất giá trị."
+      }
+    ]
+  },
+  {
+    "id": "vocab_n4_100",
+    "word": "見物",
+    "reading": "けんぶつ",
+    "romaji": "kenbutsu",
+    "meanings_vi": ["tham quan", "ngắm cảnh"],
+    "meanings_en": ["sightseeing", "visit"],
+    "partOfSpeech": "noun",
+    "jlpt": "N4",
+    "examples": [
+      {
+        "ja": "東京の有名な場所を見物しました。",
+        "reading": "とうきょうのゆうめいなばしょをけんぶつしました。",
+        "vi": "Tôi đã đi tham quan các địa điểm nổi tiếng ở Tokyo."
+      }
+    ]
   }
 ]

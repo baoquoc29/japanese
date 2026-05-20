@@ -4,6 +4,7 @@ import { useStudyProgress } from '../../../hooks/useStudyProgress';
 import { SearchInput } from '../../../components/SearchInput';
 import { LevelFilter } from '../../../components/LevelFilter';
 import { GrammarCard } from '../components/GrammarCard';
+import { Pagination } from '../../../components/Pagination';
 
 type JLPTLevel = 'ALL' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
 
@@ -12,6 +13,16 @@ export const GrammarList: React.FC = () => {
   const { progress, toggleFavoriteGrammar, markGrammarAsLearned } = useStudyProgress();
   const [searchQuery, setSearchQuery] = useState('');
   const [activeLevel, setActiveLevel] = useState<JLPTLevel>('ALL');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
+
+  // Reset to page 1 when query or level filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, activeLevel]);
+
+  const totalPages = Math.ceil(grammarList.length / itemsPerPage);
+  const paginatedGrammar = grammarList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   // Trigger search on query or level change
   useEffect(() => {
@@ -64,17 +75,24 @@ export const GrammarList: React.FC = () => {
           </p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {grammarList.map((grammar) => (
-            <GrammarCard
-              key={grammar.id}
-              grammar={grammar}
-              isLearned={progress.learnedGrammar.includes(grammar.id)}
-              isFavorite={progress.favoriteGrammar.includes(grammar.id)}
-              onToggleFavorite={() => toggleFavoriteGrammar(grammar.id)}
-              onToggleLearned={() => markGrammarAsLearned(grammar.id, !progress.learnedGrammar.includes(grammar.id))}
-            />
-          ))}
+        <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {paginatedGrammar.map((grammar) => (
+              <GrammarCard
+                key={grammar.id}
+                grammar={grammar}
+                isLearned={progress.learnedGrammar.includes(grammar.id)}
+                isFavorite={progress.favoriteGrammar.includes(grammar.id)}
+                onToggleFavorite={() => toggleFavoriteGrammar(grammar.id)}
+                onToggleLearned={() => markGrammarAsLearned(grammar.id, !progress.learnedGrammar.includes(grammar.id))}
+              />
+            ))}
+          </div>
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
         </div>
       )}
     </div>

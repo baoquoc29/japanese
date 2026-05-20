@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
 
   const jlptLevels = [
     { level: 'N5', label: 'Cơ bản', desc: 'Chữ Hán, từ vựng và ngữ pháp nhập môn', border: 'border-neutral-200 dark:border-neutral-800', active: true },
-    { level: 'N4', label: 'Sơ cấp', desc: 'Giao tiếp đời sống hàng ngày', border: 'border-neutral-200 dark:border-neutral-800', active: false },
+    { level: 'N4', label: 'Sơ cấp', desc: 'Giao tiếp đời sống hàng ngày', border: 'border-neutral-200 dark:border-neutral-800', active: true },
     { level: 'N3', label: 'Trung cấp', desc: 'Đọc hiểu báo chí đơn giản', border: 'border-neutral-200 dark:border-neutral-800', active: false },
     { level: 'N2', label: 'Trung cao cấp', desc: 'Tiếng Nhật học thuật & công việc', border: 'border-neutral-200 dark:border-neutral-800', active: false },
     { level: 'N1', label: 'Cao cấp', desc: 'Thành thạo tiếng Nhật', border: 'border-neutral-200 dark:border-neutral-800', active: false },
@@ -163,39 +163,46 @@ export const Home: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-          {jlptLevels.map((jlpt) => (
-            <div
-              key={jlpt.level}
-              onClick={() => navigate('/kanji')}
-              className="bg-white dark:bg-zinc-900 rounded-xl p-5 border border-neutral-200 dark:border-neutral-800/80 hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40 cursor-pointer flex flex-col justify-between"
-            >
-              <div className="space-y-2">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-bold text-neutral-800 dark:text-neutral-100 font-display">{jlpt.level}</h3>
-                  {jlpt.active && (
-                    <span className="text-[10px] font-semibold text-neutral-400 uppercase">
-                      Đang học
-                    </span>
-                  )}
+          {jlptLevels.map((jlpt) => {
+            const levelKanji = kanjiList.filter(k => k.jlpt === jlpt.level);
+            const levelLearnedCount = levelKanji.filter(k => progress.learnedKanji.includes(k.character)).length;
+            const levelTotalCount = levelKanji.length;
+            const percentage = levelTotalCount > 0 ? Math.round((levelLearnedCount / levelTotalCount) * 100) : 0;
+
+            return (
+              <div
+                key={jlpt.level}
+                onClick={() => navigate('/kanji')}
+                className="bg-white dark:bg-zinc-900 rounded-xl p-5 border border-neutral-200 dark:border-neutral-800/80 hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40 cursor-pointer flex flex-col justify-between"
+              >
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl font-bold text-neutral-800 dark:text-neutral-100 font-display">{jlpt.level}</h3>
+                    {jlpt.active && (
+                      <span className="text-[10px] font-semibold text-neutral-400 uppercase">
+                        Đang học
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-xs font-semibold text-neutral-750 dark:text-neutral-300">{jlpt.label}</p>
+                  <p className="text-[11px] text-neutral-400 dark:text-neutral-500 leading-relaxed">{jlpt.desc}</p>
                 </div>
-                <p className="text-xs font-semibold text-neutral-750 dark:text-neutral-300">{jlpt.label}</p>
-                <p className="text-[11px] text-neutral-400 dark:text-neutral-500 leading-relaxed">{jlpt.desc}</p>
-              </div>
-              
-              {/* Progress bar (Thin and simple, no colors/gradients) */}
-              <div className="mt-6 space-y-1.5">
-                <div className="h-1 bg-neutral-100 dark:bg-neutral-800 rounded-full overflow-hidden">
-                  <div 
-                    className="h-full bg-neutral-400 dark:bg-neutral-600 rounded-full progress-bar-fill"
-                    style={{ width: jlpt.active ? `${Math.round((progress.learnedKanji.length / Math.max(kanjiList.length, 1)) * 100)}%` : '0%' }}
-                  />
+                
+                {/* Progress bar (Thin and simple, no colors/gradients) */}
+                <div className="mt-6 space-y-1.5">
+                  <div className="h-1 bg-neutral-100 dark:bg-neutral-800 rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-neutral-400 dark:bg-neutral-600 rounded-full progress-bar-fill"
+                      style={{ width: jlpt.active ? `${percentage}%` : '0%' }}
+                    />
+                  </div>
+                  <p className="text-[10px] text-neutral-400 dark:text-neutral-500 font-medium">
+                    {jlpt.active ? `${percentage}% hoàn thành` : 'Chưa mở'}
+                  </p>
                 </div>
-                <p className="text-[10px] text-neutral-400 dark:text-neutral-500 font-medium">
-                  {jlpt.active ? `${Math.round((progress.learnedKanji.length / Math.max(kanjiList.length, 1)) * 100)}% hoàn thành` : 'Chưa mở'}
-                </p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
@@ -217,7 +224,7 @@ export const Home: React.FC = () => {
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-5 border border-neutral-200/80 dark:border-neutral-800/80">
             <div className="text-[10px] font-bold text-neutral-400 uppercase tracking-wider">Chữ Hán đã học</div>
             <div className="text-2xl font-semibold text-neutral-800 dark:text-neutral-200 mt-2">{progress.learnedKanji.length} chữ</div>
-            <p className="text-[10px] text-neutral-400 dark:text-neutral-550 mt-1">trên tổng số {kanjiList.length} chữ N5</p>
+            <p className="text-[10px] text-neutral-400 dark:text-neutral-550 mt-1">trên tổng số {kanjiList.length} chữ</p>
           </div>
 
           {/* Vocab learned */}

@@ -4,6 +4,7 @@ import { useStudyProgress } from '../../../hooks/useStudyProgress';
 import { SearchInput } from '../../../components/SearchInput';
 import { LevelFilter } from '../../../components/LevelFilter';
 import { VocabularyCard } from '../components/VocabularyCard';
+import { Pagination } from '../../../components/Pagination';
 
 type JLPTLevel = 'ALL' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
 type POSFilter = 'ALL' | 'noun' | 'verb-i' | 'verb-ii' | 'verb-iii' | 'adj-i' | 'adj-na' | 'adverb';
@@ -14,6 +15,16 @@ export const VocabularyList: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeLevel, setActiveLevel] = useState<JLPTLevel>('ALL');
   const [activePOS, setActivePOS] = useState<POSFilter>('ALL');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
+
+  // Reset to page 1 when query, level, or POS filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, activeLevel, activePOS]);
+
+  const totalPages = Math.ceil(vocabList.length / itemsPerPage);
+  const paginatedVocab = vocabList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   // Trigger search on inputs change
   useEffect(() => {
@@ -101,17 +112,24 @@ export const VocabularyList: React.FC = () => {
           </p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {vocabList.map((vocab) => (
-            <VocabularyCard
-              key={vocab.id}
-              vocab={vocab}
-              isLearned={progress.learnedVocab.includes(vocab.id)}
-              isFavorite={progress.favoriteVocab.includes(vocab.id)}
-              onToggleFavorite={() => toggleFavoriteVocab(vocab.id)}
-              onToggleLearned={() => markVocabAsLearned(vocab.id, !progress.learnedVocab.includes(vocab.id))}
-            />
-          ))}
+        <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {paginatedVocab.map((vocab) => (
+              <VocabularyCard
+                key={vocab.id}
+                vocab={vocab}
+                isLearned={progress.learnedVocab.includes(vocab.id)}
+                isFavorite={progress.favoriteVocab.includes(vocab.id)}
+                onToggleFavorite={() => toggleFavoriteVocab(vocab.id)}
+                onToggleLearned={() => markVocabAsLearned(vocab.id, !progress.learnedVocab.includes(vocab.id))}
+              />
+            ))}
+          </div>
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
         </div>
       )}
     </div>

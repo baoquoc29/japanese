@@ -5,6 +5,7 @@ import { SearchInput } from '../../../components/SearchInput';
 import { LevelFilter } from '../../../components/LevelFilter';
 import { KanjiCard } from '../components/KanjiCard';
 import { DrawKanjiSearchPage } from '../../kanji-search/DrawKanjiSearchPage';
+import { Pagination } from '../../../components/Pagination';
 
 type JLPTLevel = 'ALL' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
 type KanjiViewTab = 'LIST' | 'DRAW';
@@ -15,6 +16,8 @@ export const KanjiList: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeLevel, setActiveLevel] = useState<JLPTLevel>('ALL');
   const [activeTab, setActiveTab] = useState<KanjiViewTab>('LIST');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 20;
 
   // Trigger search on query or level change
   useEffect(() => {
@@ -23,6 +26,14 @@ export const KanjiList: React.FC = () => {
       search(searchQuery, levelParam);
     }
   }, [searchQuery, activeLevel, activeTab, search]);
+
+  // Reset to page 1 when query, filters, or tab changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, activeLevel, activeTab]);
+
+  const totalPages = Math.ceil(kanjiList.length / itemsPerPage);
+  const paginatedKanjis = kanjiList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
     <div className="space-y-8">
@@ -100,23 +111,30 @@ export const KanjiList: React.FC = () => {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              {kanjiList.map((kanji) => (
-                <KanjiCard
-                  key={kanji.character}
-                  kanji={kanji}
-                  isLearned={progress.learnedKanji.includes(kanji.character)}
-                  isFavorite={progress.favoriteKanji.includes(kanji.character)}
-                  onToggleFavorite={(e) => {
-                    e.preventDefault();
-                    toggleFavoriteKanji(kanji.character);
-                  }}
-                  onToggleLearned={(e) => {
-                    e.preventDefault();
-                    markKanjiAsLearned(kanji.character, !progress.learnedKanji.includes(kanji.character));
-                  }}
-                />
-              ))}
+            <div className="space-y-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                {paginatedKanjis.map((kanji) => (
+                  <KanjiCard
+                    key={kanji.character}
+                    kanji={kanji}
+                    isLearned={progress.learnedKanji.includes(kanji.character)}
+                    isFavorite={progress.favoriteKanji.includes(kanji.character)}
+                    onToggleFavorite={(e) => {
+                      e.preventDefault();
+                      toggleFavoriteKanji(kanji.character);
+                    }}
+                    onToggleLearned={(e) => {
+                      e.preventDefault();
+                      markKanjiAsLearned(kanji.character, !progress.learnedKanji.includes(kanji.character));
+                    }}
+                  />
+                ))}
+              </div>
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onPageChange={setCurrentPage}
+              />
             </div>
           )}
         </div>

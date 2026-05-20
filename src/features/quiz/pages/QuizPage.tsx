@@ -5,16 +5,6 @@ import { useGrammar } from '../../../hooks/useGrammar';
 import { useStudyProgress } from '../../../hooks/useStudyProgress';
 import { QuizCard } from '../components/QuizCard';
 import type { QuizQuestion } from '../../../types';
-import { 
-  Trophy, 
-  RotateCcw, 
-  ArrowLeft, 
-  BookOpen, 
-  GraduationCap, 
-  BookMarked,
-  CheckCircle,
-  XCircle
-} from 'lucide-react';
 
 type QuizState = 'setup' | 'active' | 'completed';
 type QuizCategory = 'kanji' | 'vocabulary' | 'grammar' | 'review';
@@ -149,12 +139,8 @@ export const QuizPage: React.FC = () => {
       const shuffledGrammar = shuffle(grammarList);
 
       shuffledGrammar.slice(0, 10).forEach((g, idx) => {
-        // We do Fill in the blank grammar question based on example sentences
         const example = g.examples[0];
         const correctPattern = g.pattern.replace('〜', '');
-        
-        // Let's create a blank inside sentence: e.g. "私は学生です。" -> "私は学生 [ ? ] 。"
-        // Replace correctPattern with [ ... ]
         const sentenceQuestion = example.ja.replace(correctPattern, ' [ ... ] ');
 
         const distractors = shuffle(grammarList.filter(item => item.id !== g.id))
@@ -175,9 +161,6 @@ export const QuizPage: React.FC = () => {
     }
 
     else if (cat === 'review') {
-      // Create quiz from wrong quiz questions in the past (wrongQuizQuestions)
-      // Since wrongQuizQuestions contains plain text question names, we can look up matching elements or fallback to simple mixed questions.
-      // For simplicity, we can shuffle Kanji, Vocab and Grammar N5 database and create a 10 question mixed quiz
       const allKanjis = shuffle(kanjiList).slice(0, 4);
       const allVocabs = shuffle(vocabList).slice(0, 3);
       const allGrammars = shuffle(grammarList).slice(0, 3);
@@ -239,10 +222,8 @@ export const QuizPage: React.FC = () => {
     
     if (isCorrect) {
       setScore(prev => prev + 1);
-      // Remove from wrong questions pool if it was there
       removeWrongQuizQuestion(q.question);
     } else {
-      // Add to wrong questions queue for favorites/review module
       addWrongQuizQuestion(q.question);
     }
 
@@ -253,93 +234,81 @@ export const QuizPage: React.FC = () => {
     if (currentIdx + 1 < questions.length) {
       setCurrentIdx(prev => prev + 1);
     } else {
-      // Save result to localStorage
       addQuizResult(score, questions.length, category);
       setQuizState('completed');
     }
   };
 
+  const getCategoryLabel = (cat: string) => {
+    switch (cat) {
+      case 'kanji': return 'Chữ Hán';
+      case 'vocabulary': return 'Từ vựng';
+      case 'grammar': return 'Ngữ pháp';
+      case 'review': return 'Tổng hợp';
+      default: return cat;
+    }
+  };
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       
       {/* Header Info */}
-      <div className="space-y-2">
-        <h1 className="text-3xl font-extrabold font-display text-slate-800 dark:text-slate-100">
+      <div className="space-y-2 border-b border-neutral-200 dark:border-neutral-800 pb-5">
+        <h1 className="text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 font-display">
           Trắc nghiệm ôn tập
         </h1>
-        <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">
+        <p className="text-xs text-neutral-500 dark:text-neutral-400">
           Kiểm tra ngẫu nhiên và củng cố kiến thức chữ Hán, từ vựng hoặc cấu trúc ngữ pháp.
         </p>
       </div>
 
       {/* SETUP SCREEN */}
       {quizState === 'setup' && (
-        <div className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-3xl p-8 max-w-2xl mx-auto shadow-sm space-y-6">
-          <div className="text-center">
-            <Trophy className="w-16 h-16 text-indigo-500 mx-auto mb-4 animate-bounce" />
-            <h2 className="text-2xl font-black font-display text-slate-800 dark:text-slate-100">Chọn chủ đề ôn tập</h2>
-            <p className="text-xs text-slate-450 dark:text-slate-550 mt-1">Hệ thống sẽ sinh ngẫu nhiên 10 câu hỏi trắc nghiệm từ bộ dữ liệu local.</p>
+        <div className="bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-6 max-w-xl mx-auto space-y-6">
+          <div className="text-center space-y-1">
+            <h2 className="text-sm font-bold text-neutral-800 dark:text-neutral-250">Chọn chủ đề ôn tập</h2>
+            <p className="text-xs text-neutral-450 dark:text-neutral-500 max-w-xs mx-auto">Hệ thống sẽ sinh ngẫu nhiên 10 câu hỏi trắc nghiệm từ bộ dữ liệu local.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Kanji */}
             <button
               onClick={() => { setCategory('kanji'); generateQuiz('kanji'); }}
               disabled={kanjiList.length < 4}
-              className="flex items-center gap-4 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-left hover:border-sky-500/40 hover:shadow-lg transition-all cursor-pointer group"
+              className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-neutral-350 dark:hover:border-neutral-750 bg-white dark:bg-zinc-900 text-left transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              <div className="p-3 bg-sky-500/10 text-sky-500 rounded-xl">
-                <BookOpen className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-extrabold text-slate-800 dark:text-slate-200 group-hover:text-sky-500 transition-colors">Quiz Chữ Hán</h3>
-                <p className="text-[10px] text-slate-400 mt-0.5">Nghĩa chữ Kanji, âm đọc On/Kun</p>
-              </div>
+              <h3 className="text-xs font-bold text-neutral-900 dark:text-neutral-100 mb-1">Quiz Chữ Hán</h3>
+              <p className="text-[10px] text-neutral-450 dark:text-neutral-500">Nghĩa chữ Kanji, âm đọc On/Kun</p>
             </button>
 
             {/* Vocabulary */}
             <button
               onClick={() => { setCategory('vocabulary'); generateQuiz('vocabulary'); }}
               disabled={vocabList.length < 4}
-              className="flex items-center gap-4 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-left hover:border-emerald-500/40 hover:shadow-lg transition-all cursor-pointer group"
+              className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-neutral-350 dark:hover:border-neutral-750 bg-white dark:bg-zinc-900 text-left transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              <div className="p-3 bg-emerald-500/10 text-emerald-500 rounded-xl">
-                <GraduationCap className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-extrabold text-slate-800 dark:text-slate-200 group-hover:text-emerald-500 transition-colors">Quiz Từ vựng</h3>
-                <p className="text-[10px] text-slate-400 mt-0.5">Dịch nghĩa từ vựng, cách đọc Kana</p>
-              </div>
+              <h3 className="text-xs font-bold text-neutral-900 dark:text-neutral-100 mb-1">Quiz Từ vựng</h3>
+              <p className="text-[10px] text-neutral-450 dark:text-neutral-500">Dịch nghĩa từ vựng, cách đọc Kana</p>
             </button>
 
             {/* Grammar */}
             <button
               onClick={() => { setCategory('grammar'); generateQuiz('grammar'); }}
               disabled={grammarList.length < 4}
-              className="flex items-center gap-4 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-left hover:border-violet-500/40 hover:shadow-lg transition-all cursor-pointer group"
+              className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-neutral-350 dark:hover:border-neutral-750 bg-white dark:bg-zinc-900 text-left transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              <div className="p-3 bg-violet-500/10 text-violet-500 rounded-xl">
-                <BookMarked className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-extrabold text-slate-800 dark:text-slate-200 group-hover:text-violet-500 transition-colors">Quiz Ngữ pháp</h3>
-                <p className="text-[10px] text-slate-400 mt-0.5">Điền mẫu ngữ pháp vào câu ví dụ</p>
-              </div>
+              <h3 className="text-xs font-bold text-neutral-900 dark:text-neutral-100 mb-1">Quiz Ngữ pháp</h3>
+              <p className="text-[10px] text-neutral-450 dark:text-neutral-500">Điền mẫu ngữ pháp vào câu ví dụ</p>
             </button>
 
             {/* Review mix */}
             <button
               onClick={() => { setCategory('review'); generateQuiz('review'); }}
               disabled={kanjiList.length < 4 && vocabList.length < 4}
-              className="flex items-center gap-4 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-left hover:border-indigo-500/40 hover:shadow-lg transition-all cursor-pointer group"
+              className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-neutral-350 dark:hover:border-neutral-750 bg-white dark:bg-zinc-900 text-left transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              <div className="p-3 bg-indigo-500/10 text-indigo-500 rounded-xl">
-                <RotateCcw className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-extrabold text-slate-800 dark:text-slate-200 group-hover:text-indigo-500 transition-colors">Ôn tập tổng hợp</h3>
-                <p className="text-[10px] text-slate-400 mt-0.5">Xào trộn Kanji, từ vựng và ngữ pháp</p>
-              </div>
+              <h3 className="text-xs font-bold text-neutral-900 dark:text-neutral-100 mb-1">Ôn tập tổng hợp</h3>
+              <p className="text-[10px] text-neutral-450 dark:text-neutral-500">Xào trộn Kanji, từ vựng và ngữ pháp</p>
             </button>
           </div>
         </div>
@@ -351,12 +320,12 @@ export const QuizPage: React.FC = () => {
           <div className="max-w-xl mx-auto flex justify-between items-center px-1">
             <button
               onClick={() => setQuizState('setup')}
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-400 hover:text-slate-650 cursor-pointer"
+              className="px-2.5 py-1 border border-neutral-300 dark:border-neutral-750 hover:bg-neutral-50 dark:hover:bg-neutral-800 text-neutral-600 dark:text-neutral-300 text-[10px] font-bold rounded cursor-pointer transition-colors"
             >
-              <ArrowLeft className="w-4 h-4" /> Thoát Quiz
+              Thoát Quiz
             </button>
-            <div className="text-xs font-bold text-slate-400">
-              Điểm số: <span className="text-emerald-500 font-black text-sm">{score}</span>
+            <div className="text-[11px] font-semibold text-neutral-500 dark:text-neutral-400">
+              Điểm: <span className="text-indigo-600 dark:text-indigo-400 font-bold text-xs">{score}</span>
             </div>
           </div>
 
@@ -372,37 +341,36 @@ export const QuizPage: React.FC = () => {
 
       {/* COMPLETED RESULT SCREEN */}
       {quizState === 'completed' && (
-        <div className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-3xl p-8 max-w-2xl mx-auto shadow-sm space-y-6 text-center">
-          <div>
-            <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-3 animate-bounce" />
-            <h2 className="text-3xl font-black font-display text-slate-800 dark:text-slate-100">Hoàn thành bài Quiz!</h2>
-            <p className="text-sm font-semibold text-slate-400 dark:text-slate-500 mt-1 capitalize">Chủ đề: {category === 'kanji' ? 'Chữ Hán' : category === 'vocabulary' ? 'Từ vựng' : 'Ngữ pháp'}</p>
+        <div className="bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-6 max-w-xl mx-auto space-y-6 text-center">
+          <div className="space-y-1">
+            <h2 className="text-xl font-bold text-neutral-900 dark:text-neutral-100">Hoàn thành bài Quiz!</h2>
+            <p className="text-[11px] text-neutral-400 dark:text-neutral-500 capitalize">Chủ đề: {getCategoryLabel(category)}</p>
           </div>
 
           {/* Big Score Display */}
-          <div className="p-6 bg-slate-50 dark:bg-slate-950 rounded-3xl border border-slate-100 dark:border-slate-800/40 max-w-xs mx-auto">
-            <div className="text-6xl font-black text-indigo-600 dark:text-indigo-400 font-display">
+          <div className="py-4 px-6 bg-neutral-50 dark:bg-neutral-950 rounded-lg border border-neutral-200 dark:border-neutral-850 max-w-[200px] mx-auto">
+            <div className="text-4xl font-extrabold text-neutral-900 dark:text-neutral-100 font-display">
               {score}/{questions.length}
             </div>
-            <p className="text-[10px] font-bold text-slate-400 dark:text-slate-500 mt-2 uppercase tracking-widest">
-              {(score / questions.length) >= 0.8 ? "Tuyệt vời!" : (score / questions.length) >= 0.5 ? "Khá lắm!" : "Cần ôn tập thêm!"}
+            <p className="text-[9px] font-bold text-neutral-400 dark:text-neutral-500 mt-1 uppercase tracking-wider">
+              {(score / questions.length) >= 0.8 ? "Xuất sắc" : (score / questions.length) >= 0.5 ? "Đạt yêu cầu" : "Cần ôn thêm"}
             </p>
           </div>
 
           {/* Breakdown Review of answers */}
-          <div className="text-left space-y-3.5 max-w-lg mx-auto">
-            <h3 className="text-sm font-black text-slate-400 dark:text-slate-500 uppercase tracking-wider block select-none">Xem lại câu trả lời</h3>
-            <div className="space-y-2 max-h-60 overflow-y-auto pr-1">
+          <div className="text-left space-y-2 max-w-md mx-auto">
+            <h3 className="text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider block select-none">Xem lại kết quả</h3>
+            <div className="space-y-1.5 max-h-48 overflow-y-auto pr-1">
               {answersLog.map((log, idx) => (
-                <div key={idx} className="p-3 bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800/60 rounded-xl flex items-center justify-between text-xs font-bold gap-3">
+                <div key={idx} className="p-3 bg-neutral-50/50 dark:bg-neutral-950 border border-neutral-150 dark:border-neutral-850 rounded-lg flex items-center justify-between text-[11px] font-medium gap-3">
                   <div className="truncate max-w-[80%]">
-                    <div className="text-slate-700 dark:text-slate-300 truncate leading-relaxed">{log.question.question}</div>
-                    <div className="text-[10px] text-slate-400 font-semibold mt-0.5">Đáp án: {log.question.answer}</div>
+                    <div className="text-neutral-800 dark:text-neutral-250 truncate leading-relaxed">{log.question.question}</div>
+                    <div className="text-[9px] text-neutral-400 mt-0.5">Đáp án: {log.question.answer}</div>
                   </div>
                   {log.isCorrect ? (
-                    <CheckCircle className="w-5 h-5 text-emerald-500 shrink-0" />
+                    <span className="text-[9px] font-bold text-emerald-600 dark:text-emerald-450 uppercase shrink-0">[Đúng]</span>
                   ) : (
-                    <XCircle className="w-5 h-5 text-rose-500 shrink-0" />
+                    <span className="text-[9px] font-bold text-rose-500 uppercase shrink-0">[Sai]</span>
                   )}
                 </div>
               ))}
@@ -410,18 +378,18 @@ export const QuizPage: React.FC = () => {
           </div>
 
           {/* Action buttons */}
-          <div className="flex gap-3 justify-center max-w-sm mx-auto pt-4 border-t border-slate-100 dark:border-slate-800/65">
+          <div className="flex gap-3 justify-center max-w-sm mx-auto pt-4 border-t border-neutral-150 dark:border-neutral-800">
             <button
               onClick={() => generateQuiz(category)}
-              className="flex-1 flex items-center justify-center gap-1.5 py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl text-xs font-extrabold shadow-md shadow-indigo-500/10 cursor-pointer"
+              className="flex-1 py-2 px-4 bg-neutral-900 hover:bg-neutral-800 dark:bg-neutral-50 dark:hover:bg-neutral-200 text-white dark:text-neutral-950 text-xs font-semibold rounded-lg transition-colors cursor-pointer"
             >
-              <RotateCcw className="w-4 h-4" /> Làm lại
+              Làm lại
             </button>
             <button
               onClick={() => setQuizState('setup')}
-              className="flex-1 flex items-center justify-center gap-1.5 py-3 px-4 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700/80 text-slate-700 dark:text-slate-350 rounded-2xl text-xs font-extrabold cursor-pointer"
+              className="flex-1 py-2 px-4 border border-neutral-300 dark:border-neutral-750 hover:bg-neutral-55 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 text-xs font-semibold rounded-lg cursor-pointer"
             >
-              <ArrowLeft className="w-4 h-4" /> Menu chính
+              Quay lại
             </button>
           </div>
         </div>
@@ -429,4 +397,5 @@ export const QuizPage: React.FC = () => {
     </div>
   );
 };
+
 export default QuizPage;

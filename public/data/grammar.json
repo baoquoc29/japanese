@@ -76,7 +76,7 @@
         "vi": "Đây là xe hơi của tôi."
       },
       {
-        "ja": "日本語の本を読みます。",
+        "ja": "日本語の本 を読みます。",
         "reading": "にほんごのほんをよみます。",
         "vi": "Tôi đọc cuốn sách tiếng Nhật."
       }
@@ -139,7 +139,7 @@
         "vi": "Tôi ăn cơm."
       },
       {
-        "ja": "水を聞きますではなく、音楽を聞きます。",
+        "ja": "音楽を聞きます。",
         "reading": "おんがくをききます。",
         "vi": "Tôi nghe nhạc."
       }
@@ -173,7 +173,7 @@
     "jlpt": "N5",
     "meaning_vi": "Muốn làm gì... (Biểu thị mong muốn thực hiện hành động của bản thân).",
     "meaning_en": "Want to do...",
-    "structure": "Verb (Stem form / Masu-form without masu) + たいです",
+    "structure": "Verb (Stem form) + たいです",
     "examples": [
       {
         "ja": "日本へ行きたいです。",
@@ -186,7 +186,7 @@
         "vi": "Tôi muốn uống nước."
       }
     ],
-    "notes": "Mẫu câu này chỉ dùng cho ngôi thứ nhất (bản thân). Tính từ đuôi -i có cách chia tương tự (tai -> takunai)."
+    "notes": "Mẫu câu này chỉ dùng cho ngôi thứ nhất (bản thân)."
   },
   {
     "id": "grammar_n5_010",
@@ -208,5 +208,535 @@
       }
     ],
     "notes": "Thường đi kèm với cụm từ 一緒に (isshoni - cùng nhau)."
+  },
+  {
+    "id": "grammar_n4_001",
+    "pattern": "〜ことがある",
+    "jlpt": "N4",
+    "meaning_vi": "Đã từng làm gì đó (nói về kinh nghiệm trong quá khứ).",
+    "meaning_en": "have done before (experience)",
+    "structure": "Verb (Ta-form) + ことがある",
+    "examples": [
+      {
+        "ja": "日本へ行ったことがあります。",
+        "reading": "にほんへいったことがあります。",
+        "vi": "Tôi đã từng đi Nhật Bản."
+      },
+      {
+        "ja": "寿司を食べたことがありますか。",
+        "reading": "すしをたべたことがありますか。",
+        "vi": "Bạn đã từng ăn sushi chưa?"
+      }
+    ],
+    "notes": "Dùng để diễn tả một kinh nghiệm cá nhân đã từng xảy ra trong quá khứ."
+  },
+  {
+    "id": "grammar_n4_002",
+    "pattern": "〜ことができる",
+    "jlpt": "N4",
+    "meaning_vi": "Có thể làm gì đó (biểu thị khả năng hoặc sự cho phép).",
+    "meaning_en": "can do / be able to do",
+    "structure": "Verb (Dictionary form) + ことができる",
+    "examples": [
+      {
+        "ja": "日本語を話すことができます。",
+        "reading": "にほんごをはなすことができます。",
+        "vi": "Tôi có thể nói được tiếng Nhật."
+      },
+      {
+        "ja": "ここで車を止めることはできません。",
+        "reading": "ここでくるまをとめることはできません。",
+        "vi": "Không thể đỗ xe ở đây."
+      }
+    ],
+    "notes": "Có thể thay thế cấu trúc này bằng thể khả năng trực tiếp của động từ."
+  },
+  {
+    "id": "grammar_n4_003",
+    "pattern": "〜ことにする",
+    "jlpt": "N4",
+    "meaning_vi": "Quyết định làm việc gì đó (do chủ ý cá nhân bản thân).",
+    "meaning_en": "decide to do",
+    "structure": "Verb (Dictionary form / Nai-form) + ことにする",
+    "examples": [
+      {
+        "ja": "毎日、日本語を勉強することにします。",
+        "reading": "まいにち、にほんごをべんきょうすることにします。",
+        "vi": "Tôi quyết định mỗi ngày đều học tiếng Nhật."
+      },
+      {
+        "ja": "お酒は飲まないことにしました。",
+        "reading": "おさけはのまないことにしました。",
+        "vi": "Tôi đã quyết định không uống rượu nữa."
+      }
+    ],
+    "notes": "Diễn tả sự quyết định xuất phát từ ý chí chủ quan cá nhân người nói."
+  },
+  {
+    "id": "grammar_n4_004",
+    "pattern": "〜ことになる",
+    "jlpt": "N4",
+    "meaning_vi": "Được quyết định là... (quyết định mang tính khách quan hoặc do người khác).",
+    "meaning_en": "it has been decided that...",
+    "structure": "Verb (Dictionary form / Nai-form) + ことになる",
+    "examples": [
+      {
+        "ja": "来月、日本へ出張することになりました。",
+        "reading": "らいげつ、にほんへしゅっちょうすることになりました。",
+        "vi": "Tôi được quyết định đi công tác Nhật vào tháng tới."
+      }
+    ],
+    "notes": "Diễn tả quyết định, quy định của một tổ chức hoặc do yếu tố khách quan đem lại."
+  },
+  {
+    "id": "grammar_n4_005",
+    "pattern": "〜そうだ (truyền đạt)",
+    "jlpt": "N4",
+    "meaning_vi": "Nghe nói là... (dùng để thuật lại thông tin nghe hoặc đọc được).",
+    "meaning_en": "I heard that... / people say that...",
+    "structure": "Verb / Adjective / Noun (Plain form) + そうだ",
+    "examples": [
+      {
+        "ja": "明日は雨が降るそうです。",
+        "reading": "あしたはあめがふるそうです。",
+        "vi": "Nghe nói ngày mai trời sẽ mưa."
+      },
+      {
+        "ja": "彼女はとても元気だそうです。",
+        "reading": "かのじょはとてもげんきだそうです。",
+        "vi": "Nghe nói cô ấy rất khỏe mạnh."
+      }
+    ],
+    "notes": "Không chia đuôi 'sou' sang các dạng phủ định hay quá khứ trong cấu trúc truyền đạt."
+  },
+  {
+    "id": "grammar_n4_006",
+    "pattern": "〜そうだ (phỏng đoán)",
+    "jlpt": "N4",
+    "meaning_vi": "Trông có vẻ... / Dường như sắp...",
+    "meaning_en": "looks like / seems like",
+    "structure": "Verb (Stem form) / Adjective (without i/na) + そうだ",
+    "examples": [
+      {
+        "ja": "このケーキは美味しそうです。",
+        "reading": "このケーキはおいしそうです。",
+        "vi": "Chiếc bánh ngọt này trông có vẻ ngon đấy."
+      },
+      {
+        "ja": "雨が降りそうな天気ですね。",
+        "reading": "あめがふりそうなてんきですね。",
+        "vi": "Thời tiết trông dường như sắp mưa nhỉ."
+      }
+    ],
+    "notes": "Với tính từ よい (tốt) đổi thành よさそうだ. Phủ định dùng なさそうだ."
+  },
+  {
+    "id": "grammar_n4_007",
+    "pattern": "〜すぎる",
+    "jlpt": "N4",
+    "meaning_vi": "Quá... (vượt quá mức độ cần thiết hoặc bình thường).",
+    "meaning_en": "too much / excessively",
+    "structure": "Verb (Stem form) / Adjective (without i/na) + すぎる",
+    "examples": [
+      {
+        "ja": "昨日はお酒を飲みすぎました。",
+        "reading": "きのうはおさけをのみすぎました。",
+        "vi": "Hôm qua tôi đã uống quá nhiều rượu."
+      },
+      {
+        "ja": "この試験は難しすぎます。",
+        "reading": "このしけんはむずかしすぎます。",
+        "vi": "Kỳ thi này khó quá mức."
+      }
+    ],
+    "notes": "Động từ chia đuôi すぎる hoạt động như một động từ nhóm II."
+  },
+  {
+    "id": "grammar_n4_008",
+    "pattern": "〜ながら",
+    "jlpt": "N4",
+    "meaning_vi": "Vừa làm cái này... vừa làm cái kia (hai hành động diễn ra song song).",
+    "meaning_en": "while doing...",
+    "structure": "Verb (Stem form) + ながら",
+    "examples": [
+      {
+        "ja": "音楽を聞きながら勉強します。",
+        "reading": "おんがくをききながらべんきょうします。",
+        "vi": "Tôi vừa nghe nhạc vừa học bài."
+      }
+    ],
+    "notes": "Hành động đứng sau 'nagara' luôn là hành động chính của người nói."
+  },
+  {
+    "id": "grammar_n4_009",
+    "pattern": "〜やすい",
+    "jlpt": "N4",
+    "meaning_vi": "Dễ làm việc gì đó.",
+    "meaning_en": "easy to do",
+    "structure": "Verb (Stem form) + やすい",
+    "examples": [
+      {
+        "ja": "このペンはとても書きやすいです。",
+        "reading": "このペンはとてもかきやすいです。",
+        "vi": "Chiếc bút này rất dễ viết."
+      }
+    ],
+    "notes": "Tính từ ghép tạo thành hoạt động như một tính từ đuôi -i."
+  },
+  {
+    "id": "grammar_n4_010",
+    "pattern": "〜にくい",
+    "jlpt": "N4",
+    "meaning_vi": "Khó làm việc gì đó.",
+    "meaning_en": "hard to do / difficult to do",
+    "structure": "Verb (Stem form) + にくい",
+    "examples": [
+      {
+        "ja": "漢字は覚えにくいです。",
+        "reading": "かんじはおぼえにくいです。",
+        "vi": "Chữ Kanji rất khó ghi nhớ."
+      }
+    ],
+    "notes": "Hoạt động như một tính từ đuôi -i."
+  },
+  {
+    "id": "grammar_n4_011",
+    "pattern": "〜たばかり",
+    "jlpt": "N4",
+    "meaning_vi": "Vừa mới làm gì đó (theo cảm nhận chủ quan của người nói).",
+    "meaning_en": "just finished doing",
+    "structure": "Verb (Ta-form) + ばかり",
+    "examples": [
+      {
+        "ja": "日本に来たばかりの時は日本語が話せませんでした。",
+        "reading": "にほんにきたばかりのときはにほんごがはなせませんでした。",
+        "vi": "Khi vừa mới đến Nhật Bản, tôi đã không nói được tiếng Nhật."
+      }
+    ],
+    "notes": "Khác với たところ (vừa làm xong thật sự về mặt thời gian), たばかり là cảm nhận chủ quan của người nói."
+  },
+  {
+    "id": "grammar_n4_012",
+    "pattern": "〜ところ",
+    "jlpt": "N4",
+    "meaning_vi": "Đang chuẩn bị / Đang làm / Vừa mới làm xong...",
+    "meaning_en": "about to do / in the middle of doing / just done",
+    "structure": "Verb (Dict / Te-iru / Ta-form) + ところ",
+    "examples": [
+      {
+        "ja": "これからご飯を食べるところです。",
+        "reading": "これからごはんをたべるところです。",
+        "vi": "Tôi đang chuẩn bị ăn cơm đây."
+      },
+      {
+        "ja": "今、勉強しているところです。",
+        "reading": "いま、べんきょうしているところです。",
+        "vi": "Bây giờ tôi đang ở giữa lúc học bài."
+      }
+    ],
+    "notes": "Mô tả chính xác thời điểm thực hiện hành động khách quan."
+  },
+  {
+    "id": "grammar_n4_013",
+    "pattern": "〜はずだ",
+    "jlpt": "N4",
+    "meaning_vi": "Chắc chắn là... (dựa trên cơ sở, lý do hợp lý).",
+    "meaning_en": "supposed to be / must be",
+    "structure": "Plain form / [Na-adj + な] / [Noun + の] + はずだ",
+    "examples": [
+      {
+        "ja": "彼は今日来るはずです。",
+        "reading": "かれはきょうくるはずです。",
+        "vi": "Chắc chắn hôm nay anh ấy sẽ đến."
+      }
+    ],
+    "notes": "Diễn tả phán đoán mang tính tin tưởng cao dựa trên lý do logic."
+  },
+  {
+    "id": "grammar_n4_014",
+    "pattern": "〜つもりだ",
+    "jlpt": "N4",
+    "meaning_vi": "Dự định làm... / Dự định không làm...",
+    "meaning_en": "intend to do",
+    "structure": "Verb (Dict-form / Nai-form) + つもりだ",
+    "examples": [
+      {
+        "ja": "将来、日本で働くつもりです。",
+        "reading": "しょうらい、にほんではたらくつもりです。",
+        "vi": "Trong tương lai, tôi dự định làm việc ở Nhật Bản."
+      }
+    ],
+    "notes": "Thể hiện ý định rõ ràng đã được lên kế hoạch của người nói."
+  },
+  {
+    "id": "grammar_n4_015",
+    "pattern": "〜てみる",
+    "jlpt": "N4",
+    "meaning_vi": "Thử làm việc gì đó xem sao.",
+    "meaning_en": "try doing something",
+    "structure": "Verb (Te-form) + みる",
+    "examples": [
+      {
+        "ja": "日本語で手紙を書いてみました。",
+        "reading": "にほんごでてがみをかいてみました。",
+        "vi": "Tôi đã viết thử bức thư bằng tiếng Nhật."
+      }
+    ],
+    "notes": "Thử làm điều gì đó mà trước đây mình chưa từng làm hoặc để kiểm chứng kết quả."
+  },
+  {
+    "id": "grammar_n4_016",
+    "pattern": "〜てしまう",
+    "jlpt": "N4",
+    "meaning_vi": "Lỡ làm... (hối tiếc) / Hoàn thành xong hoàn toàn việc gì.",
+    "meaning_en": "do completely / accidentally do",
+    "structure": "Verb (Te-form) + しまう",
+    "examples": [
+      {
+        "ja": "宿題を全部やってしまいました。",
+        "reading": "しゅくだいをぜんぶやってしまいました。",
+        "vi": "Tôi đã làm xong hoàn toàn đống bài tập về nhà rồi."
+      },
+      {
+        "ja": "パスポートを忘れてしまいました。",
+        "reading": "パスポートをわすれてしまいました。",
+        "vi": "Tôi lỡ quên mất hộ chiếu rồi."
+      }
+    ],
+    "notes": "Dạng rút gọn trong văn nói thường là ちゃう (chau) hoặc じゃう (jau)."
+  },
+  {
+    "id": "grammar_n4_017",
+    "pattern": "〜ておく",
+    "jlpt": "N4",
+    "meaning_vi": "Làm sẵn việc gì đó trước (để chuẩn bị cho mục đích nào đó).",
+    "meaning_en": "do in advance",
+    "structure": "Verb (Te-form) + おく",
+    "examples": [
+      {
+        "ja": "旅行の前に切符を買っておきます。",
+        "reading": "りょこうのまえにきっぷをかっておきます。",
+        "vi": "Tôi mua vé sẵn trước chuyến đi du lịch."
+      }
+    ],
+    "notes": "Văn nói thường rút gọn thành とく (toku)."
+  },
+  {
+    "id": "grammar_n4_018",
+    "pattern": "〜てある",
+    "jlpt": "N4",
+    "meaning_vi": "Đã được làm sẵn... (diễn tả trạng thái kết quả của hành động có mục đích).",
+    "meaning_en": "has been done",
+    "structure": "Noun + が + Transitive Verb (Te-form) + ある",
+    "examples": [
+      {
+        "ja": "カレンダーに予定が書いてあります。",
+        "reading": "カレンダーによていがかいてあります。",
+        "vi": "Lịch trình đã được ghi sẵn trên cuốn lịch rồi."
+      }
+    ],
+    "notes": "Chủ ngữ là đồ vật chịu tác động của hành động có chủ đích từ trước."
+  },
+  {
+    "id": "grammar_n4_019",
+    "pattern": "〜てほしい",
+    "jlpt": "N4",
+    "meaning_vi": "Muốn người khác làm việc gì đó cho mình.",
+    "meaning_en": "want someone to do",
+    "structure": "Person + に + Verb (Te-form) + ほしい",
+    "examples": [
+      {
+        "ja": "あなたに私の日本語を直してほしいです。",
+        "reading": "あなたにわたしのにほんごをなおしてほしいです。",
+        "vi": "Tôi muốn bạn sửa hộ tiếng Nhật cho tôi."
+      }
+    ],
+    "notes": "Phủ định là てほしくない hoặc ないでほしい."
+  },
+  {
+    "id": "grammar_n4_020",
+    "pattern": "〜てもいい",
+    "jlpt": "N4",
+    "meaning_vi": "Được phép làm việc gì đó.",
+    "meaning_en": "may / allowed to do",
+    "structure": "Verb (Te-form) / Adjective (Te-form) + もいい",
+    "examples": [
+      {
+        "ja": "写真を撮ってもいいですか。",
+        "reading": "しゃしんをとってもいいですか。",
+        "vi": "Tôi chụp ảnh có được không?"
+      }
+    ],
+    "notes": "Dùng trong mẫu câu xin phép hoặc cho phép ai đó làm gì."
+  },
+  {
+    "id": "grammar_n4_021",
+    "pattern": "〜てはいけない",
+    "jlpt": "N4",
+    "meaning_vi": "Không được phép làm việc gì đó (cấm đoán).",
+    "meaning_en": "must not do",
+    "structure": "Verb (Te-form) + はいけない",
+    "examples": [
+      {
+        "ja": "ここに車を止めてはいけません。",
+        "reading": "ここにくるまをとめてはいけません。",
+        "vi": "Không được phép đỗ xe ở chỗ này."
+      }
+    ],
+    "notes": "Dùng để cấm đoán một cách lịch sự nhưng nghiêm khắc."
+  },
+  {
+    "id": "grammar_n4_022",
+    "pattern": "〜なければならない",
+    "jlpt": "N4",
+    "meaning_vi": "Bắt buộc phải làm việc gì đó.",
+    "meaning_en": "must do / have to do",
+    "structure": "Verb (Nai-form without i) + なければならない",
+    "examples": [
+      {
+        "ja": "毎日宿題をしなければなりません。",
+        "reading": "まいにちしゅくだいをしなければなりません。",
+        "vi": "Hàng ngày tôi bắt buộc phải làm bài tập."
+      }
+    ],
+    "notes": "Diễn tả nghĩa vụ hoặc bổn phận bắt buộc không thể tránh khỏi."
+  },
+  {
+    "id": "grammar_n4_023",
+    "pattern": "〜なくてもいい",
+    "jlpt": "N4",
+    "meaning_vi": "Không cần thiết phải làm việc gì đó cũng được.",
+    "meaning_en": "don't have to do / need not to do",
+    "structure": "Verb (Nai-form without i) + なくてもいい",
+    "examples": [
+      {
+        "ja": "明日は日曜日なので、早く起きなくてもいいです。",
+        "reading": "あしたはにちようびなので、はやくおきなくてもいいです。",
+        "vi": "Ngày mai là Chủ Nhật nên không cần thức dậy sớm cũng được."
+      }
+    ],
+    "notes": "Giải phóng người nghe khỏi bổn phận bắt buộc phải thực hiện."
+  },
+  {
+    "id": "grammar_n4_024",
+    "pattern": "〜たら",
+    "jlpt": "N4",
+    "meaning_vi": "Nếu... thì... (giả định điều kiện trong tương lai / sau khi làm gì).",
+    "meaning_en": "if / when (conditional)",
+    "structure": "Verb (Ta-form) + ら / Adjective (Ta-form) + ら",
+    "examples": [
+      {
+        "ja": "雨が降ったら、行きません。",
+        "reading": "あめがふったら、いきません。",
+        "vi": "Nếu trời mưa thì tôi sẽ không đi."
+      },
+      {
+        "ja": "駅に着いたら、電話してください。",
+        "reading": "えきについたら、でんわしてください。",
+        "vi": "Sau khi đến ga thì hãy gọi điện thoại cho tôi nhé."
+      }
+    ],
+    "notes": "Cấu trúc điều kiện rất phổ biến và linh hoạt trong đời sống."
+  },
+  {
+    "id": "grammar_n4_025",
+    "pattern": "〜ば",
+    "jlpt": "N4",
+    "meaning_vi": "Nếu... (thể điều kiện biểu thị mối quan hệ nhân quả mạnh).",
+    "meaning_en": "if (conditional form)",
+    "structure": "Verb (Ba-form) / [i-adj + ければ] / [na-adj + ならば]",
+    "examples": [
+      {
+        "ja": "安ければ、買います。",
+        "reading": "やすければ、かいます。",
+        "vi": "Nếu rẻ thì tôi sẽ mua."
+      }
+    ],
+    "notes": "Thường biểu thị điều kiện cần thiết để có kết quả phía sau."
+  },
+  {
+    "id": "grammar_n4_026",
+    "pattern": "〜と",
+    "jlpt": "N4",
+    "meaning_vi": "Hễ mà... thì... (kết quả hiển nhiên, tự nhiên hoặc chỉ đường).",
+    "meaning_en": "whenever / if (natural consequence)",
+    "structure": "Verb (Dict-form) + と",
+    "examples": [
+      {
+        "ja": "このボタンを押すと、水が出ます。",
+        "reading": "このボタンをおすと、みずがでます。",
+        "vi": "Hễ nhấn nút này thì nước sẽ chảy ra."
+      }
+    ],
+    "notes": "Vế sau không dùng các mẫu câu biểu thị ý chí, mệnh lệnh, hay rủ rê."
+  },
+  {
+    "id": "grammar_n4_027",
+    "pattern": "〜ようにする",
+    "jlpt": "N4",
+    "meaning_vi": "Cố gắng tạo thói quen làm/không làm việc gì đó.",
+    "meaning_en": "try to / make an effort to",
+    "structure": "Verb (Dict-form / Nai-form) + ようにする",
+    "examples": [
+      {
+        "ja": "毎日、野菜を食べるようにしています。",
+        "reading": "まいにち、やさいをたべるようにしています。",
+        "vi": "Tôi đang cố gắng tạo thói quen ăn rau mỗi ngày."
+      }
+    ],
+    "notes": "Thường sử dụng ở dạng ようにしている (biểu thị thói quen tốt đang duy trì)."
+  },
+  {
+    "id": "grammar_n4_028",
+    "pattern": "〜ようになる",
+    "jlpt": "N4",
+    "meaning_vi": "Trở nên có thể làm gì đó (thay đổi trạng thái từ không thể sang có thể).",
+    "meaning_en": "come to be able to / learn to",
+    "structure": "Verb (Potential / Dict-form) + ようになる",
+    "examples": [
+      {
+        "ja": "日本語が話せるようになりました。",
+        "reading": "にほんごがはなせるようになりました。",
+        "vi": "Tôi đã trở nên có thể nói được tiếng Nhật."
+      }
+    ],
+    "notes": "Diễn tả sự biến chuyển năng lực hoặc thói quen theo thời gian."
+  },
+  {
+    "id": "grammar_n4_029",
+    "pattern": "〜ために",
+    "jlpt": "N4",
+    "meaning_vi": "Để... / Vì lợi ích của... / Vì... (nguyên nhân).",
+    "meaning_en": "in order to / for the sake of / because of",
+    "structure": "Verb (Dict-form) + ために / Noun + のために",
+    "examples": [
+      {
+        "ja": "日本に留学するために、日本語を勉強しています。",
+        "reading": "にほんにりゅうがくするために、にほんごをべんきょうしています。",
+        "vi": "Tôi học tiếng Nhật để đi du học Nhật Bản."
+      },
+      {
+        "ja": "家族のために、一生懸命働きます。",
+        "reading": "かぞくのために、いっしょうけんめいはたらきます。",
+        "vi": "Tôi làm việc hết sức mình vì gia đình."
+      }
+    ],
+    "notes": "Động từ đứng trước 'tame ni' phải mang tính chủ động (ý chí)."
+  },
+  {
+    "id": "grammar_n4_030",
+    "pattern": "〜ように",
+    "jlpt": "N4",
+    "meaning_vi": "Để... (mục tiêu không mang tính ý chí trực tiếp/trạng thái không tự chủ).",
+    "meaning_en": "so that / in order to",
+    "structure": "Verb (Potential / Nai-form / Dict-form non-volitional) + ように",
+    "examples": [
+      {
+        "ja": "日本語の新聞が読めるように、毎日漢字を覚えます。",
+        "reading": "にほんごのしんぶんがよめるように、まいにちかんじをおぼえます。",
+        "vi": "Để có thể đọc được báo tiếng Nhật, hàng ngày tôi đều nhớ chữ Kanji."
+      }
+    ],
+    "notes": "Khác với ために (với động từ ý chí), ように kết hợp với động từ khả năng, tự động từ hoặc thể phủ định."
   }
 ]
