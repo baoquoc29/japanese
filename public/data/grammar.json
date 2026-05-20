@@ -1,0 +1,212 @@
+[
+  {
+    "id": "grammar_n5_001",
+    "pattern": "〜です",
+    "jlpt": "N5",
+    "meaning_vi": "Là..., dùng để kết thúc câu danh từ hoặc tính từ một cách lịch sự.",
+    "meaning_en": "To be... (polite copula)",
+    "structure": "Noun / Na-adjective + です",
+    "examples": [
+      {
+        "ja": "私は学生です。",
+        "reading": "わたしはがくせいです。",
+        "vi": "Tôi là học sinh."
+      },
+      {
+        "ja": "あの人は静かです。",
+        "reading": "あのひとはしずかです。",
+        "vi": "Người đó thật yên tĩnh."
+      }
+    ],
+    "notes": "Dùng trong hội thoại lịch sự cơ bản để khẳng định một sự việc."
+  },
+  {
+    "id": "grammar_n5_002",
+    "pattern": "A は B です",
+    "jlpt": "N5",
+    "meaning_vi": "A là B (Trợ từ は biểu thị chủ ngữ / chủ đề câu).",
+    "meaning_en": "A is B",
+    "structure": "Noun A + は + Noun B + です",
+    "examples": [
+      {
+        "ja": "これは本です。",
+        "reading": "これはほんです。",
+        "vi": "Đây là cuốn sách."
+      },
+      {
+        "ja": "木村さんは先生です。",
+        "reading": "きむらさんはせんせいです。",
+        "vi": "Anh Kimura là giáo viên."
+      }
+    ],
+    "notes": "Trợ từ は phát âm là 'wa'. Đây là cấu trúc cơ bản nhất của tiếng Nhật."
+  },
+  {
+    "id": "grammar_n5_003",
+    "pattern": "〜も",
+    "jlpt": "N5",
+    "meaning_vi": "Cũng... (biểu thị sự tương tự như đối tượng trước đó).",
+    "meaning_en": "Also / Too",
+    "structure": "Noun + も + (Verb/Adjective)",
+    "examples": [
+      {
+        "ja": "私もベトナム人です。",
+        "reading": "わたしもベトナムじんです。",
+        "vi": "Tôi cũng là người Việt Nam."
+      },
+      {
+        "ja": "彼も学校へ行きます。",
+        "reading": "かれもがっこうへいきます。",
+        "vi": "Anh ấy cũng sẽ đi học."
+      }
+    ],
+    "notes": "Trợ từ も thay thế trực tiếp trợ từ は hoặc が."
+  },
+  {
+    "id": "grammar_n5_004",
+    "pattern": "A の B",
+    "jlpt": "N5",
+    "meaning_vi": "B của A / B thuộc về A (Trợ từ の biểu thị sở hữu hoặc bổ nghĩa).",
+    "meaning_en": "B of A / A's B",
+    "structure": "Noun A + の + Noun B",
+    "examples": [
+      {
+        "ja": "これは私の車です。",
+        "reading": "これはわたしのくるまです。",
+        "vi": "Đây là xe hơi của tôi."
+      },
+      {
+        "ja": "日本語の本を読みます。",
+        "reading": "にほんごのほんをよみます。",
+        "vi": "Tôi đọc cuốn sách tiếng Nhật."
+      }
+    ],
+    "notes": "Trợ từ の liên kết hai danh từ, danh từ đứng trước bổ nghĩa cho danh từ đứng sau."
+  },
+  {
+    "id": "grammar_n5_005",
+    "pattern": "〜に (hành động/địa điểm)",
+    "jlpt": "N5",
+    "meaning_vi": "Vào lúc... / Đến... (Chỉ thời gian xác định hoặc địa điểm hướng tới).",
+    "meaning_en": "At (time) / To (direction/destination)",
+    "structure": "Time + に / Destination + に + (行く/来る)",
+    "examples": [
+      {
+        "ja": "七時に起きます。",
+        "reading": "しちじにおきます。",
+        "vi": "Tôi thức dậy vào lúc 7 giờ."
+      },
+      {
+        "ja": "日本に行きます。",
+        "reading": "にほんにいきます。",
+        "vi": "Tôi đi Nhật Bản."
+      }
+    ],
+    "notes": "Không dùng に với các trạng từ thời gian không có số cụ thể như 'hôm nay', 'ngày mai'."
+  },
+  {
+    "id": "grammar_n5_006",
+    "pattern": "〜で (địa điểm/phương tiện)",
+    "jlpt": "N5",
+    "meaning_vi": "Tại... / Bằng... (Chỉ nơi xảy ra hành động, hoặc bằng phương tiện/cách thức).",
+    "meaning_en": "At (action location) / By (means/tool)",
+    "structure": "Location + で + Action / Means + で + Verb",
+    "examples": [
+      {
+        "ja": "図書館で勉強します。",
+        "reading": "としょかんでべんきょうします。",
+        "vi": "Tôi học bài ở thư viện."
+      },
+      {
+        "ja": "電車で学校へ行きます。",
+        "reading": "でんしゃでがっこうへいきます。",
+        "vi": "Tôi đi học bằng tàu điện."
+      }
+    ],
+    "notes": "Trợ từ で đứng sau nơi diễn ra hành động chủ động, phân biệt với に biểu thị sự tồn tại tĩnh (có ở đâu)."
+  },
+  {
+    "id": "grammar_n5_007",
+    "pattern": "〜を (tân ngữ)",
+    "jlpt": "N5",
+    "meaning_vi": "Tác động vào... (Trợ từ を chỉ tân ngữ trực tiếp của ngoại động từ).",
+    "meaning_en": "Direct object marker (pronounced 'o')",
+    "structure": "Noun + を + Transitive Verb",
+    "examples": [
+      {
+        "ja": "ご飯を食べます。",
+        "reading": "ごはんをたべます。",
+        "vi": "Tôi ăn cơm."
+      },
+      {
+        "ja": "水を聞きますではなく、音楽を聞きます。",
+        "reading": "おんがくをききます。",
+        "vi": "Tôi nghe nhạc."
+      }
+    ],
+    "notes": "Trợ từ を viết là 'wo' nhưng luôn phát âm là 'o'."
+  },
+  {
+    "id": "grammar_n5_008",
+    "pattern": "〜てください",
+    "jlpt": "N5",
+    "meaning_vi": "Hãy... / Vui lòng... (Dùng để đưa ra lời yêu cầu, đề nghị lịch sự).",
+    "meaning_en": "Please do...",
+    "structure": "Verb (Te-form) + てください",
+    "examples": [
+      {
+        "ja": "ここに名前を書いてください。",
+        "reading": "ここになまえをかいてください。",
+        "vi": "Vui lòng viết tên vào đây."
+      },
+      {
+        "ja": "日本語で話してください。",
+        "reading": "にほんごではなしてください。",
+        "vi": "Hãy nói bằng tiếng Nhật."
+      }
+    ],
+    "notes": "Đây là mẫu câu cơ bản để hướng dẫn hoặc yêu cầu người khác làm gì một cách lịch sự."
+  },
+  {
+    "id": "grammar_n5_009",
+    "pattern": "〜たいです",
+    "jlpt": "N5",
+    "meaning_vi": "Muốn làm gì... (Biểu thị mong muốn thực hiện hành động của bản thân).",
+    "meaning_en": "Want to do...",
+    "structure": "Verb (Stem form / Masu-form without masu) + たいです",
+    "examples": [
+      {
+        "ja": "日本へ行きたいです。",
+        "reading": "にほんへいきたいです。",
+        "vi": "Tôi muốn đi Nhật Bản."
+      },
+      {
+        "ja": "お水を飲みたいです。",
+        "reading": "おみずをのみたいです。",
+        "vi": "Tôi muốn uống nước."
+      }
+    ],
+    "notes": "Mẫu câu này chỉ dùng cho ngôi thứ nhất (bản thân). Tính từ đuôi -i có cách chia tương tự (tai -> takunai)."
+  },
+  {
+    "id": "grammar_n5_010",
+    "pattern": "〜ましょう",
+    "jlpt": "N5",
+    "meaning_vi": "Cùng làm... nhé / Hãy cùng... (Rủ rê, đề nghị cùng làm gì đó).",
+    "meaning_en": "Let's do...",
+    "structure": "Verb (Stem form) + ましょう",
+    "examples": [
+      {
+        "ja": "一緒にご飯を食べましょう。",
+        "reading": "いっしょにごはんをたべましょう。",
+        "vi": "Chúng ta hãy cùng ăn cơm nhé."
+      },
+      {
+        "ja": "少し休みましょう。",
+        "reading": "すこしやすみましょう。",
+        "vi": "Chúng ta nghỉ ngơi một chút nhé."
+      }
+    ],
+    "notes": "Thường đi kèm với cụm từ 一緒に (isshoni - cùng nhau)."
+  }
+]

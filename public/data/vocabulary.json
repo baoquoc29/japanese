@@ -1,0 +1,512 @@
+[
+  {
+    "id": "vocab_001",
+    "word": "日本",
+    "reading": "にほん",
+    "romaji": "nihon",
+    "meanings_vi": ["Nhật Bản"],
+    "meanings_en": ["Japan"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "私は日本に住んでいます。",
+        "reading": "わたしはにほんにすんでいます。",
+        "vi": "Tôi đang sống ở Nhật Bản."
+      }
+    ]
+  },
+  {
+    "id": "vocab_002",
+    "word": "日本語",
+    "reading": "にほんご",
+    "romaji": "nihongo",
+    "meanings_vi": ["tiếng Nhật"],
+    "meanings_en": ["Japanese language"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "日本語を勉強しています。",
+        "reading": "にほんごをべんきょうしています。",
+        "vi": "Tôi đang học tiếng Nhật."
+      }
+    ]
+  },
+  {
+    "id": "vocab_003",
+    "word": "先生",
+    "reading": "せんせい",
+    "romaji": "sensei",
+    "meanings_vi": ["thầy giáo", "cô giáo", "bác sĩ"],
+    "meanings_en": ["teacher", "doctor", "master"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "彼は私の日本語の先生です。",
+        "reading": "かれはわたしのにほんごのせんせいです。",
+        "vi": "Thầy ấy là giáo viên tiếng Nhật của tôi."
+      }
+    ]
+  },
+  {
+    "id": "vocab_004",
+    "word": "学生",
+    "reading": "がくせい",
+    "romaji": "gakusei",
+    "meanings_vi": ["học sinh", "sinh viên"],
+    "meanings_en": ["student"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "私はハノイ大学の学生です。",
+        "reading": "わたしはハノイだいがくのがくせいです。",
+        "vi": "Tôi là sinh viên của Đại học Hà Nội."
+      }
+    ]
+  },
+  {
+    "id": "vocab_005",
+    "word": "学校",
+    "reading": "がっこう",
+    "romaji": "gakkou",
+    "meanings_vi": ["trường học"],
+    "meanings_en": ["school"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "自転車で学校へ行きます。",
+        "reading": "じてんしゃでがっこうへいきます。",
+        "vi": "Tôi đi học bằng xe đạp."
+      }
+    ]
+  },
+  {
+    "id": "vocab_006",
+    "word": "友達",
+    "reading": "ともだち",
+    "romaji": "tomodachi",
+    "meanings_vi": ["bạn bè"],
+    "meanings_en": ["friend"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "週末に友達と遊びました。",
+        "reading": "しゅうまつにともだちとあそびました。",
+        "vi": "Tôi đã đi chơi với bạn vào cuối tuần."
+      }
+    ]
+  },
+  {
+    "id": "vocab_007",
+    "word": "今日",
+    "reading": "きょう",
+    "romaji": "kyou",
+    "meanings_vi": ["hôm nay"],
+    "meanings_en": ["today"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "今日は天気がいいですね。",
+        "reading": "きょうはてんきがいいですね。",
+        "vi": "Hôm nay thời tiết đẹp nhỉ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_008",
+    "word": "明日",
+    "reading": "あした",
+    "romaji": "ashita",
+    "meanings_vi": ["ngày mai"],
+    "meanings_en": ["tomorrow"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "明日、テストがあります。",
+        "reading": "あした、テストがあります。",
+        "vi": "Ngày mai tôi có bài kiểm tra."
+      }
+    ]
+  },
+  {
+    "id": "vocab_009",
+    "word": "昨日",
+    "reading": "きのう",
+    "romaji": "kinou",
+    "meanings_vi": ["hôm qua"],
+    "meanings_en": ["yesterday"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "昨日は雨が降りました。",
+        "reading": "きのうはあめがふりました。",
+        "vi": "Hôm qua trời đã mưa."
+      }
+    ]
+  },
+  {
+    "id": "vocab_010",
+    "word": "お水",
+    "reading": "おみず",
+    "romaji": "omizu",
+    "meanings_vi": ["nước", "nước uống"],
+    "meanings_en": ["water"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "お水を一杯ください。",
+        "reading": "おみずをいっぱいください。",
+        "vi": "Vui lòng cho tôi xin một ly nước."
+      }
+    ]
+  },
+  {
+    "id": "vocab_011",
+    "word": "お金",
+    "reading": "おかね",
+    "romaji": "okane",
+    "meanings_vi": ["tiền"],
+    "meanings_en": ["money"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "今、お金がありません。",
+        "reading": "いま、おかねがありません。",
+        "vi": "Bây giờ tôi không có tiền."
+      }
+    ]
+  },
+  {
+    "id": "vocab_012",
+    "word": "車",
+    "reading": "くるま",
+    "romaji": "kuruma",
+    "meanings_vi": ["xe hơi", "ô tô"],
+    "meanings_en": ["car", "vehicle"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "新しい車を買いたいです。",
+        "reading": "あたらしいくるまをかいたいです。",
+        "vi": "Tôi muốn mua một chiếc ô tô mới."
+      }
+    ]
+  },
+  {
+    "id": "vocab_013",
+    "word": "猫",
+    "reading": "ねこ",
+    "romaji": "neko",
+    "meanings_vi": ["con mèo"],
+    "meanings_en": ["cat"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "私の猫は白いです。",
+        "reading": "わたしのねこはしろいです。",
+        "vi": "Con mèo của tôi màu trắng."
+      }
+    ]
+  },
+  {
+    "id": "vocab_014",
+    "word": "犬",
+    "reading": "いぬ",
+    "romaji": "inu",
+    "meanings_vi": ["con chó"],
+    "meanings_en": ["dog"],
+    "partOfSpeech": "noun",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "公園で犬と散歩します。",
+        "reading": "こうえんでいぬとさんぽします。",
+        "vi": "Tôi dắt chó đi dạo ở công viên."
+      }
+    ]
+  },
+  {
+    "id": "vocab_015",
+    "word": "行く",
+    "reading": "いく",
+    "romaji": "iku",
+    "meanings_vi": ["đi"],
+    "meanings_en": ["to go"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "明日、東京へ行きます。",
+        "reading": "あした、とうきょうへいきます。",
+        "vi": "Ngày mai tôi sẽ đi Tokyo."
+      }
+    ]
+  },
+  {
+    "id": "vocab_016",
+    "word": "来る",
+    "reading": "くる",
+    "romaji": "kuru",
+    "meanings_vi": ["đến"],
+    "meanings_en": ["to come"],
+    "partOfSpeech": "verb-iii",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "早くここに来てください。",
+        "reading": "はやくここにきてください。",
+        "vi": "Hãy đến đây nhanh lên."
+      }
+    ]
+  },
+  {
+    "id": "vocab_017",
+    "word": "食べる",
+    "reading": "たべる",
+    "romaji": "taberu",
+    "meanings_vi": ["ăn"],
+    "meanings_en": ["to eat"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "朝ご飯をもう食べましたか。",
+        "reading": "あさごはんをもうたべましたか。",
+        "vi": "Bạn đã ăn sáng chưa?"
+      }
+    ]
+  },
+  {
+    "id": "vocab_018",
+    "word": "飲む",
+    "reading": "のむ",
+    "romaji": "nomu",
+    "meanings_vi": ["uống"],
+    "meanings_en": ["to drink"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "コーヒーを飲みましょう。",
+        "reading": "コーヒーをのみましょう。",
+        "vi": "Chúng ta hãy uống cà phê nhé."
+      }
+    ]
+  },
+  {
+    "id": "vocab_019",
+    "word": "見る",
+    "reading": "みる",
+    "romaji": "miru",
+    "meanings_vi": ["nhìn", "xem", "ngắm"],
+    "meanings_en": ["to see", "to watch", "to look"],
+    "partOfSpeech": "verb-ii",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "昨日、映画を見ました。",
+        "reading": "きのう、えいがをみました。",
+        "vi": "Hôm qua tôi đã xem phim."
+      }
+    ]
+  },
+  {
+    "id": "vocab_020",
+    "word": "聞く",
+    "reading": "きく",
+    "romaji": "kiku",
+    "meanings_vi": ["nghe", "hỏi"],
+    "meanings_en": ["to listen", "to hear", "to ask"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "毎日、日本の音楽を聞きます。",
+        "reading": "まいにち、にほんのおんがくをききます。",
+        "vi": "Mỗi ngày tôi đều nghe nhạc Nhật."
+      }
+    ]
+  },
+  {
+    "id": "vocab_021",
+    "word": "書く",
+    "reading": "かく",
+    "romaji": "kaku",
+    "meanings_vi": ["viết"],
+    "meanings_en": ["to write"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "漢字で手紙を書きます。",
+        "reading": "かんじでてがみをかきます。",
+        "vi": "Tôi viết thư bằng chữ Kanji."
+      }
+    ]
+  },
+  {
+    "id": "vocab_022",
+    "word": "話す",
+    "reading": "はなす",
+    "romaji": "hanasu",
+    "meanings_vi": ["nói chuyện", "thảo luận"],
+    "meanings_en": ["to speak", "to talk"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "日本語で話してください。",
+        "reading": "にほんごではなしてください。",
+        "vi": "Vui lòng nói chuyện bằng tiếng Nhật."
+      }
+    ]
+  },
+  {
+    "id": "vocab_023",
+    "word": "買う",
+    "reading": "かう",
+    "romaji": "kau",
+    "meanings_vi": ["mua"],
+    "meanings_en": ["to buy"],
+    "partOfSpeech": "verb-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "スーパーで林檎を買いました。",
+        "reading": "スーパーでりんごをかいました。",
+        "vi": "Tôi đã mua táo ở siêu thị."
+      }
+    ]
+  },
+  {
+    "id": "vocab_024",
+    "word": "大きい",
+    "reading": "おおきい",
+    "romaji": "ookii",
+    "meanings_vi": ["to", "lớn"],
+    "meanings_en": ["big", "large"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "これは大きな家ですね。",
+        "reading": "これはおおきないえですね。",
+        "vi": "Đây quả là một căn nhà lớn nhỉ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_025",
+    "word": "小さい",
+    "reading": "ちいさい",
+    "romaji": "chiisai",
+    "meanings_vi": ["nhỏ", "bé"],
+    "meanings_en": ["small", "little"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "小さな猫がいます。",
+        "reading": "ちいさなねこがいます。",
+        "vi": "Có một chú mèo nhỏ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_026",
+    "word": "美味しい",
+    "reading": "おいしい",
+    "romaji": "oishii",
+    "meanings_vi": ["ngon"],
+    "meanings_en": ["delicious", "tasty"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "このラーメンは美味しいです。",
+        "reading": "このラーメンはおいしいです。",
+        "vi": "Món mì ramen này rất ngon."
+      }
+    ]
+  },
+  {
+    "id": "vocab_027",
+    "word": "高い",
+    "reading": "たかい",
+    "romaji": "takai",
+    "meanings_vi": ["cao", "đắt"],
+    "meanings_en": ["high", "expensive"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "あの山はとても高いです。",
+        "reading": "あのやまはとてもたかいです。",
+        "vi": "Ngọn núi kia rất cao."
+      }
+    ]
+  },
+  {
+    "id": "vocab_028",
+    "word": "安い",
+    "reading": "やすい",
+    "romaji": "yasui",
+    "meanings_vi": ["rẻ"],
+    "meanings_en": ["cheap", "inexpensive"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "この服はとても安いです。",
+        "reading": "このふくはとてもやすいです。",
+        "vi": "Bộ quần áo này rất rẻ."
+      }
+    ]
+  },
+  {
+    "id": "vocab_029",
+    "word": "新しい",
+    "reading": "あたらしい",
+    "romaji": "atarashii",
+    "meanings_vi": ["mới"],
+    "meanings_en": ["new"],
+    "partOfSpeech": "adj-i",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "新しいスマホを買いました。",
+        "reading": "あたらしいスマホをかいました。",
+        "vi": "Tôi đã mua một chiếc điện thoại mới."
+      }
+    ]
+  },
+  {
+    "id": "vocab_030",
+    "word": "静か",
+    "reading": "しずか",
+    "romaji": "shizuka",
+    "meanings_vi": ["yên tĩnh"],
+    "meanings_en": ["quiet", "peaceful"],
+    "partOfSpeech": "adj-na",
+    "jlpt": "N5",
+    "examples": [
+      {
+        "ja": "図書館はとても静かです。",
+        "reading": "としょかんはとてもしずかです。",
+        "vi": "Thư viện rất yên tĩnh."
+      }
+    ]
+  }
+]
